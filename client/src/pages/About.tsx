@@ -8,7 +8,7 @@ export default function About() {
       <Header />
 
       <main className="flex-1">
-        <div className="container max-w-3xl px-4 py-12 md:px-6">
+        <div className="mx-auto max-w-3xl px-4 py-12 md:px-6">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" data-testid="text-about-title">
             About AI x Marketing Tools
           </h1>
