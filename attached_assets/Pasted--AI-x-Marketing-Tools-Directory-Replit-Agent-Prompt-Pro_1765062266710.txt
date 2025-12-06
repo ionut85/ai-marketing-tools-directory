@@ -1,0 +1,331 @@
+# AI x Marketing Tools Directory - Replit Agent Prompt
+
+## Project Overview
+
+Build a minimal, fast directory website for AI x Marketing tools. Design inspired by Vercel's template gallery - clean, spacious, black/white aesthetic with prominent search.
+
+**Primary Goal:** Users should see MOST tools on first load. Compact cards, no pagination - filtering shows/hides tools dynamically.
+
+**Stack:**
+- Next.js 15 (App Router)
+- Tailwind CSS 4
+- shadcn/ui
+- TypeScript
+- OpenAI API for natural language search
+- JSON files for data (no database)
+- Deploy: Vercel
+
+---
+
+## Design System
+
+**Theme:** Black & White (shadcn default)
+- Background: White #FFFFFF
+- Text: Black #000000 / Gray #71717A
+- Borders: Light gray #E4E4E7
+- Accent: Black buttons, hover states
+- Cards: White with subtle border
+
+**Typography:**
+- Font: Inter (or Geist if available)
+- Clean, minimal, lots of whitespace
+
+**Components from shadcn:**
+- Input (search bar)
+- Badge (tags, filters)
+- Card (tool cards - but COMPACT)
+- Button
+- Checkbox (filters)
+- Dialog/Sheet (mobile filters)
+- Separator
+
+---
+
+## Core Pages
+
+### 1. Homepage / Directory (/)
+
+**Layout (top to bottom):**
+
+- Minimal header: Logo on left, "Landscape" and "About" links on right
+- Hero section: Large centered H1 "Discover AI x Marketing Tools" with subtitle
+- LARGE search bar (48px+ height) centered below hero
+- Main content: Filter sidebar on LEFT, tool grid on RIGHT
+- Tool grid: 4-6 columns of compact cards
+- Footer: "Submit a Tool" link
+
+**Search Bar Behavior:**
+- Large, centered, prominent (48px height minimum)
+- Placeholder: Search tools... try "AI for ad creative" or "attribution platforms"
+- On type: filters results in real-time (client-side for speed)
+- Natural language via OpenAI: understands "show me creative tools" or "what helps with measurement"
+- Debounced API call (300ms) for AI-powered semantic search
+
+**Tool Cards (COMPACT - this is key):**
+- Card size: ~180-220px wide, ~100-120px tall
+- Logo: 32x32px with fallback (colored circle + initial)
+- Tool name next to logo
+- Tagline: 1 line max, truncated
+- 2-3 small badge tags
+- Hover: subtle shadow, cursor pointer
+- Click -> tool detail page
+
+**Filter Sidebar (Left):**
+- Collapsible sections: "Category", "Use Case", "Pricing"
+- Checkboxes with counts: "Creative (23)"
+- Multi-select (AND logic for categories, OR for use cases)
+- "Clear all" link
+- On mobile: slide-out sheet
+
+**Results Counter:**
+- Bottom of grid or top-right: "Showing 47 of 103 tools"
+- Updates live as filters change
+
+---
+
+### 2. Tool Detail Page (/tools/[slug])
+
+**Layout:**
+- Back link (top left): "← Back to Directory"
+- Primary CTA (top right): "Visit Website" button
+- Tool name (H1) + tagline
+- Hero area: screenshot or large logo display
+- Description: full markdown content (left/main column)
+- Sidebar (right): metadata cards
+  - Category + subcategory
+  - Use case tags (badges)
+  - Pricing model
+  - Social/external links (icons)
+- Related tools section at bottom (horizontal scroll of 4 cards)
+
+---
+
+### 3. Landscape Page (/landscape)
+
+**Interactive category grid (LUMAscape-style but clickable):**
+
+- Full-width page with title "AI x Marketing Landscape"
+- Grid with categories as COLUMNS (4-6 columns)
+- Subcategories as ROWS within each column
+- Each cell contains compact logo grid (24x24 or 32x32 logos)
+- Category headers are color-coded
+- Hover on logo: tooltip with tool name
+- Click logo: navigate to tool detail page
+- Responsive: horizontal scroll on mobile
+
+---
+
+## Data Structure
+
+### /data/tools.json
+
+```json
+[
+  {
+    "id": "jasper",
+    "slug": "jasper",
+    "name": "Jasper",
+    "tagline": "AI copilot for enterprise marketing teams",
+    "description": "Jasper is an AI copilot for marketing teams...",
+    "logo": "/logos/jasper.png",
+    "screenshot": "/screenshots/jasper.png",
+    "website": "https://jasper.ai",
+    "category": "creative-delivery",
+    "subcategory": "content-creation",
+    "useCases": ["copywriting", "content-generation", "brand-voice"],
+    "pricing": "paid",
+    "founded": 2021,
+    "social": {
+      "linkedin": "https://linkedin.com/company/jasper-ai",
+      "twitter": "https://twitter.com/jasperai"
+    }
+  }
+]
+```
+
+### /data/categories.json
+
+```json
+[
+  {
+    "id": "creative-delivery",
+    "name": "Creative & Delivery",
+    "color": "#000000",
+    "order": 1,
+    "subcategories": [
+      { "id": "content-creation", "name": "Content Creation", "order": 1 },
+      { "id": "creative-intelligence", "name": "Creative Intelligence", "order": 2 },
+      { "id": "ad-serving", "name": "Ad Serving", "order": 3 }
+    ]
+  }
+]
+```
+
+### /data/useCases.json
+
+```json
+[
+  { "id": "copywriting", "name": "Copywriting", "count": 12 },
+  { "id": "attribution", "name": "Attribution", "count": 8 },
+  { "id": "audience-targeting", "name": "Audience Targeting", "count": 15 }
+]
+```
+
+---
+
+## API Routes
+
+### POST /api/search
+
+```typescript
+// Request
+{ "query": "tools for creative optimization" }
+
+// Response
+{ 
+  "results": ["jasper", "pencil", "smartly"],
+  "intent": "creative-optimization"
+}
+```
+
+Uses OpenAI to understand natural language queries and return ranked tool IDs.
+
+---
+
+## File Structure
+
+```
+/app
+  page.tsx                 # Homepage/directory
+  layout.tsx               # Root layout
+  /landscape
+    page.tsx               # Landscape grid view
+  /tools
+    /[slug]
+      page.tsx             # Tool detail page
+  /api
+    /search
+      route.ts             # Search API endpoint
+/components
+  Header.tsx
+  Footer.tsx
+  SearchBar.tsx
+  ToolCard.tsx
+  ToolGrid.tsx
+  FilterSidebar.tsx
+  LandscapeGrid.tsx
+  TagBadge.tsx
+/data
+  tools.json
+  categories.json
+  useCases.json
+/lib
+  tools.ts                 # Data loading utilities
+  openai.ts                # OpenAI client
+/public
+  /logos                   # Tool logos
+  /screenshots             # Tool screenshots
+```
+
+---
+
+## Key Implementation Details
+
+### Compact Tool Cards
+
+```tsx
+// Target: 180-220px wide, ~100-120px tall
+<Card className="p-3 hover:shadow-md transition-shadow cursor-pointer">
+  <div className="flex items-center gap-2 mb-1">
+    <Image src={logo} alt="" className="w-8 h-8 rounded" />
+    <span className="font-medium text-sm truncate">{name}</span>
+  </div>
+  <p className="text-xs text-muted-foreground line-clamp-1">{tagline}</p>
+  <div className="flex gap-1 mt-2">
+    <Badge variant="secondary" className="text-xs">{category}</Badge>
+  </div>
+</Card>
+```
+
+### Search with Debounce
+
+```tsx
+const [query, setQuery] = useState('')
+const debouncedQuery = useDebounce(query, 300)
+
+useEffect(() => {
+  if (debouncedQuery.length > 2) {
+    fetch('/api/search', {
+      method: 'POST',
+      body: JSON.stringify({ query: debouncedQuery })
+    }).then(/* update results */)
+  }
+}, [debouncedQuery])
+```
+
+### Filter Logic
+
+- Client-side filtering for speed
+- Checkboxes update URL params: ?category=creative&useCase=copywriting
+- Grid re-renders with CSS transitions (fade out/in)
+
+---
+
+## Sample Tools Data (10 starters)
+
+| Name | Category | Subcategory | Use Cases |
+|------|----------|-------------|-----------|
+| Jasper | Creative & Delivery | Content Creation | copywriting, content-generation |
+| Copy.ai | Creative & Delivery | Content Creation | copywriting, email |
+| Pencil | Creative & Delivery | Creative Intelligence | ad-creative, testing |
+| Smartly | Creative & Delivery | Creative Intelligence | automation, creative-optimization |
+| AppsFlyer | Measurement & Analytics | Attribution | mobile-attribution, deep-linking |
+| Singular | Measurement & Analytics | Analytics | marketing-analytics, roi |
+| The Trade Desk | Media Facilitation | DSPs | programmatic, bidding |
+| LiveRamp | Data Enablement | Identity | identity-resolution, data-connectivity |
+| Segment | Data Enablement | CDPs | customer-data, integration |
+| Branch | Measurement & Analytics | Attribution | deep-linking, mobile-attribution |
+
+---
+
+## Environment Variables
+
+```
+OPENAI_API_KEY=sk-...
+```
+
+---
+
+## Implementation Order
+
+1. **Setup**: Next.js 15 + Tailwind + shadcn (npx shadcn@latest init)
+2. **Data**: Create JSON files with 10 sample tools
+3. **Homepage**: Header, search bar, tool grid (static)
+4. **Tool cards**: Compact design, hover states
+5. **Tool detail page**: Full layout with metadata
+6. **Filter sidebar**: Category/use case checkboxes
+7. **Client-side filtering**: Real-time show/hide
+8. **Landscape page**: Grid layout with categories as columns
+9. **AI search**: OpenAI integration
+10. **Polish**: Loading states, mobile responsive
+
+---
+
+## Notes for Agent
+
+- **COMPACT CARDS** - Users should see 20+ tools without scrolling on desktop
+- Use shadcn components where possible (Input, Badge, Card, Checkbox, Button)
+- Keep the black/white theme - no colors except category indicators on landscape
+- Search bar should be visually prominent (larger than typical)
+- Filter sidebar is essential - don't skip it
+- Logo fallback: colored circle with first letter if no logo file
+- Mobile: filters in a slide-out sheet, search stays prominent
+- SEO: Add proper meta tags for tool detail pages
+
+---
+
+## Submit a Tool
+
+Simple approach for v1:
+- Footer link: "Submit a Tool"
+- Opens mailto link: mailto:submit@yourdomain.com?subject=Tool%20Submission
