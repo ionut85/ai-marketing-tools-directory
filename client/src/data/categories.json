@@ -1,0 +1,43 @@
+[
+  {
+    "id": "creative-delivery",
+    "name": "Creative & Delivery",
+    "color": "#000000",
+    "order": 1,
+    "subcategories": [
+      { "id": "content-creation", "name": "Content Creation", "order": 1 },
+      { "id": "creative-intelligence", "name": "Creative Intelligence", "order": 2 },
+      { "id": "ad-serving", "name": "Ad Serving", "order": 3 }
+    ]
+  },
+  {
+    "id": "measurement-analytics",
+    "name": "Measurement & Analytics",
+    "color": "#374151",
+    "order": 2,
+    "subcategories": [
+      { "id": "attribution", "name": "Attribution", "order": 1 },
+      { "id": "analytics", "name": "Analytics", "order": 2 }
+    ]
+  },
+  {
+    "id": "media-facilitation",
+    "name": "Media Facilitation",
+    "color": "#6B7280",
+    "order": 3,
+    "subcategories": [
+      { "id": "dsps", "name": "DSPs", "order": 1 },
+      { "id": "retargeting", "name": "Retargeting", "order": 2 }
+    ]
+  },
+  {
+    "id": "data-enablement",
+    "name": "Data Enablement",
+    "color": "#9CA3AF",
+    "order": 4,
+    "subcategories": [
+      { "id": "identity", "name": "Identity", "order": 1 },
+      { "id": "cdps", "name": "CDPs", "order": 2 }
+    ]
+  }
+]

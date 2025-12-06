@@ -1,0 +1,344 @@
+[
+  {
+    "id": "jasper",
+    "slug": "jasper",
+    "name": "Jasper",
+    "tagline": "AI copilot for enterprise marketing teams",
+    "description": "Jasper is an AI copilot for marketing teams that helps create content at scale. With advanced AI capabilities, Jasper enables teams to maintain brand voice consistency while generating high-quality marketing copy, social media posts, and long-form content.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://jasper.ai",
+    "category": "creative-delivery",
+    "subcategory": "content-creation",
+    "useCases": ["copywriting", "content-generation", "brand-voice"],
+    "pricing": "paid",
+    "founded": 2021,
+    "social": {
+      "linkedin": "https://linkedin.com/company/jasper-ai",
+      "twitter": "https://twitter.com/jasperai"
+    }
+  },
+  {
+    "id": "copy-ai",
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "tagline": "AI-powered content creation platform",
+    "description": "Copy.ai is an AI-powered platform that helps marketers and businesses create compelling copy in seconds. From blog posts to email campaigns, Copy.ai streamlines the content creation process.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://copy.ai",
+    "category": "creative-delivery",
+    "subcategory": "content-creation",
+    "useCases": ["copywriting", "email", "social-media"],
+    "pricing": "freemium",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://linkedin.com/company/copy-ai",
+      "twitter": "https://twitter.com/copy_ai"
+    }
+  },
+  {
+    "id": "pencil",
+    "slug": "pencil",
+    "name": "Pencil",
+    "tagline": "AI-powered creative generation for ads",
+    "description": "Pencil uses AI to generate winning ad creative at scale. The platform analyzes performance data to predict which creative concepts will perform best, helping marketers optimize their ad spend.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://trypencil.com",
+    "category": "creative-delivery",
+    "subcategory": "creative-intelligence",
+    "useCases": ["ad-creative", "testing", "creative-optimization"],
+    "pricing": "paid",
+    "founded": 2018,
+    "social": {
+      "linkedin": "https://linkedin.com/company/pencil-ai",
+      "twitter": "https://twitter.com/trypencil"
+    }
+  },
+  {
+    "id": "smartly",
+    "slug": "smartly",
+    "name": "Smartly.io",
+    "tagline": "Creative automation for social advertising",
+    "description": "Smartly.io combines creative automation with intelligent media buying to help brands scale their social advertising. The platform enables teams to produce thousands of ad variations while optimizing performance in real-time.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://smartly.io",
+    "category": "creative-delivery",
+    "subcategory": "creative-intelligence",
+    "useCases": ["automation", "creative-optimization", "social-ads"],
+    "pricing": "enterprise",
+    "founded": 2013,
+    "social": {
+      "linkedin": "https://linkedin.com/company/smartly-io",
+      "twitter": "https://twitter.com/smartaboread"
+    }
+  },
+  {
+    "id": "appsflyer",
+    "slug": "appsflyer",
+    "name": "AppsFlyer",
+    "tagline": "Mobile attribution and marketing analytics",
+    "description": "AppsFlyer is the leading mobile attribution and marketing analytics platform. It helps marketers measure and optimize their mobile campaigns across channels, providing accurate attribution data and deep linking capabilities.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://appsflyer.com",
+    "category": "measurement-analytics",
+    "subcategory": "attribution",
+    "useCases": ["mobile-attribution", "deep-linking", "analytics"],
+    "pricing": "paid",
+    "founded": 2011,
+    "social": {
+      "linkedin": "https://linkedin.com/company/appsflyer",
+      "twitter": "https://twitter.com/appsflyer"
+    }
+  },
+  {
+    "id": "singular",
+    "slug": "singular",
+    "name": "Singular",
+    "tagline": "Marketing intelligence platform",
+    "description": "Singular provides unified marketing analytics that combines attribution, cost aggregation, and creative analytics. The platform helps marketers understand their true ROI across all channels.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://singular.net",
+    "category": "measurement-analytics",
+    "subcategory": "analytics",
+    "useCases": ["marketing-analytics", "roi", "cost-aggregation"],
+    "pricing": "paid",
+    "founded": 2014,
+    "social": {
+      "linkedin": "https://linkedin.com/company/singular",
+      "twitter": "https://twitter.com/singular"
+    }
+  },
+  {
+    "id": "the-trade-desk",
+    "slug": "the-trade-desk",
+    "name": "The Trade Desk",
+    "tagline": "Leading demand-side platform for programmatic",
+    "description": "The Trade Desk is a leading technology company that empowers buyers of advertising through its self-service platform. It enables advertisers to create, manage, and optimize digital advertising campaigns across various channels.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://thetradedesk.com",
+    "category": "media-facilitation",
+    "subcategory": "dsps",
+    "useCases": ["programmatic", "bidding", "display-ads"],
+    "pricing": "enterprise",
+    "founded": 2009,
+    "social": {
+      "linkedin": "https://linkedin.com/company/the-trade-desk",
+      "twitter": "https://twitter.com/thetradedesk"
+    }
+  },
+  {
+    "id": "liveramp",
+    "slug": "liveramp",
+    "name": "LiveRamp",
+    "tagline": "Identity resolution and data connectivity",
+    "description": "LiveRamp provides identity resolution and data connectivity solutions that enable companies to connect customer data across systems and channels while maintaining privacy and compliance.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://liveramp.com",
+    "category": "data-enablement",
+    "subcategory": "identity",
+    "useCases": ["identity-resolution", "data-connectivity", "privacy"],
+    "pricing": "enterprise",
+    "founded": 2011,
+    "social": {
+      "linkedin": "https://linkedin.com/company/liveramp",
+      "twitter": "https://twitter.com/liveramp"
+    }
+  },
+  {
+    "id": "segment",
+    "slug": "segment",
+    "name": "Segment",
+    "tagline": "Customer data platform for unified data",
+    "description": "Segment is a customer data platform that collects, cleans, and controls customer data. It provides a single view of the customer by connecting data from multiple sources to any tool or warehouse.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://segment.com",
+    "category": "data-enablement",
+    "subcategory": "cdps",
+    "useCases": ["customer-data", "integration", "analytics"],
+    "pricing": "freemium",
+    "founded": 2011,
+    "social": {
+      "linkedin": "https://linkedin.com/company/segment",
+      "twitter": "https://twitter.com/segment"
+    }
+  },
+  {
+    "id": "branch",
+    "slug": "branch",
+    "name": "Branch",
+    "tagline": "Mobile linking and measurement platform",
+    "description": "Branch is the leading mobile linking and measurement platform, trusted by the most top ranking apps to increase efficiency and revenue through enterprise-grade links. Deep linking and attribution for mobile apps.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://branch.io",
+    "category": "measurement-analytics",
+    "subcategory": "attribution",
+    "useCases": ["deep-linking", "mobile-attribution", "cross-platform"],
+    "pricing": "freemium",
+    "founded": 2014,
+    "social": {
+      "linkedin": "https://linkedin.com/company/branch-metrics",
+      "twitter": "https://twitter.com/brlogging"
+    }
+  },
+  {
+    "id": "persado",
+    "slug": "persado",
+    "name": "Persado",
+    "tagline": "AI-generated language that motivates action",
+    "description": "Persado uses AI and machine learning to generate the language that motivates each individual to engage and act. The platform optimizes marketing messages for emotion and personalization.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://persado.com",
+    "category": "creative-delivery",
+    "subcategory": "content-creation",
+    "useCases": ["copywriting", "personalization", "email"],
+    "pricing": "enterprise",
+    "founded": 2012,
+    "social": {
+      "linkedin": "https://linkedin.com/company/persado",
+      "twitter": "https://twitter.com/persado"
+    }
+  },
+  {
+    "id": "adroll",
+    "slug": "adroll",
+    "name": "AdRoll",
+    "tagline": "Growth marketing platform for D2C brands",
+    "description": "AdRoll is a growth marketing platform that helps ambitious D2C brands compete and grow by using AI to find more customers. Cross-channel advertising and retargeting made simple.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://adroll.com",
+    "category": "media-facilitation",
+    "subcategory": "retargeting",
+    "useCases": ["retargeting", "display-ads", "prospecting"],
+    "pricing": "freemium",
+    "founded": 2007,
+    "social": {
+      "linkedin": "https://linkedin.com/company/adroll",
+      "twitter": "https://twitter.com/adroll"
+    }
+  },
+  {
+    "id": "amplitude",
+    "slug": "amplitude",
+    "name": "Amplitude",
+    "tagline": "Digital analytics platform for product teams",
+    "description": "Amplitude is the leading digital analytics platform that helps companies understand user behavior and build better products. Real-time analytics, behavioral cohorts, and predictive insights.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://amplitude.com",
+    "category": "measurement-analytics",
+    "subcategory": "analytics",
+    "useCases": ["product-analytics", "user-behavior", "cohorts"],
+    "pricing": "freemium",
+    "founded": 2012,
+    "social": {
+      "linkedin": "https://linkedin.com/company/amplitude-analytics",
+      "twitter": "https://twitter.com/amplitude_hq"
+    }
+  },
+  {
+    "id": "mixpanel",
+    "slug": "mixpanel",
+    "name": "Mixpanel",
+    "tagline": "Product analytics for mobile and web",
+    "description": "Mixpanel helps companies measure what matters, make decisions fast, and build better products through data. Powerful event tracking and user analytics for product teams.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://mixpanel.com",
+    "category": "measurement-analytics",
+    "subcategory": "analytics",
+    "useCases": ["product-analytics", "user-behavior", "funnels"],
+    "pricing": "freemium",
+    "founded": 2009,
+    "social": {
+      "linkedin": "https://linkedin.com/company/mixpanel",
+      "twitter": "https://twitter.com/mixpanel"
+    }
+  },
+  {
+    "id": "braze",
+    "slug": "braze",
+    "name": "Braze",
+    "tagline": "Customer engagement platform",
+    "description": "Braze is a comprehensive customer engagement platform that powers relevant and memorable experiences between consumers and brands. Push, email, in-app messaging and more in one platform.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://braze.com",
+    "category": "creative-delivery",
+    "subcategory": "ad-serving",
+    "useCases": ["customer-engagement", "push-notifications", "email"],
+    "pricing": "enterprise",
+    "founded": 2011,
+    "social": {
+      "linkedin": "https://linkedin.com/company/braze",
+      "twitter": "https://twitter.com/braze"
+    }
+  },
+  {
+    "id": "crisp",
+    "slug": "crisp",
+    "name": "Crisp",
+    "tagline": "Retail data platform for CPG brands",
+    "description": "Crisp connects consumer brands with real-time retail data to help them sell more and waste less. Demand signals, inventory analytics, and supply chain optimization.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://gocrisp.com",
+    "category": "data-enablement",
+    "subcategory": "cdps",
+    "useCases": ["retail-data", "supply-chain", "demand-forecasting"],
+    "pricing": "paid",
+    "founded": 2016,
+    "social": {
+      "linkedin": "https://linkedin.com/company/gocrisp",
+      "twitter": "https://twitter.com/gocrisp"
+    }
+  },
+  {
+    "id": "kochava",
+    "slug": "kochava",
+    "name": "Kochava",
+    "tagline": "Unified audience platform and attribution",
+    "description": "Kochava provides unified audience platform capabilities including attribution, analytics, and data management. Comprehensive mobile measurement and fraud prevention.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://kochava.com",
+    "category": "measurement-analytics",
+    "subcategory": "attribution",
+    "useCases": ["mobile-attribution", "fraud-prevention", "analytics"],
+    "pricing": "paid",
+    "founded": 2011,
+    "social": {
+      "linkedin": "https://linkedin.com/company/kochava",
+      "twitter": "https://twitter.com/kochava"
+    }
+  },
+  {
+    "id": "neuron",
+    "slug": "neuron",
+    "name": "Neurons",
+    "tagline": "AI-powered creative pre-testing",
+    "description": "Neurons uses neuroscience and AI to predict how consumers will respond to creative before launch. Optimize ads, packaging, and digital experiences with attention prediction.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://neuronsinc.com",
+    "category": "creative-delivery",
+    "subcategory": "creative-intelligence",
+    "useCases": ["creative-testing", "attention-prediction", "optimization"],
+    "pricing": "paid",
+    "founded": 2013,
+    "social": {
+      "linkedin": "https://linkedin.com/company/neuronsinc",
+      "twitter": "https://twitter.com/neuronsinc"
+    }
+  }
+]
