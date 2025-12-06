@@ -1,5 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   const [location] = useLocation();
@@ -16,7 +17,7 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-4">
           <Link
             href="/landscape"
             className={cn(
@@ -37,6 +38,7 @@ export function Header() {
           >
             About
           </Link>
+          <ThemeToggle />
         </nav>
       </div>
     </header>
