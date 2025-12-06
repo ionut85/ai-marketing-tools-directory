@@ -18,7 +18,7 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
   };
 
   return (
-    <div className="overflow-x-auto pb-4" data-testid="landscape-grid">
+    <div className="overflow-x-auto pb-4 flex justify-center" data-testid="landscape-grid">
       <div className="inline-flex gap-4 min-w-max">
         {sortedCategories.map((category) => (
           <div key={category.id} className="w-64 flex-shrink-0">
