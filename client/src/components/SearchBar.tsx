@@ -1,5 +1,4 @@
 import { Search, X } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 interface SearchBarProps {
@@ -17,20 +16,20 @@ export function SearchBar({
 }: SearchBarProps) {
   return (
     <div className={`relative w-full max-w-2xl ${className ?? ""}`}>
-      <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
-      <Input
-        type="search"
+      <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground z-10" />
+      <input
+        type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="h-12 pl-12 pr-10 text-base"
+        className="flex h-12 w-full rounded-md border border-input bg-background px-12 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
         data-testid="input-search"
       />
       {value && (
         <Button
           variant="ghost"
           size="icon"
-          className="absolute right-1 top-1/2 h-8 w-8 -translate-y-1/2"
+          className="absolute right-2 top-1/2 h-8 w-8 -translate-y-1/2 z-10"
           onClick={() => onChange("")}
           data-testid="button-clear-search"
         >

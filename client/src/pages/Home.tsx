@@ -94,7 +94,7 @@ export default function Home() {
       <Header />
 
       <section className="border-b bg-background py-12 md:py-16">
-        <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-testid="text-hero-title">
               Discover AI x Marketing Tools
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       <main className="flex-1">
-        <div className="container px-4 py-8 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 py-8 md:px-6">
           <div className="flex items-center justify-between gap-4 mb-6">
             <MobileFilters
               categories={categories}

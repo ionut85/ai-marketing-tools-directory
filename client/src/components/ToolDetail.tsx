@@ -33,7 +33,7 @@ export function ToolDetail({
   };
 
   return (
-    <div className="container max-w-5xl px-4 py-8 md:px-6">
+    <div className="mx-auto max-w-5xl px-4 py-8 md:px-6">
       <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
         <Link href="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground">
           <ArrowLeft className="mr-2 h-4 w-4" />

@@ -22,7 +22,7 @@ export default function Landscape() {
       <Header />
 
       <main className="flex-1">
-        <div className="container px-4 py-12 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" data-testid="text-landscape-title">
               AI x Marketing Landscape
