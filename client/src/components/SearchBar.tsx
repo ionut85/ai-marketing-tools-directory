@@ -11,24 +11,26 @@ interface SearchBarProps {
 export function SearchBar({
   value,
   onChange,
-  placeholder = "Search tools... try \"AI for ad creative\" or \"attribution platforms\"",
+  placeholder = "Search tools...",
   className,
 }: SearchBarProps) {
   return (
-    <div className={`relative w-full max-w-2xl ${className ?? ""}`}>
-      <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground z-10" />
+    <div
+      className={`flex h-12 w-full max-w-2xl items-center gap-3 rounded-md border border-input bg-background px-4 focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 ring-offset-background ${className ?? ""}`}
+    >
+      <Search className="h-5 w-5 flex-shrink-0 text-muted-foreground" />
       <input
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="flex h-12 w-full rounded-md border border-input bg-background px-12 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+        className="flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground"
         data-testid="input-search"
       />
       <Button
         variant="ghost"
         size="icon"
-        className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 ${value ? "visible" : "invisible"}`}
+        className={`h-8 w-8 flex-shrink-0 ${value ? "visible" : "invisible"}`}
         onClick={() => onChange("")}
         data-testid="button-clear-search"
       >
