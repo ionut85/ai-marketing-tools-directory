@@ -13,7 +13,7 @@ export function Header() {
             <span className="text-xs font-bold text-background">GM</span>
           </div>
           <span className="hidden font-semibold sm:inline-block" data-testid="text-logo">
-            GenAI Marketing
+            GenAI Marketing Landscape
           </span>
         </Link>
 
