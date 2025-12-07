@@ -10,7 +10,8 @@ export interface Tool {
   category: string;
   subcategory: string;
   useCases: string[];
-  pricing: "free" | "freemium" | "paid" | "enterprise";
+  pricing: "free" | "subscription" | "usage-based" | "performance";
+  companyType: "indie" | "startup" | "private" | "public" | "oss";
   founded: number;
   social: {
     linkedin?: string;
@@ -41,5 +42,6 @@ export interface FilterState {
   categories: string[];
   useCases: string[];
   pricing: string[];
+  companyType: string[];
   search: string;
 }

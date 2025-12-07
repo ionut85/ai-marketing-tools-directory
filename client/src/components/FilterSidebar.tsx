@@ -15,14 +15,23 @@ interface FilterSidebarProps {
     categories: Record<string, number>;
     useCases: Record<string, number>;
     pricing: Record<string, number>;
+    companyType: Record<string, number>;
   };
 }
 
 const pricingOptions = [
   { id: "free", name: "Free" },
-  { id: "freemium", name: "Freemium" },
-  { id: "paid", name: "Paid" },
-  { id: "enterprise", name: "Enterprise" },
+  { id: "subscription", name: "Subscription" },
+  { id: "usage-based", name: "Usage-Based" },
+  { id: "performance", name: "Performance" },
+];
+
+const companyTypeOptions = [
+  { id: "indie", name: "Indie" },
+  { id: "startup", name: "Startup" },
+  { id: "private", name: "Private" },
+  { id: "public", name: "Public" },
+  { id: "oss", name: "Open Source" },
 ];
 
 export function FilterSidebar({
@@ -36,12 +45,14 @@ export function FilterSidebar({
     category: true,
     useCase: true,
     pricing: true,
+    companyType: true,
   });
 
   const hasActiveFilters =
     filters.categories.length > 0 ||
     filters.useCases.length > 0 ||
-    filters.pricing.length > 0;
+    filters.pricing.length > 0 ||
+    filters.companyType.length > 0;
 
   const toggleCategory = (categoryId: string) => {
     const newCategories = filters.categories.includes(categoryId)
@@ -64,12 +75,20 @@ export function FilterSidebar({
     onFilterChange({ ...filters, pricing: newPricing });
   };
 
+  const toggleCompanyType = (companyTypeId: string) => {
+    const newCompanyType = filters.companyType.includes(companyTypeId)
+      ? filters.companyType.filter((c) => c !== companyTypeId)
+      : [...filters.companyType, companyTypeId];
+    onFilterChange({ ...filters, companyType: newCompanyType });
+  };
+
   const clearAll = () => {
     onFilterChange({
       ...filters,
       categories: [],
       useCases: [],
       pricing: [],
+      companyType: [],
     });
   };
 
@@ -181,6 +200,39 @@ export function FilterSidebar({
               <span className="text-sm">{option.name}</span>
               <span className="ml-auto text-xs text-muted-foreground">
                 ({toolCounts.pricing[option.id] || 0})
+              </span>
+            </label>
+          ))}
+        </CollapsibleContent>
+      </Collapsible>
+
+      <Collapsible
+        open={openSections.companyType}
+        onOpenChange={(open) => setOpenSections((s) => ({ ...s, companyType: open }))}
+      >
+        <CollapsibleTrigger className="flex w-full items-center justify-between py-2 text-sm font-medium">
+          Company Type
+          <ChevronDown
+            className={cn(
+              "h-4 w-4 transition-transform",
+              openSections.companyType && "rotate-180"
+            )}
+          />
+        </CollapsibleTrigger>
+        <CollapsibleContent className="space-y-2 pt-2">
+          {companyTypeOptions.map((option) => (
+            <label
+              key={option.id}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <Checkbox
+                checked={filters.companyType.includes(option.id)}
+                onCheckedChange={() => toggleCompanyType(option.id)}
+                data-testid={`checkbox-companytype-${option.id}`}
+              />
+              <span className="text-sm">{option.name}</span>
+              <span className="ml-auto text-xs text-muted-foreground">
+                ({toolCounts.companyType[option.id] || 0})
               </span>
             </label>
           ))}

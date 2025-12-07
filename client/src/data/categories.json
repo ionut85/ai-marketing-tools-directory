@@ -1,43 +1,49 @@
 [
   {
-    "id": "creative-delivery",
-    "name": "Creative & Delivery",
+    "id": "plan",
+    "name": "Plan",
     "color": "#000000",
     "order": 1,
     "subcategories": [
-      { "id": "content-creation", "name": "Content Creation", "order": 1 },
-      { "id": "creative-intelligence", "name": "Creative Intelligence", "order": 2 },
-      { "id": "ad-serving", "name": "Ad Serving", "order": 3 }
+      { "id": "market-research", "name": "Market Research", "order": 1 },
+      { "id": "audience-intelligence", "name": "Audience Intelligence", "order": 2 },
+      { "id": "competitive-analysis", "name": "Competitive Analysis", "order": 3 },
+      { "id": "ai-assistants", "name": "AI Assistants", "order": 4 }
     ]
   },
   {
-    "id": "measurement-analytics",
-    "name": "Measurement & Analytics",
+    "id": "create",
+    "name": "Create",
     "color": "#374151",
     "order": 2,
     "subcategories": [
-      { "id": "attribution", "name": "Attribution", "order": 1 },
-      { "id": "analytics", "name": "Analytics", "order": 2 }
+      { "id": "ad-creative", "name": "Ad Creative", "order": 1 },
+      { "id": "copywriting-seo", "name": "Copywriting / SEO", "order": 2 },
+      { "id": "landing-pages", "name": "Landing Pages", "order": 3 },
+      { "id": "social-influencers", "name": "Social & Influencers", "order": 4 }
     ]
   },
   {
-    "id": "media-facilitation",
-    "name": "Media Facilitation",
+    "id": "activate",
+    "name": "Activate",
     "color": "#6B7280",
     "order": 3,
     "subcategories": [
-      { "id": "dsps", "name": "DSPs", "order": 1 },
-      { "id": "retargeting", "name": "Retargeting", "order": 2 }
+      { "id": "campaign-management", "name": "Campaign Management", "order": 1 },
+      { "id": "email-outreach", "name": "Email & Outreach", "order": 2 },
+      { "id": "ai-ad-platforms", "name": "AI Ad Platforms", "order": 3 },
+      { "id": "shopping-assistants", "name": "Shopping Assistants", "order": 4 }
     ]
   },
   {
-    "id": "data-enablement",
-    "name": "Data Enablement",
+    "id": "measure",
+    "name": "Measure",
     "color": "#9CA3AF",
     "order": 4,
     "subcategories": [
-      { "id": "identity", "name": "Identity", "order": 1 },
-      { "id": "cdps", "name": "CDPs", "order": 2 }
+      { "id": "attribution", "name": "Attribution", "order": 1 },
+      { "id": "analytics", "name": "Analytics", "order": 2 },
+      { "id": "ai-visibility", "name": "AI Visibility", "order": 3 }
     ]
   }
 ]

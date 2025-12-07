@@ -19,6 +19,7 @@ interface MobileFiltersProps {
     categories: Record<string, number>;
     useCases: Record<string, number>;
     pricing: Record<string, number>;
+    companyType: Record<string, number>;
   };
   activeFilterCount: number;
 }

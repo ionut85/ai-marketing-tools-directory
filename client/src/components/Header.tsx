@@ -10,10 +10,10 @@ export function Header() {
       <div className="mx-auto max-w-7xl flex h-14 items-center justify-between gap-4 px-4 md:px-6 w-full">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-md bg-foreground">
-            <span className="text-sm font-bold text-background">AI</span>
+            <span className="text-xs font-bold text-background">GM</span>
           </div>
           <span className="hidden font-semibold sm:inline-block" data-testid="text-logo">
-            AI x Marketing
+            GenAI Marketing
           </span>
         </Link>
 

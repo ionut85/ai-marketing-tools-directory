@@ -1,26 +1,26 @@
 {
-  "creative-delivery": {
-    "title": "Creative & Delivery AI Tools",
-    "description": "Discover AI-powered tools that revolutionize content creation and ad delivery. From generating compelling copy and visuals to optimizing creative performance and serving ads at scale, these tools help marketers produce and deliver content faster and more effectively.",
-    "longDescription": "The Creative & Delivery category encompasses AI tools that transform how marketing content is created, optimized, and distributed. Content Creation tools leverage AI to generate compelling copy, images, and video content at scale. Creative Intelligence platforms analyze creative performance to provide data-driven insights for optimization. Ad Serving solutions use machine learning to deliver the right creative to the right audience at the right time.",
-    "keywords": ["AI content creation", "creative automation", "ad serving AI", "marketing creative tools", "AI copywriting", "creative intelligence"]
+  "plan": {
+    "title": "Plan - GenAI Marketing Tools",
+    "description": "Research, analyze, and strategize with AI-powered market research, audience intelligence, and competitive analysis tools. These solutions help marketers make data-driven decisions and develop winning strategies.",
+    "longDescription": "The Plan category encompasses AI tools that help marketers understand their market landscape before taking action. Market Research tools leverage AI to uncover trends and insights. Audience Intelligence platforms analyze customer behavior and preferences. Competitive Analysis tools track and analyze competitor strategies. AI Assistants provide on-demand strategic guidance and insights.",
+    "keywords": ["market research AI", "audience intelligence", "competitive analysis", "AI marketing strategy", "marketing planning tools", "AI assistants"]
   },
-  "measurement-analytics": {
-    "title": "Measurement & Analytics AI Tools",
-    "description": "Track, measure, and understand your marketing performance with AI-powered analytics and attribution tools. These solutions help marketers accurately attribute conversions, analyze campaign effectiveness, and make data-driven decisions.",
-    "longDescription": "Measurement & Analytics tools powered by AI provide deeper insights into marketing performance than ever before. Attribution platforms use machine learning to accurately assign credit to touchpoints across the customer journey. Analytics tools leverage AI to surface actionable insights, predict trends, and identify optimization opportunities. Together, these tools help marketers understand what's working and maximize ROI.",
-    "keywords": ["marketing attribution", "AI analytics", "campaign measurement", "marketing ROI", "conversion tracking", "predictive analytics"]
+  "create": {
+    "title": "Create - GenAI Marketing Tools",
+    "description": "Generate compelling content with AI-powered creative tools for ads, copy, landing pages, and social media. These tools help marketers produce high-quality content faster and at scale.",
+    "longDescription": "The Create category features AI tools that transform how marketing content is produced. Ad Creative tools generate high-performing ad variations. Copywriting & SEO platforms create optimized content for search and conversion. Landing Page builders use AI for rapid page creation. Social & Influencer tools help discover and create social content.",
+    "keywords": ["AI ad creative", "AI copywriting", "SEO content AI", "landing page AI", "social content creation", "influencer marketing AI"]
   },
-  "media-facilitation": {
-    "title": "Media Facilitation AI Tools",
-    "description": "Optimize your media buying and audience targeting with AI-driven demand-side platforms and retargeting solutions. These tools help marketers reach the right audiences efficiently and maximize advertising spend.",
-    "longDescription": "Media Facilitation tools leverage AI to improve how advertisers buy and target digital media. Demand-Side Platforms (DSPs) use machine learning algorithms to optimize bidding strategies and audience targeting in real-time. Retargeting solutions apply AI to identify and re-engage potential customers who have shown interest in your products or services. These tools help marketers maximize the efficiency and effectiveness of their media investments.",
-    "keywords": ["DSP advertising", "programmatic buying", "AI retargeting", "media buying AI", "audience targeting", "RTB optimization"]
+  "activate": {
+    "title": "Activate - GenAI Marketing Tools",
+    "description": "Launch and manage campaigns with AI-powered activation tools for campaign management, email, ad platforms, and personalized shopping experiences. These tools help marketers reach customers efficiently.",
+    "longDescription": "The Activate category includes AI tools that power marketing execution. Campaign Management platforms automate and optimize multi-channel campaigns. Email & Outreach tools personalize communication at scale. AI Ad Platforms leverage machine learning for smarter media buying. Shopping Assistants provide personalized product recommendations and conversational commerce.",
+    "keywords": ["campaign automation", "AI email marketing", "AI ad platforms", "shopping assistants", "marketing activation", "outreach automation"]
   },
-  "data-enablement": {
-    "title": "Data Enablement AI Tools",
-    "description": "Build a unified view of your customers and activate your data effectively with AI-powered identity resolution and customer data platforms. These tools help marketers connect data sources and deliver personalized experiences.",
-    "longDescription": "Data Enablement tools use AI to help marketers make the most of their customer data. Identity resolution platforms leverage machine learning to create unified customer profiles across devices and channels. Customer Data Platforms (CDPs) apply AI to organize, activate, and analyze customer data for personalization and targeting. These tools form the foundation for data-driven marketing strategies.",
-    "keywords": ["customer data platform", "identity resolution", "CDP tools", "data unification", "customer identity", "first-party data"]
+  "measure": {
+    "title": "Measure - GenAI Marketing Tools",
+    "description": "Track, analyze, and optimize with AI-powered measurement tools for attribution, analytics, and AI visibility. These tools help marketers understand performance and make data-driven improvements.",
+    "longDescription": "The Measure category provides AI tools for understanding marketing performance. Attribution platforms accurately assign credit across customer touchpoints. Analytics tools surface actionable insights and predict trends. AI Visibility tools monitor how your brand appears in AI search results and recommendations.",
+    "keywords": ["marketing attribution", "AI analytics", "performance measurement", "AI visibility", "marketing ROI", "brand monitoring"]
   }
 }

@@ -12,7 +12,7 @@ export function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div className="space-y-4">
             <p className="text-sm font-medium">
-              AI x Marketing Tools Directory
+              GenAI Marketing Landscape
             </p>
             <a
               href="mailto:submit@aimarketing.tools?subject=Tool%20Submission"
@@ -43,7 +43,7 @@ export function Footer() {
 
         <div className="mt-8 border-t pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            Discover the best AI-powered marketing tools
+            Discover the best GenAI marketing tools
           </p>
         </div>
       </div>

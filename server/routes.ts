@@ -104,8 +104,8 @@ export async function registerRoutes(
   app.get("/robots.txt", (req, res) => {
     const baseUrl = getBaseUrl(req);
     
-    const robots = `# AI x Marketing Tools Directory
-# https://aimarketing.tools
+    const robots = `# GenAI Marketing Landscape
+# https://genaimarketing.tools
 
 User-agent: *
 Allow: /
@@ -127,9 +127,9 @@ Sitemap: ${baseUrl}/sitemap.xml
     const categories = loadJsonData<Category[]>("categories.json");
     const categoryDescriptions = loadJsonData<Record<string, CategoryDescription>>("categoryDescriptions.json");
     
-    let llms = `# AI x Marketing Tools Directory
+    let llms = `# GenAI Marketing Landscape
 
-> A comprehensive directory of AI-powered marketing tools helping marketers discover solutions for creative, analytics, attribution, and data enablement.
+> A comprehensive directory of GenAI marketing tools helping marketers discover solutions across Plan, Create, Activate, and Measure categories.
 
 This directory helps marketing professionals find and evaluate AI tools across four main categories. Each tool listing includes pricing information, use cases, and direct links to the tool's website.
 

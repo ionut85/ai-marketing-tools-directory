@@ -25,6 +25,7 @@ export default function Home() {
     categories: [],
     useCases: [],
     pricing: [],
+    companyType: [],
     search: "",
   });
 
@@ -36,7 +37,7 @@ export default function Home() {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [filters.categories, filters.useCases, filters.pricing, debouncedSearch]);
+  }, [filters.categories, filters.useCases, filters.pricing, filters.companyType, debouncedSearch]);
 
   const filteredTools = useMemo(() => {
     return tools.filter((tool) => {
@@ -49,6 +50,10 @@ export default function Home() {
       }
 
       if (filters.pricing.length > 0 && !filters.pricing.includes(tool.pricing)) {
+        return false;
+      }
+
+      if (filters.companyType.length > 0 && !filters.companyType.includes(tool.companyType)) {
         return false;
       }
 
@@ -69,7 +74,7 @@ export default function Home() {
 
       return true;
     });
-  }, [tools, filters.categories, filters.useCases, filters.pricing, debouncedSearch]);
+  }, [tools, filters.categories, filters.useCases, filters.pricing, filters.companyType, debouncedSearch]);
 
   const paginatedTools = useMemo(() => {
     const startIndex = (currentPage - 1) * TOOLS_PER_PAGE;
@@ -82,6 +87,7 @@ export default function Home() {
     const categoryCounts: Record<string, number> = {};
     const useCaseCounts: Record<string, number> = {};
     const pricingCounts: Record<string, number> = {};
+    const companyTypeCounts: Record<string, number> = {};
 
     tools.forEach((tool) => {
       categoryCounts[tool.category] = (categoryCounts[tool.category] || 0) + 1;
@@ -89,17 +95,19 @@ export default function Home() {
         useCaseCounts[uc] = (useCaseCounts[uc] || 0) + 1;
       });
       pricingCounts[tool.pricing] = (pricingCounts[tool.pricing] || 0) + 1;
+      companyTypeCounts[tool.companyType] = (companyTypeCounts[tool.companyType] || 0) + 1;
     });
 
     return {
       categories: categoryCounts,
       useCases: useCaseCounts,
       pricing: pricingCounts,
+      companyType: companyTypeCounts,
     };
   }, [tools]);
 
   const activeFilterCount =
-    filters.categories.length + filters.useCases.length + filters.pricing.length;
+    filters.categories.length + filters.useCases.length + filters.pricing.length + filters.companyType.length;
 
   const handleToolClick = (tool: Tool) => {
     setLocation(`/tools/${tool.slug}`);
@@ -108,8 +116,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title="Discover the Best AI Marketing Tools"
-        description="Explore the comprehensive directory of AI-powered marketing tools. Find the best solutions for creative, analytics, attribution, and more."
+        title="Discover the Best GenAI Marketing Tools"
+        description="Explore the GenAI Marketing Landscape - discover AI-powered tools to plan, create, activate, and measure your marketing campaigns."
         keywords={["AI marketing tools", "marketing automation", "AI advertising", "marketing analytics", "creative AI"]}
         canonicalUrl="/"
         jsonLd={generateDirectoryJsonLd()}
@@ -120,10 +128,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-testid="text-hero-title">
-              Discover AI x Marketing Tools
+              GenAI Marketing Landscape
             </h1>
             <p className="mt-4 text-muted-foreground md:text-lg" data-testid="text-hero-subtitle">
-              The comprehensive directory of AI-powered marketing solutions
+              Discover AI-powered tools to plan, create, activate, and measure your marketing
             </p>
             <div className="mt-8 flex justify-center">
               <SearchBar
