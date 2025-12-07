@@ -3,6 +3,7 @@ import { useLocation, useParams } from "wouter";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ToolDetail } from "@/components/ToolDetail";
+import { SEO, generateToolJsonLd } from "@/components/SEO";
 import type { Tool, Category } from "@/lib/types";
 
 import toolsData from "@/data/tools.json";
@@ -45,8 +46,26 @@ export default function ToolDetailPage() {
     );
   }
 
+  const category = categories.find((c) => c.id === tool.category);
+
   return (
     <div className="flex min-h-screen flex-col">
+      <SEO
+        title={`${tool.name} - ${category?.name || "AI Marketing Tool"}`}
+        description={tool.tagline || tool.description.slice(0, 160)}
+        keywords={[tool.name, ...tool.useCases, category?.name || "", "AI marketing tool"]}
+        ogType="product"
+        ogImage={tool.logo || undefined}
+        canonicalUrl={`/tools/${tool.slug}`}
+        jsonLd={generateToolJsonLd({
+          name: tool.name,
+          description: tool.description,
+          tagline: tool.tagline,
+          website: tool.website,
+          logo: tool.logo || undefined,
+          pricing: tool.pricing,
+        })}
+      />
       <Header />
       <main className="flex-1">
         <ToolDetail

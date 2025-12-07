@@ -1,10 +1,17 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import { SEO } from "@/components/SEO";
 
 export default function About() {
   return (
     <div className="flex min-h-screen flex-col">
+      <SEO
+        title="About"
+        description="Learn about the AI x Marketing Tools Directory - your comprehensive resource for discovering the best AI-powered marketing solutions."
+        keywords={["about AI marketing", "marketing tools directory", "AI advertising tools"]}
+        canonicalUrl="/about"
+      />
       <Header />
 
       <main className="flex-1">
