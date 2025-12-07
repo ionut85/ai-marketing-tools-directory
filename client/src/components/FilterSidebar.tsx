@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link } from "wouter";
-import { ChevronDown, X, ExternalLink } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -104,29 +103,20 @@ export function FilterSidebar({
         </CollapsibleTrigger>
         <CollapsibleContent className="space-y-2 pt-2">
           {categories.map((category) => (
-            <div key={category.id} className="flex items-center gap-2">
-              <label className="flex flex-1 cursor-pointer items-center gap-2">
-                <Checkbox
-                  checked={filters.categories.includes(category.id)}
-                  onCheckedChange={() => toggleCategory(category.id)}
-                  data-testid={`checkbox-category-${category.id}`}
-                />
-                <span className="text-sm">{category.name}</span>
-                <span className="ml-auto text-xs text-muted-foreground">
-                  ({toolCounts.categories[category.id] || 0})
-                </span>
-              </label>
-              <Link href={`/category/${category.id}`}>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="h-6 w-6 shrink-0"
-                  data-testid={`link-category-${category.id}`}
-                >
-                  <ExternalLink className="h-3 w-3" />
-                </Button>
-              </Link>
-            </div>
+            <label
+              key={category.id}
+              className="flex cursor-pointer items-center gap-2"
+            >
+              <Checkbox
+                checked={filters.categories.includes(category.id)}
+                onCheckedChange={() => toggleCategory(category.id)}
+                data-testid={`checkbox-category-${category.id}`}
+              />
+              <span className="text-sm">{category.name}</span>
+              <span className="ml-auto text-xs text-muted-foreground">
+                ({toolCounts.categories[category.id] || 0})
+              </span>
+            </label>
           ))}
         </CollapsibleContent>
       </Collapsible>
