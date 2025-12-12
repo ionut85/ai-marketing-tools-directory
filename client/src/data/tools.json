@@ -358,5 +358,325 @@
       "linkedin": "https://linkedin.com/company/neuronsinc",
       "twitter": "https://twitter.com/neuronsinc"
     }
+  },
+  {
+    "id": "hypd-ai",
+    "slug": "hypd-ai",
+    "name": "HYPD.ai",
+    "tagline": "Your AI Assistant for Performance Marketers",
+    "description": "AI assistant for performance marketers. Connect Facebook and Google Ad accounts to talk to your campaigns, create reports, and get campaign recommendations through natural language.",
+    "logo": "https://www.hypd.ai/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.hypd.ai/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": ["campaign-automation", "reporting"],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "gomarble",
+    "slug": "gomarble",
+    "name": "GoMarble",
+    "tagline": "The AI Agent for Performance Marketing & Creative Intelligence",
+    "description": "AI agent for performance marketing and creative intelligence. Generates instant HTML reports across Google, Meta, LinkedIn, and TikTok. Analyzes creative performance, surfaces insights, and provides frameworks from top 1% marketing experts. Used by 1000+ marketing teams across 80+ countries.",
+    "logo": "https://www.gomarble.ai/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.gomarble.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": ["reporting", "ad-creative", "campaign-automation"],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "markifact",
+    "slug": "markifact",
+    "name": "Markifact",
+    "tagline": "AI Marketing Automation Platform",
+    "description": "AI marketing automation platform with 10,000+ users. Features: consolidated Google & Meta Ads reports in Slides, natural language GA4 analysis in Slack, automated Google Ads audits (40+ checks), bulk Meta ads creation, SEO reports, competitor ad export, Meta ads audits (100+ checks), responsive search ads at scale, Google Merchant Center analysis, Shopify integration, GA4 setup audits (50+ checks).",
+    "logo": "https://www.markifact.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.markifact.com/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": ["reporting", "campaign-automation", "seo-content"],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "blobr",
+    "slug": "blobr",
+    "name": "Blobr",
+    "tagline": "Run Google Ads Like a Pro",
+    "description": "AI agents trained on best practices of top Google Ads experts. Plugs into Google Ads, analyzes performance continuously, and turns best practices into concrete actions. Automates 80% of daily Google Ads account management. Provides weekly prioritized recommendations tailored to goals and budget.",
+    "logo": "https://www.blobr.io/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.blobr.io/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": ["campaign-automation"],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "singular-mcp",
+    "slug": "singular-mcp",
+    "name": "Singular MCP",
+    "tagline": "MCP Server for Singular Mobile Measurement",
+    "description": "Model Context Protocol (MCP) server for Singular mobile measurement platform. Enables integration with LLMs and agentic AI systems to query marketing data and trigger optimizations.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://support.singular.net/hc/en-us/articles/37923459892507-Singular-MCP",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": ["reporting"],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "appsflyer-agentic-ai",
+    "slug": "appsflyer-agentic-ai",
+    "name": "AppsFlyer Agentic AI Suite",
+    "tagline": "AI-powered execution eliminating friction in marketing",
+    "description": "AI-powered execution suite built on clean, unified, and semantically clear marketing data. Includes MCP integration for connecting any LLM to AppsFlyer data, and pre-built agents for anomaly detection, performance summaries, and opportunity spotting. Privacy-first infrastructure with partner-specific policies and regulatory standards.",
+    "logo": "https://www.appsflyer.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.appsflyer.com/products/agentic-ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": ["attribution", "reporting", "campaign-automation"],
+    "pricing": "usage-based",
+    "companyType": "private",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "kochava-stationone",
+    "slug": "kochava-stationone",
+    "name": "Kochava StationOne",
+    "tagline": "The Integrative AI Hub for Marketers & Digital Professionals",
+    "description": "Integrative AI hub making agentic AI accessible. Orchestration layer delivering choice, security, and agentic intelligence. Runs locally on desktop or environment for complete privacy. Supports connecting any model, integrating MCPs, building custom agents. Available for Windows, macOS, and Linux.",
+    "logo": "https://www.kochava.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.kochava.com/stationone/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": ["reporting", "campaign-automation"],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "ryze-ai",
+    "slug": "ryze-ai",
+    "name": "Ryze AI",
+    "tagline": "Let AI manage your paid ads",
+    "description": "AI-powered ad management platform managing $10M+ in ad budgets for 230+ customers. Manages Meta and TikTok ads. Features: 24/7 ad monitoring, AI ad creation, real-time budget optimization, keyword and targeting management, ad audits, competitor benchmarking. Replaces agencies with AdGent AI.",
+    "logo": "https://www.get-ryze.ai/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.get-ryze.ai/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": ["campaign-automation", "ad-creative"],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "google-ads-advisor",
+    "slug": "google-ads-advisor",
+    "name": "Google Ads Advisor",
+    "tagline": "Agentic conversational AI for Google Ads",
+    "description": "Agentic conversational experience in Google Ads designed to maximize performance based on unique business goals. Helps identify improvement areas, troubleshoot issues, understand performance changes, generate campaign optimization suggestions, and create assets. Currently in beta, expanding to all English-language advertisers.",
+    "logo": "https://www.google.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://support.google.com/google-ads/answer/16574983",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": ["campaign-automation"],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "google-analytics-advisor",
+    "slug": "google-analytics-advisor",
+    "name": "Google Analytics Advisor",
+    "tagline": "Agentic AI for Google Analytics",
+    "description": "Agentic conversational AI in Google Analytics powered by Gemini models. Designed to accelerate data analysis for all GA users. Provides personalized answers about analytics property with actionable insights, visualizations, and links to helpful reports. Currently available in English with plans to expand.",
+    "logo": "https://www.google.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://support.google.com/analytics/answer/16675569",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": ["reporting", "research"],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "google-ads-mcp",
+    "slug": "google-ads-mcp",
+    "name": "Google Ads MCP",
+    "tagline": "MCP Server for Google Ads API",
+    "description": "Model Context Protocol (MCP) server for Google Ads API. Enables LLMs and agentic AI to query performance data, retrieve campaign information, and access customer accounts. Open-source repository with tools for search, list accessible customers, and more.",
+    "logo": "https://www.google.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://github.com/googleads/google-ads-mcp",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": ["campaign-automation", "reporting"],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "amazon-ads-agent",
+    "slug": "amazon-ads-agent",
+    "name": "Amazon Ads Agent",
+    "tagline": "AI Agent for Amazon Advertising",
+    "description": "AI agent launched at Amazon Ads unBoxed 2025. Simplifies campaign planning, launching, and optimization. Automates identifying targeting segments, adjusting pacing across hundreds of campaigns, and generating SQL queries. Features include campaign creation at scale, intelligent targeting recommendations, and time-to-insight acceleration.",
+    "logo": "https://advertising.amazon.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://advertising.amazon.com/resources/whats-new/unboxed-2025-introducing-ads-agent",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": ["campaign-automation"],
+    "pricing": "usage-based",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "meta-business-ai",
+    "slug": "meta-business-ai",
+    "name": "Meta Business AI",
+    "tagline": "AI-powered sales agent across Meta platforms",
+    "description": "Always-on sales agent guiding customers from discovery to purchase across Meta ads, messaging apps, and websites. Learns from posts and campaigns to deliver personalized responses. No coding required. Handles customer conversations in Messenger, WhatsApp, Facebook Reels, and Instagram Stories. Voice interaction and return handling capabilities.",
+    "logo": "https://www.facebook.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.facebook.com/business/ai/business-ai",
+    "category": "activate",
+    "subcategory": "shopping-assistants",
+    "useCases": ["chatbots", "personalization"],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "meta-business-assistant",
+    "slug": "meta-business-assistant",
+    "name": "Meta Business Assistant",
+    "tagline": "AI-powered campaign recommendations in Ads Manager",
+    "description": "Personalized campaign recommendations AI in Ads Manager. Provides insights unique to Meta through seamless chat experience. Helps with campaign optimization, creative suggestions, audience insights, and performance analysis.",
+    "logo": "https://www.facebook.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.facebook.com/business/ai/business-assistant",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": ["campaign-automation", "ad-creative"],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "walmart-sparky",
+    "slug": "walmart-sparky",
+    "name": "Walmart Sparky",
+    "tagline": "AI Shopping Assistant",
+    "description": "Walmart's AI shopping assistant available in Walmart mobile app. Helps users make purchasing decisions by reading reviews, providing product recommendations, and reducing purchase surprises. Available as in-app feature for shoppers.",
+    "logo": "https://www.walmart.com/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.walmart.com/cp/sparky/5291783",
+    "category": "activate",
+    "subcategory": "shopping-assistants",
+    "useCases": ["chatbots", "personalization"],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "branch-ivy",
+    "slug": "branch-ivy",
+    "name": "Branch Ivy",
+    "tagline": "Your strategic AI partner",
+    "description": "Integrated AI system transforming how marketers work. Turns complex data into clear insights to reveal campaign performance drivers. Features include intelligent link creation with accurate tags, campaign analysis, personalized actionable recommendations, automated data analysis, and smart workflow streamlining. Privacy-safe processing with enterprise-grade security.",
+    "logo": "https://www.branch.io/favicon.ico",
+    "screenshot": null,
+    "website": "https://www.branch.io/ivyai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": ["reporting", "campaign-automation"],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
   }
 ]
