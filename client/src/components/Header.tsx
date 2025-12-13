@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./ThemeToggle";
+import logoUrl from "@assets/logos/logo.png";
 
 export function Header() {
   const [location] = useLocation();
@@ -9,9 +10,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-7xl flex h-14 items-center justify-between gap-4 px-4 md:px-6 w-full">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-foreground">
-            <span className="text-xs font-bold text-background">GM</span>
-          </div>
+          <img src={logoUrl} alt="Logo" className="h-8 w-8 rounded-md" />
           <span className="hidden font-semibold sm:inline-block" data-testid="text-logo">
             GenAI Marketing Landscape
           </span>
