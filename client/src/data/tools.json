@@ -1,381 +1,779 @@
 [
   {
-    "id": "jasper",
-    "slug": "jasper",
-    "name": "Jasper",
-    "tagline": "AI copilot for enterprise marketing teams",
-    "description": "Jasper is an AI copilot for marketing teams that helps create content at scale. With advanced AI capabilities, Jasper enables teams to maintain brand voice consistency while generating high-quality marketing copy, social media posts, and long-form content.",
-    "logo": "https://ph-files.imgix.net/396cee77-b752-4f6a-925c-b3889e2ae991.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=64&h=64&fit=crop&frame=1&dpr=2",
+    "id": "withmarket-ai",
+    "slug": "withmarket-ai",
+    "name": "WithMarket.ai",
+    "tagline": "AI assistant for your e-commerce marketing",
+    "description": "AI assistant for e-commerce marketing that connects to store data and helps understand sales trends, customer behavior, and business performance through conversational queries and data-driven insights.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
-    "website": "https://jasper.ai",
+    "website": "https://www.withmarket.ai/",
+    "category": "activate",
+    "subcategory": "shopping-assistants",
+    "useCases": [
+      "personalization",
+      "reporting",
+      "chatbots"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": null,
+      "twitter": "https://x.com/WithMarketAI"
+    }
+  },
+  {
+    "id": "nogood-cro",
+    "slug": "nogood-cro",
+    "name": "Conversion Rate Optimization Services",
+    "tagline": "Conversion rate optimization agency that drives action",
+    "description": "Growth marketing agency offering data-driven CRO services including funnel audits, A/B and multivariate testing, landing page optimization, and customer journey optimization to increase conversion rates and reduce acquisition costs.",
+    "logo": "https://cdn.brandfetch.io/idH8eJrHL1/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://nogood.io/conversion-rate-optimization-services/",
     "category": "create",
-    "subcategory": "copywriting-seo",
-    "useCases": ["copywriting", "seo-content", "social-content"],
+    "subcategory": "landing-pages",
+    "useCases": [
+      "landing-pages",
+      "personalization"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/nogood/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "ask-bosco",
+    "slug": "ask-bosco",
+    "name": "ASK BOSCO",
+    "tagline": "AI analytics for better reporting and forecasting",
+    "description": "AI-powered reporting and forecasting platform for retailers and agencies that unifies performance marketing data across channels, provides budget allocation recommendations, and delivers predictive analytics with 96% accuracy for media spend optimization.",
+    "logo": "https://cdn.brandfetch.io/id5ybZSOkb/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://askbosco.io/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution",
+      "campaign-automation"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/ask-bosco/",
+      "twitter": "https://x.com/AskBOSCOai"
+    }
+  },
+  {
+    "id": "memorable",
+    "slug": "memorable",
+    "name": "Memorable Ad Maker (Creative Intelligence Platform)",
+    "tagline": "AI platform for creative effectiveness",
+    "description": "AI-powered creative effectiveness platform (now part of Reddit) that uses deep-learning models to predict ad performance, optimize creative elements, and pretest every creative alternative in seconds for branding and performance across digital platforms.",
+    "logo": "https://cdn.brandfetch.io/idJtRkG0bc/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.memorable.io/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "image-generation",
+      "reporting"
+    ],
     "pricing": "subscription",
     "companyType": "private",
     "founded": 2021,
     "social": {
-      "linkedin": "https://linkedin.com/company/jasper-ai",
-      "twitter": "https://twitter.com/jasperai"
+      "linkedin": "https://www.linkedin.com/company/memorable-io/",
+      "twitter": null
     }
   },
   {
-    "id": "copy-ai",
-    "slug": "copy-ai",
-    "name": "Copy.ai",
-    "tagline": "AI-powered content creation platform",
-    "description": "Copy.ai is an AI-powered platform that helps marketers and businesses create compelling copy in seconds. From blog posts to email campaigns, Copy.ai streamlines the content creation process.",
-    "logo": null,
+    "id": "cldr-ai",
+    "slug": "cldr-ai",
+    "name": "cldr.ai",
+    "tagline": "AI-powered media planning and optimization",
+    "description": "AI-driven marketing platform focused on automating media planning and optimization by using data-driven insights and predictive models for performance marketing teams (archived product).",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
-    "website": "https://copy.ai",
-    "category": "create",
-    "subcategory": "copywriting-seo",
-    "useCases": ["copywriting", "email-marketing", "social-content"],
-    "pricing": "free",
-    "companyType": "startup",
-    "founded": 2020,
-    "social": {
-      "linkedin": "https://linkedin.com/company/copy-ai",
-      "twitter": "https://twitter.com/copy_ai"
-    }
-  },
-  {
-    "id": "pencil",
-    "slug": "pencil",
-    "name": "Pencil",
-    "tagline": "AI-powered creative generation for ads",
-    "description": "Pencil uses AI to generate winning ad creative at scale. The platform analyzes performance data to predict which creative concepts will perform best, helping marketers optimize their ad spend.",
-    "logo": "https://cdn.brandfetch.io/ideuGvkMWT/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1757560954556",
-    "screenshot": null,
-    "website": "https://trypencil.com",
-    "category": "create",
-    "subcategory": "ad-creative",
-    "useCases": ["ad-creative", "video-generation", "image-generation"],
+    "website": "https://cldr.ai/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "research",
+      "campaign-automation"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
+    "founded": 2021,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "sphinx-mind",
+    "slug": "sphinx-mind",
+    "name": "Sphinx Mind",
+    "tagline": "Your AI marketing assistant",
+    "description": "AI marketing assistant that integrates with platforms like Facebook Ads, Google Ads, Google Analytics, and LinkedIn Ads to provide chat-based data analysis, automated reporting, campaign insights, and actionable recommendations for marketers and agencies.",
+    "logo": "https://cdn.brandfetch.io/id59ESTqL5/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.sphinxmind.com/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "reporting",
+      "campaign-automation",
+      "research"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/sphinxmind/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "albert-ai",
+    "slug": "albert-ai",
+    "name": "Albert.ai",
+    "tagline": "Autonomous AI for digital marketing",
+    "description": "Autonomous AI platform for digital marketing that self-optimizes and manages campaign design, execution, and budget allocation across channels, using machine learning to continuously test, learn, and adjust campaigns without human intervention.",
+    "logo": "https://cdn.brandfetch.io/idjgKOxEeK/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://albert.ai/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
     "founded": 2018,
     "social": {
-      "linkedin": "https://linkedin.com/company/pencil-ai",
-      "twitter": "https://twitter.com/trypencil"
+      "linkedin": "https://www.linkedin.com/company/albert-technologies-ltd/",
+      "twitter": "https://x.com/Albert_AI"
     }
   },
   {
-    "id": "smartly",
-    "slug": "smartly",
-    "name": "Smartly.io",
-    "tagline": "Creative automation for social advertising",
-    "description": "Smartly.io combines creative automation with intelligent media buying to help brands scale their social advertising. The platform enables teams to produce thousands of ad variations while optimizing performance in real-time.",
-    "logo": "https://cdn.brandfetch.io/idbjKP85Ij/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1734405199434",
+    "id": "opteo",
+    "slug": "opteo",
+    "name": "Opteo",
+    "tagline": "The smarter way to manage your Google Ads accounts",
+    "description": "Google Ads optimization platform that surfaces smart improvement recommendations, automates account changes, and provides one-click optimizations to help agencies and in-house teams increase conversions, reduce wasted spend, and save time on account management.",
+    "logo": "https://cdn.brandfetch.io/id5o9ezrm4/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
-    "website": "https://smartly.io",
+    "website": "https://opteo.com/",
     "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation", "ad-creative", "social-content"],
-    "pricing": "usage-based",
-    "companyType": "private",
-    "founded": 2013,
-    "social": {
-      "linkedin": "https://linkedin.com/company/smartly-io",
-      "twitter": "https://twitter.com/smartaboread"
-    }
-  },
-  {
-    "id": "appsflyer",
-    "slug": "appsflyer",
-    "name": "AppsFlyer",
-    "tagline": "Mobile attribution and marketing analytics",
-    "description": "AppsFlyer is the leading mobile attribution and marketing analytics platform. It helps marketers measure and optimize their mobile campaigns across channels, providing accurate attribution data and deep linking capabilities.",
-    "logo": "https://cdn.brandfetch.io/idfRPs1zxg/w/354/h/354/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1667591371813",
-    "screenshot": null,
-    "website": "https://appsflyer.com",
-    "category": "measure",
-    "subcategory": "attribution",
-    "useCases": ["attribution", "reporting", "campaign-automation"],
-    "pricing": "usage-based",
-    "companyType": "private",
-    "founded": 2011,
-    "social": {
-      "linkedin": "https://linkedin.com/company/appsflyer",
-      "twitter": "https://twitter.com/appsflyer"
-    }
-  },
-  {
-    "id": "singular",
-    "slug": "singular",
-    "name": "Singular",
-    "tagline": "Marketing intelligence platform",
-    "description": "Singular provides unified marketing analytics that combines attribution, cost aggregation, and creative analytics. The platform helps marketers understand their true ROI across all channels.",
-    "logo": "https://www.businessofapps.com/wp-content/uploads/2019/05/singular_logo_2019.png",
-    "screenshot": null,
-    "website": "https://singular.net",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["attribution", "reporting", "campaign-automation"],
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
     "pricing": "subscription",
-    "companyType": "private",
-    "founded": 2014,
+    "companyType": "startup",
+    "founded": 2019,
     "social": {
-      "linkedin": "https://linkedin.com/company/singular",
-      "twitter": "https://twitter.com/singular"
+      "linkedin": "https://www.linkedin.com/company/opteo/",
+      "twitter": "https://x.com/opteoapp"
     }
   },
   {
-    "id": "the-trade-desk",
-    "slug": "the-trade-desk",
-    "name": "The Trade Desk",
-    "tagline": "Leading demand-side platform for programmatic",
-    "description": "The Trade Desk is a leading technology company that empowers buyers of advertising through its self-service platform. It enables advertisers to create, manage, and optimize digital advertising campaigns across various channels.",
-    "logo": "https://cdn.brandfetch.io/id0vXeV85V/w/376/h/376/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1668013955976",
+    "id": "toffu-ai",
+    "slug": "toffu-ai",
+    "name": "Toffu.ai",
+    "tagline": "AI marketing teammate that executes strategies through conversation",
+    "description": "AI marketing teammate for B2B SaaS teams and small businesses that automates marketing tasks, creates content, analyzes data from integrated tools, and executes complete workflows through natural conversation in browser or Slack.",
+    "logo": "https://cdn.brandfetch.io/id7yY-yomo/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
-    "website": "https://thetradedesk.com",
-    "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation", "personalization", "reporting"],
-    "pricing": "usage-based",
-    "companyType": "public",
-    "founded": 2009,
-    "social": {
-      "linkedin": "https://linkedin.com/company/the-trade-desk",
-      "twitter": "https://twitter.com/thetradedesk"
-    }
-  },
-  {
-    "id": "liveramp",
-    "slug": "liveramp",
-    "name": "LiveRamp",
-    "tagline": "Identity resolution and data connectivity",
-    "description": "LiveRamp provides identity resolution and data connectivity solutions that enable companies to connect customer data across systems and channels while maintaining privacy and compliance.",
-    "logo": null,
-    "screenshot": null,
-    "website": "https://liveramp.com",
-    "category": "plan",
-    "subcategory": "audience-intelligence",
-    "useCases": ["audience-discovery", "personalization", "research"],
-    "pricing": "usage-based",
-    "companyType": "public",
-    "founded": 2011,
-    "social": {
-      "linkedin": "https://linkedin.com/company/liveramp",
-      "twitter": "https://twitter.com/liveramp"
-    }
-  },
-  {
-    "id": "segment",
-    "slug": "segment",
-    "name": "Segment",
-    "tagline": "Customer data platform for unified data",
-    "description": "Segment is a customer data platform that collects, cleans, and controls customer data. It provides a single view of the customer by connecting data from multiple sources to any tool or warehouse.",
-    "logo": "https://cdn.brandfetch.io/idiousYjQz/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1717151154165",
-    "screenshot": null,
-    "website": "https://segment.com",
-    "category": "plan",
-    "subcategory": "audience-intelligence",
-    "useCases": ["audience-discovery", "personalization", "research"],
-    "pricing": "free",
-    "companyType": "private",
-    "founded": 2011,
-    "social": {
-      "linkedin": "https://linkedin.com/company/segment",
-      "twitter": "https://twitter.com/segment"
-    }
-  },
-  {
-    "id": "branch",
-    "slug": "branch",
-    "name": "Branch",
-    "tagline": "Mobile linking and measurement platform",
-    "description": "Branch is the leading mobile linking and measurement platform, trusted by the most top ranking apps to increase efficiency and revenue through enterprise-grade links. Deep linking and attribution for mobile apps.",
-    "logo": "https://www.branch.io/favicon.ico",
-    "screenshot": null,
-    "website": "https://branch.io",
-    "category": "measure",
-    "subcategory": "attribution",
-    "useCases": ["attribution", "reporting", "campaign-automation"],
-    "pricing": "free",
-    "companyType": "private",
-    "founded": 2014,
-    "social": {
-      "linkedin": "https://linkedin.com/company/branch-metrics",
-      "twitter": "https://twitter.com/brlogging"
-    }
-  },
-  {
-    "id": "persado",
-    "slug": "persado",
-    "name": "Persado",
-    "tagline": "AI-generated language that motivates action",
-    "description": "Persado uses AI and machine learning to generate the language that motivates each individual to engage and act. The platform optimizes marketing messages for emotion and personalization.",
-    "logo": null,
-    "screenshot": null,
-    "website": "https://persado.com",
+    "website": "https://www.toffu.ai/",
     "category": "create",
     "subcategory": "copywriting-seo",
-    "useCases": ["copywriting", "personalization", "email-marketing"],
-    "pricing": "performance",
-    "companyType": "private",
-    "founded": 2012,
-    "social": {
-      "linkedin": "https://linkedin.com/company/persado",
-      "twitter": "https://twitter.com/persado"
-    }
-  },
-  {
-    "id": "adroll",
-    "slug": "adroll",
-    "name": "AdRoll",
-    "tagline": "Growth marketing platform for D2C brands",
-    "description": "AdRoll is a growth marketing platform that helps ambitious D2C brands compete and grow by using AI to find more customers. Cross-channel advertising and retargeting made simple.",
-    "logo": null,
-    "screenshot": null,
-    "website": "https://adroll.com",
-    "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation", "personalization", "ad-creative"],
-    "pricing": "usage-based",
-    "companyType": "private",
-    "founded": 2007,
-    "social": {
-      "linkedin": "https://linkedin.com/company/adroll",
-      "twitter": "https://twitter.com/adroll"
-    }
-  },
-  {
-    "id": "amplitude",
-    "slug": "amplitude",
-    "name": "Amplitude",
-    "tagline": "Digital analytics platform for product teams",
-    "description": "Amplitude is the leading digital analytics platform that helps companies understand user behavior and build better products. Real-time analytics, behavioral cohorts, and predictive insights.",
-    "logo": null,
-    "screenshot": null,
-    "website": "https://amplitude.com",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["reporting", "audience-discovery", "research"],
-    "pricing": "free",
-    "companyType": "public",
-    "founded": 2012,
-    "social": {
-      "linkedin": "https://linkedin.com/company/amplitude-analytics",
-      "twitter": "https://twitter.com/amplitude_hq"
-    }
-  },
-  {
-    "id": "mixpanel",
-    "slug": "mixpanel",
-    "name": "Mixpanel",
-    "tagline": "Product analytics for mobile and web",
-    "description": "Mixpanel helps companies measure what matters, make decisions fast, and build better products through data. Powerful event tracking and user analytics for product teams.",
-    "logo": null,
-    "screenshot": null,
-    "website": "https://mixpanel.com",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["reporting", "audience-discovery", "research"],
-    "pricing": "free",
-    "companyType": "private",
-    "founded": 2009,
-    "social": {
-      "linkedin": "https://linkedin.com/company/mixpanel",
-      "twitter": "https://twitter.com/mixpanel"
-    }
-  },
-  {
-    "id": "braze",
-    "slug": "braze",
-    "name": "Braze",
-    "tagline": "Customer engagement platform",
-    "description": "Braze is a comprehensive customer engagement platform that powers relevant and memorable experiences between consumers and brands. Push, email, in-app messaging and more in one platform.",
-    "logo": null,
-    "screenshot": null,
-    "website": "https://braze.com",
-    "category": "activate",
-    "subcategory": "email-outreach",
-    "useCases": ["email-marketing", "personalization", "campaign-automation"],
-    "pricing": "usage-based",
-    "companyType": "public",
-    "founded": 2011,
-    "social": {
-      "linkedin": "https://linkedin.com/company/braze",
-      "twitter": "https://twitter.com/braze"
-    }
-  },
-  {
-    "id": "crisp",
-    "slug": "crisp",
-    "name": "Crisp",
-    "tagline": "Retail data platform for CPG brands",
-    "description": "Crisp connects consumer brands with real-time retail data to help them sell more and waste less. Demand signals, inventory analytics, and supply chain optimization.",
-    "logo": "https://www.gocrisp.com/wp-content/uploads/2021/10/crisp-logo.svg",
-    "screenshot": null,
-    "website": "https://gocrisp.com",
-    "category": "plan",
-    "subcategory": "market-research",
-    "useCases": ["research", "reporting", "competitive-analysis"],
+    "useCases": [
+      "copywriting",
+      "campaign-automation",
+      "research"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": 2016,
+    "founded": 2023,
     "social": {
-      "linkedin": "https://linkedin.com/company/gocrisp",
-      "twitter": "https://twitter.com/gocrisp"
+      "linkedin": null,
+      "twitter": null
     }
   },
   {
-    "id": "kochava",
-    "slug": "kochava",
-    "name": "Kochava",
-    "tagline": "Unified audience platform and attribution",
-    "description": "Kochava provides unified audience platform capabilities including attribution, analytics, and data management. Comprehensive mobile measurement and fraud prevention.",
-    "logo": "https://cdn.brandfetch.io/id9o7rQcOj/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1759191135850",
+    "id": "fyli-ai",
+    "slug": "fyli-ai",
+    "name": "Fyli.ai",
+    "tagline": "AI marketing automation for startups",
+    "description": "AI marketing automation platform for startups that uses AI agents to automate content posting across multiple platforms, find high-intent leads through internet scraping, optimize paid advertising campaigns, and analyze performance to maximize ROI.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
-    "website": "https://kochava.com",
-    "category": "measure",
-    "subcategory": "attribution",
-    "useCases": ["attribution", "reporting", "audience-discovery"],
+    "website": "https://fyli.ai/",
+    "category": "create",
+    "subcategory": "social-influencers",
+    "useCases": [
+      "campaign-automation",
+      "audience-discovery",
+      "social-content"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "mycofoundr-ai",
+    "slug": "mycofoundr-ai",
+    "name": "MyCoFoundr.ai",
+    "tagline": "AI McKinsey for entrepreneurs",
+    "description": "AI business advisor for founders, freelancers, and SMBs offering expert guidance on funding, sales, and strategy through conversational AI interface.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
+    "screenshot": null,
+    "website": "https://www.myfoundr.com/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "research"
+    ],
     "pricing": "subscription",
-    "companyType": "private",
-    "founded": 2011,
+    "companyType": "startup",
+    "founded": 2022,
     "social": {
-      "linkedin": "https://linkedin.com/company/kochava",
-      "twitter": "https://twitter.com/kochava"
+      "linkedin": null,
+      "twitter": null
     }
   },
   {
-    "id": "neuron",
-    "slug": "neuron",
-    "name": "Neurons",
-    "tagline": "AI-powered creative pre-testing",
-    "description": "Neurons uses neuroscience and AI to predict how consumers will respond to creative before launch. Optimize ads, packaging, and digital experiences with attention prediction.",
-    "logo": null,
+    "id": "glorya-ai",
+    "slug": "glorya-ai",
+    "name": "Glorya.ai",
+    "tagline": "AI OS for performance marketing agencies",
+    "description": "Berlin-based AI-powered marketing platform that builds Marketing Agents to automate generative performance marketing for small businesses, creating, testing, and optimizing ad creatives, copy, and landing pages at a fraction of agency costs.",
+    "logo": "https://cdn.brandfetch.io/id7KXkrkHV/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
-    "website": "https://neuronsinc.com",
+    "website": "https://glorya.ai/",
+    "category": "create",
+    "subcategory": "copywriting-seo",
+    "useCases": [
+      "campaign-automation",
+      "ad-creative",
+      "copywriting",
+      "landing-pages"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "ninjacat",
+    "slug": "ninjacat",
+    "name": "NinjaCat Marketing Data Cloud",
+    "tagline": "Enterprise data analytics and AI platform for marketing",
+    "description": "Enterprise marketing data, analytics, and AI platform that unifies marketing data from 100+ sources, provides no-code transformations, deploys AI agents, and automates reporting with a dedicated Snowflake-based data warehouse.",
+    "logo": "https://cdn.brandfetch.io/idP8RKXBNx/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.ninjacat.io/marketing-performance-management-platform/marketing-data-management",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2018,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/ninjacat/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "dicer-ai",
+    "slug": "dicer-ai",
+    "name": "Dicer.ai",
+    "tagline": "AI marketing insights for ad optimization",
+    "description": "Performance marketing SaaS platform that uses multi-modal AI analysis to optimize ad creatives 10x faster by analyzing video, image, copy, audience, and budget simultaneously to identify what drives conversions and provide actionable insights.",
+    "logo": "https://cdn.brandfetch.io/idNUvi9X8M/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.dicer.ai/",
     "category": "create",
     "subcategory": "ad-creative",
-    "useCases": ["ad-creative", "research", "reporting"],
+    "useCases": [
+      "ad-creative",
+      "video-generation",
+      "reporting"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": 2013,
+    "founded": 2022,
     "social": {
-      "linkedin": "https://linkedin.com/company/neuronsinc",
-      "twitter": "https://twitter.com/neuronsinc"
+      "linkedin": "https://www.linkedin.com/company/dicerai/",
+      "twitter": "https://x.com/dicermarketing"
+    }
+  },
+  {
+    "id": "omniperform",
+    "slug": "omniperform",
+    "name": "Omniperform",
+    "tagline": "Personalized communication at scale powered by AI",
+    "description": "Digital marketing agency delivering personalized communication at scale through proprietary AI technology that automatically creates unlimited creative versions, pre-tests with attention-rate prediction, and dynamically adapts messages to consumer behavior.",
+    "logo": "https://cdn.brandfetch.io/id6KhFGDtK/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.omniperform.com/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "personalization",
+      "copywriting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/omniperform/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "viant-ai",
+    "slug": "viant-ai",
+    "name": "ViantAI",
+    "tagline": "World's first fully autonomous ad platform",
+    "description": "First fully autonomous advertising platform and programmatic DSP that creates data-driven media plans across CTV, mobile, desktop, streaming audio, and DOOH in seconds using AI-powered automation for campaign planning, bidding, optimization, and execution.",
+    "logo": "https://cdn.brandfetch.io/id8N_aJ3du/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.viantinc.com/ai/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "enterprise",
+    "companyType": "public",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/viant/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "splitmetrics-ai",
+    "slug": "splitmetrics-ai",
+    "name": "SplitMetrics AI",
+    "tagline": "AI-powered app growth platform",
+    "description": "AI-driven app store growth platform for mobile-first companies that combines ASO, Apple Ads optimization, AI bid and budget management, and market intelligence to scale user acquisition with 10x marketing efficiency.",
+    "logo": "https://cdn.brandfetch.io/idy1ZYrAD3/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://splitmetrics.com/ai/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "seo-content",
+      "audience-discovery"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/splitmetrics/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "buildpad",
+    "slug": "buildpad",
+    "name": "Buildpad",
+    "tagline": "From idea to product faster and smarter with AI",
+    "description": "AI-powered platform that guides entrepreneurs through a structured seven-phase product development process from concept to launch, acting as an AI co-founder to validate ideas, identify critical features, and provide actionable development guidance.",
+    "logo": "https://cdn.brandfetch.io/idYp9ayubA/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://buildpad.io/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "research"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "pixis",
+    "slug": "pixis",
+    "name": "Pixis",
+    "tagline": "Where creativity meets performance",
+    "description": "Complete AI-powered advertising solution for consumer brands that automates targeting, creative generation, experimentation, and optimization autonomously across platforms to improve ad performance, maximize ROAS, and streamline marketing workflows.",
+    "logo": "https://cdn.brandfetch.io/idNpgDE0QB/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://pixis.ai/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "ad-creative",
+      "audience-discovery",
+      "personalization"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/pixisai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "swydo",
+    "slug": "swydo",
+    "name": "Swydo",
+    "tagline": "Marketing reporting platform for agencies",
+    "description": "Marketing reporting and monitoring platform for agencies that automates client reporting, provides real-time dashboards, and streamlines workflow management for digital marketing performance data across multiple channels.",
+    "logo": "https://cdn.brandfetch.io/idTJ9Y_VlW/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.swydo.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/swydo/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "pagent-ai",
+    "slug": "pagent-ai",
+    "name": "Pagent.ai",
+    "tagline": "Your conversion co-pilot",
+    "description": "AI-powered website personalization and conversion optimization platform that automatically adapts websites to each visitor using explorers that test, learn, and evolve autonomously with over 90% automation to maximize conversions and revenue.",
+    "logo": "https://cdn.brandfetch.io/id5CJfgC92/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.pagent.ai/",
+    "category": "create",
+    "subcategory": "landing-pages",
+    "useCases": [
+      "landing-pages",
+      "personalization"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/pagent-ai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "adsmurai-dashboards",
+    "slug": "adsmurai-dashboards",
+    "name": "Adsmurai Dashboards",
+    "tagline": "Your marketing data in one dashboard ready to decide faster",
+    "description": "Marketing analytics and dashboard platform that centralizes data from all advertising platforms, provides automatic normalization, AI-generated insights, and customizable visualizations to help teams analyze campaign performance and make faster data-driven decisions.",
+    "logo": "https://cdn.brandfetch.io/id4TJkzyJo/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.adsmurai.com/en/product/dashboards",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/adsmurai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "boring-ads",
+    "slug": "boring-ads",
+    "name": "Boring Ads",
+    "tagline": "We help growth-obsessed brands scale profitably with ads",
+    "description": "Performance marketing agency and in-house AI technology that analyzes industry and competitive ads to find winning creative strategies, helping growth-obsessed brands scale profitably with data-driven advertising campaigns on Google and Meta.",
+    "logo": "https://cdn.brandfetch.io/idKi2Dq-oO/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.boringads.com/",
+    "category": "plan",
+    "subcategory": "competitive-analysis",
+    "useCases": [
+      "competitive-analysis",
+      "ad-creative",
+      "research"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/boringads/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "mindmetrics",
+    "slug": "mindmetrics",
+    "name": "Mindmetrics",
+    "tagline": "Unified vision of your marketing data with AI agents",
+    "description": "AI-powered marketing analytics platform that centralizes data from Google Ads, Meta, TikTok, GA4 and other sources into one unified view, providing conversational AI agents for instant insights and automating repetitive reporting tasks to reduce analysis time by 10x.",
+    "logo": "https://cdn.brandfetch.io/idYbL6gxwD/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.mindmetrics.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution",
+      "campaign-automation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/mindmetricsai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "daypart-ai",
+    "slug": "daypart-ai",
+    "name": "Daypart.ai",
+    "tagline": "AI media buying assistant that increases lead to close rate by 30%",
+    "description": "AI accounts-based marketing (ABM) platform that connects to CRMs, uses AI to find and target leads across major ad platforms, and optimizes campaigns to increase lead-to-close rates by 30% through automated targeting and holdout group analysis.",
+    "logo": "https://cdn.brandfetch.io/idnokfLDS-/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.daypart.ai/",
+    "category": "plan",
+    "subcategory": "audience-intelligence",
+    "useCases": [
+      "campaign-automation",
+      "audience-discovery",
+      "personalization"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "getcrux",
+    "slug": "getcrux",
+    "name": "GetCrux",
+    "tagline": "AI creative strategist to launch winning ads",
+    "description": "AI creative analytics platform that reveals what makes ads perform by auto-tagging 30+ creative features, providing predictive scoring, fatigue detection, and AI Copilot for natural language queries to optimize ad performance and reduce CAC across Meta, TikTok, and Google.",
+    "logo": "https://cdn.brandfetch.io/iddqZBXAhS/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.getcrux.ai/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "reporting",
+      "competitive-analysis"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "hyros",
+    "slug": "hyros",
+    "name": "Hyros",
+    "tagline": "The best ad tracking and attribution software",
+    "description": "Advanced ad tracking and attribution software that uses AI attribution models to track customer journeys across multiple touchpoints and devices, providing accurate ROI data and eliminating reliance on platform pixels for high-ticket offers and complex sales funnels.",
+    "logo": "https://cdn.brandfetch.io/id_oKXWecS/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://hyros.com/",
+    "category": "measure",
+    "subcategory": "attribution",
+    "useCases": [
+      "attribution",
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/hyros/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "paragone",
+    "slug": "paragone",
+    "name": "Paragone",
+    "tagline": "One-stop-shop for growth marketers",
+    "description": "Cross-channel performance marketing SaaS platform specializing in paid social and Google campaigns, providing holistic reporting, campaign activation tools, audience-based advertising, and automated lead generation from a unified UI for agencies and brands.",
+    "logo": "https://cdn.brandfetch.io/idIG8-8H_f/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://paragone.ai/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "reporting",
+      "audience-discovery"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2021,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/paragone-ai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "crumbless-ai",
+    "slug": "crumbless-ai",
+    "name": "Crumbless AI Autonomous Ads Agent",
+    "tagline": "Autonomous advertising without cookies",
+    "description": "Cookieless autonomous advertising agent that manages campaigns without invasive tracking, dynamically aligning ads with content in real-time using trending keywords 24/7 and processing hundreds of thousands of media points to keep targeting fresh, adaptive, and privacy-first.",
+    "logo": "https://cdn.brandfetch.io/idZDTwCdZk/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.crumbless.ai/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "ml6-agentic-marketing",
+    "slug": "ml6-agentic-marketing",
+    "name": "ML6 Agentic Marketing",
+    "tagline": "AI marketing agent automating busywork and personalizing every touchpoint",
+    "description": "Europe's AI engineering powerhouse providing agentic marketing solutions that automate workflows, personalize customer touchpoints, optimize campaigns autonomously across channels, and turn data into predictive insights through integrated AI systems.",
+    "logo": "https://cdn.brandfetch.io/idBafSF1Zi/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.ml6.eu/autonomous-ai/autonomous-marketing",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "personalization",
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2018,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/ml6/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "bluefish-ai",
+    "slug": "bluefish-ai",
+    "name": "Bluefish AI",
+    "tagline": "AI marketing platform for the agentic era",
+    "description": "AI marketing platform for Fortune 500 brands providing GEO (Generative Engine Optimization) to gain visibility and control over brand presence in AI assistants, analyzing millions of AI responses and delivering daily optimization recommendations ranked by impact.",
+    "logo": "https://cdn.brandfetch.io/idulhWkJti/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.bluefishai.com/Platform",
+    "category": "measure",
+    "subcategory": "ai-visibility",
+    "useCases": [
+      "ai-visibility",
+      "brand-monitoring",
+      "seo-content"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/bluefishai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "operand",
+    "slug": "operand",
+    "name": "Operand",
+    "tagline": "AI to replace management consulting",
+    "description": "AI-powered consulting alternative for retail and e-commerce that analyzes data across all sources to optimize pricing, discounts, ad spend, and customer engagement, delivering verified recommendations through Slack or email with 6-figure P&L improvements.",
+    "logo": "https://cdn.brandfetch.io/idZI1pRV8E/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.tryoperand.com/",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "research",
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/operandofficial/",
+      "twitter": null
     }
   },
   {
     "id": "hypd-ai",
     "slug": "hypd-ai",
     "name": "HYPD.ai",
-    "tagline": "Your AI Assistant for Performance Marketers",
-    "description": "AI assistant for performance marketers. Connect Facebook and Google Ad accounts to talk to your campaigns, create reports, and get campaign recommendations through natural language.",
-    "logo": "https://wl.hypd.io/favicon.ico",
+    "tagline": "AI assistant for performance marketers",
+    "description": "AI Co-Pilot for performance marketers that connects to Google and Meta ad accounts to analyze performance, find wasted spend, run account audits, and generate reports through natural language conversations, automating analytical workflows for freelancers and agencies.",
+    "logo": "https://cdn.brandfetch.io/idm2q43zvK/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.hypd.ai/",
     "category": "plan",
     "subcategory": "ai-assistants",
-    "useCases": ["campaign-automation", "reporting"],
+    "useCases": [
+      "reporting",
+      "campaign-automation",
+      "research"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": null,
+    "founded": 2023,
     "social": {
-      "linkedin": null,
+      "linkedin": "https://www.linkedin.com/company/wearehypd/",
       "twitter": null
     }
   },
@@ -383,19 +781,23 @@
     "id": "gomarble",
     "slug": "gomarble",
     "name": "GoMarble",
-    "tagline": "The AI Agent for Performance Marketing & Creative Intelligence",
-    "description": "AI agent for performance marketing and creative intelligence. Generates instant HTML reports across Google, Meta, LinkedIn, and TikTok. Analyzes creative performance, surfaces insights, and provides frameworks from top 1% marketing experts. Used by 1000+ marketing teams across 80+ countries.",
-    "logo": "https://ph-files.imgix.net/7e3b4d67-65d6-41c7-9146-390c6155ba4a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=64&h=64&fit=crop&frame=1&dpr=2",
+    "tagline": "AI agent for performance marketing and creative intelligence",
+    "description": "AI Agent for performance marketing and creative intelligence that analyzes data across Google, Meta, LinkedIn, TikTok, GA4, and Shopify, providing instant insights, creative analysis, and expert recommendations with HTML reports and MCP server integration for conversational data access.",
+    "logo": "https://cdn.brandfetch.io/idbFL6CTp5/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.gomarble.ai/",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["reporting", "ad-creative", "campaign-automation"],
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "reporting",
+      "ad-creative",
+      "competitive-analysis"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": null,
+    "founded": 2023,
     "social": {
-      "linkedin": null,
+      "linkedin": "https://www.linkedin.com/company/gomarble/",
       "twitter": null
     }
   },
@@ -403,19 +805,22 @@
     "id": "markifact",
     "slug": "markifact",
     "name": "Markifact",
-    "tagline": "AI Marketing Automation Platform",
-    "description": "AI marketing automation platform with 10,000+ users. Features: consolidated Google & Meta Ads reports in Slides, natural language GA4 analysis in Slack, automated Google Ads audits (40+ checks), bulk Meta ads creation, SEO reports, competitor ad export, Meta ads audits (100+ checks), responsive search ads at scale, Google Merchant Center analysis, Shopify integration, GA4 setup audits (50+ checks).",
-    "logo": "https://www.markifact.com/favicon.ico",
+    "tagline": "AI marketing automation without coding",
+    "description": "AI marketing automation platform that builds and runs marketing workflows without coding across Google Ads, Meta, LinkedIn, and GA4, automating audits, reports, alerts, and campaign optimization through visual drag-and-drop interface and AI-generated workflows.",
+    "logo": "https://cdn.brandfetch.io/idDYZmWJ0F/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.markifact.com/",
-    "category": "plan",
-    "subcategory": "ai-assistants",
-    "useCases": ["reporting", "campaign-automation", "seo-content"],
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": null,
+    "founded": 2022,
     "social": {
-      "linkedin": null,
+      "linkedin": "https://www.linkedin.com/company/markifact/",
       "twitter": null
     }
   },
@@ -423,79 +828,45 @@
     "id": "blobr",
     "slug": "blobr",
     "name": "Blobr",
-    "tagline": "Run Google Ads Like a Pro",
-    "description": "AI agents trained on best practices of top Google Ads experts. Plugs into Google Ads, analyzes performance continuously, and turns best practices into concrete actions. Automates 80% of daily Google Ads account management. Provides weekly prioritized recommendations tailored to goals and budget.",
-    "logo": "https://cdn.prod.website-files.com/5f1ace21b47b368069989680/69300c578f34260a5cdc4aaf_logo-icon-on-light-footer.svg",
+    "tagline": "Run Google Ads like a pro with AI agents",
+    "description": "AI Google Ads expert platform that deploys over 50 specialized AI agents trained on best practices of top PPC experts to analyze accounts continuously, generate tailored weekly recommendations, and automate 80% of daily account management for agencies and advertisers.",
+    "logo": "https://cdn.brandfetch.io/idOjWLD2Wz/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.blobr.io/",
     "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation"],
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": null,
+    "founded": 2023,
     "social": {
-      "linkedin": null,
+      "linkedin": "https://www.linkedin.com/company/blobr/",
       "twitter": null
     }
   },
   {
-    "id": "singular-mcp",
-    "slug": "singular-mcp",
-    "name": "Singular MCP",
-    "tagline": "MCP Server for Singular Mobile Measurement",
-    "description": "Model Context Protocol (MCP) server for Singular mobile measurement platform. Enables integration with LLMs and agentic AI systems to query marketing data and trigger optimizations.",
-    "logo": "https://www.businessofapps.com/wp-content/uploads/2019/05/singular_logo_2019.png",
-    "screenshot": null,
-    "website": "https://support.singular.net/hc/en-us/articles/37923459892507-Singular-MCP",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["reporting"],
-    "pricing": "subscription",
-    "companyType": "private",
-    "founded": null,
-    "social": {
-      "linkedin": null,
-      "twitter": null
-    }
-  },
-  {
-    "id": "appsflyer-agentic-ai",
-    "slug": "appsflyer-agentic-ai",
-    "name": "AppsFlyer Agentic AI Suite",
-    "tagline": "AI-powered execution eliminating friction in marketing",
-    "description": "AI-powered execution suite built on clean, unified, and semantically clear marketing data. Includes MCP integration for connecting any LLM to AppsFlyer data, and pre-built agents for anomaly detection, performance summaries, and opportunity spotting. Privacy-first infrastructure with partner-specific policies and regulatory standards.",
-    "logo": "https://www.appsflyer.com/favicon.ico",
-    "screenshot": null,
-    "website": "https://www.appsflyer.com/products/agentic-ai/",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["attribution", "reporting", "campaign-automation"],
-    "pricing": "usage-based",
-    "companyType": "private",
-    "founded": null,
-    "social": {
-      "linkedin": null,
-      "twitter": null
-    }
-  },
-  {
-    "id": "kochava-stationone",
-    "slug": "kochava-stationone",
-    "name": "Kochava StationOne",
-    "tagline": "The Integrative AI Hub for Marketers & Digital Professionals",
-    "description": "Integrative AI hub making agentic AI accessible. Orchestration layer delivering choice, security, and agentic intelligence. Runs locally on desktop or environment for complete privacy. Supports connecting any model, integrating MCPs, building custom agents. Available for Windows, macOS, and Linux.",
-    "logo": "https://stationone.ai/wp-content/uploads/2025/11/stationone_icon2.png",
+    "id": "stationone-kochava",
+    "slug": "stationone-kochava",
+    "name": "StationOne by Kochava",
+    "tagline": "Integrative AI hub for agentic execution",
+    "description": "Integrative AI hub and desktop client for digital professionals that provides universal AI model support, Model Context Protocol (MCP) integration, Agent Forge for workflow automation, and on-device processing to keep data local while reducing context switching.",
+    "logo": "https://cdn.brandfetch.io/id9o7rQcOj/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.kochava.com/stationone/",
     "category": "plan",
     "subcategory": "ai-assistants",
-    "useCases": ["reporting", "campaign-automation"],
-    "pricing": "subscription",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
+    "pricing": "free",
     "companyType": "private",
-    "founded": null,
+    "founded": 2020,
     "social": {
-      "linkedin": null,
+      "linkedin": "https://www.linkedin.com/company/kochava/",
       "twitter": null
     }
   },
@@ -503,19 +874,23 @@
     "id": "ryze-ai",
     "slug": "ryze-ai",
     "name": "Ryze AI",
-    "tagline": "Let AI manage your paid ads",
-    "description": "AI-powered ad management platform managing $10M+ in ad budgets for 230+ customers. Manages Meta and TikTok ads. Features: 24/7 ad monitoring, AI ad creation, real-time budget optimization, keyword and targeting management, ad audits, competitor benchmarking. Replaces agencies with AdGent AI.",
-    "logo": "https://www.get-ryze.ai/favicon.ico",
+    "tagline": "AI that manages your ads",
+    "description": "AI copilot for performance marketers that manages ads across ChatGPT, Perplexity, Google, and Meta, providing 24/7 performance audits, AI creative generation, campaign setup and launch, and ROAS optimization suggestions through conversational interface.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
     "website": "https://www.get-ryze.ai/",
     "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation", "ad-creative"],
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "ad-creative",
+      "reporting"
+    ],
     "pricing": "subscription",
     "companyType": "startup",
-    "founded": null,
+    "founded": 2023,
     "social": {
-      "linkedin": null,
+      "linkedin": "https://www.linkedin.com/company/ryze-ai/",
       "twitter": null
     }
   },
@@ -523,17 +898,20 @@
     "id": "google-ads-advisor",
     "slug": "google-ads-advisor",
     "name": "Google Ads Advisor",
-    "tagline": "Agentic conversational AI for Google Ads",
-    "description": "Agentic conversational experience in Google Ads designed to maximize performance based on unique business goals. Helps identify improvement areas, troubleshoot issues, understand performance changes, generate campaign optimization suggestions, and create assets. Currently in beta, expanding to all English-language advertisers.",
-    "logo": "https://www.google.com/favicon.ico",
+    "tagline": "AI assistant in Google Ads",
+    "description": "Conversational AI assistant in Google Ads that provides campaign insights, recommendations, and answers through natural language in the Google Ads interface, helping advertisers optimize campaigns without leaving the platform (Beta).",
+    "logo": "https://cdn.brandfetch.io/id6O2oGzv-/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://support.google.com/google-ads/answer/16574983",
-    "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation"],
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "reporting",
+      "campaign-automation"
+    ],
     "pricing": "free",
     "companyType": "public",
-    "founded": null,
+    "founded": 2024,
     "social": {
       "linkedin": null,
       "twitter": null
@@ -543,57 +921,43 @@
     "id": "google-analytics-advisor",
     "slug": "google-analytics-advisor",
     "name": "Google Analytics Advisor",
-    "tagline": "Agentic AI for Google Analytics",
-    "description": "Agentic conversational AI in Google Analytics powered by Gemini models. Designed to accelerate data analysis for all GA users. Provides personalized answers about analytics property with actionable insights, visualizations, and links to helpful reports. Currently available in English with plans to expand.",
-    "logo": "https://www.google.com/favicon.ico",
+    "tagline": "AI assistant for Google Analytics",
+    "description": "AI-powered conversational assistant in Google Analytics that provides data insights, answers analytical questions, and helps users understand their website and app performance through natural language queries within the Analytics interface.",
+    "logo": "https://cdn.brandfetch.io/id6O2oGzv-/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://support.google.com/analytics/answer/16675569",
     "category": "measure",
     "subcategory": "analytics",
-    "useCases": ["reporting", "research"],
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
     "pricing": "free",
     "companyType": "public",
-    "founded": null,
+    "founded": 2024,
     "social": {
       "linkedin": null,
       "twitter": null
     }
   },
   {
-    "id": "google-ads-mcp",
-    "slug": "google-ads-mcp",
-    "name": "Google Ads MCP",
-    "tagline": "MCP Server for Google Ads API",
-    "description": "Model Context Protocol (MCP) server for Google Ads API. Enables LLMs and agentic AI to query performance data, retrieve campaign information, and access customer accounts. Open-source repository with tools for search, list accessible customers, and more.",
-    "logo": "https://www.google.com/favicon.ico",
+    "id": "google-ads-mcp-server",
+    "slug": "google-ads-mcp-server",
+    "name": "Google Ads MCP Server",
+    "tagline": "MCP server for Google Ads API integration",
+    "description": "Model Context Protocol server for Google Ads that enables AI agents and LLMs to interact with Google Ads data through standardized interfaces, allowing conversational access to campaign metrics and management through MCP-compatible clients like Claude Desktop.",
+    "logo": "https://cdn.brandfetch.io/idZAyF9rlg/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://github.com/googleads/google-ads-mcp",
-    "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation", "reporting"],
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
     "pricing": "free",
     "companyType": "public",
-    "founded": null,
-    "social": {
-      "linkedin": null,
-      "twitter": null
-    }
-  },
-  {
-    "id": "amazon-ads-agent",
-    "slug": "amazon-ads-agent",
-    "name": "Amazon Ads Agent",
-    "tagline": "AI Agent for Amazon Advertising",
-    "description": "AI agent launched at Amazon Ads unBoxed 2025. Simplifies campaign planning, launching, and optimization. Automates identifying targeting segments, adjusting pacing across hundreds of campaigns, and generating SQL queries. Features include campaign creation at scale, intelligent targeting recommendations, and time-to-insight acceleration.",
-    "logo": "https://advertising.amazon.com/favicon.ico",
-    "screenshot": null,
-    "website": "https://advertising.amazon.com/resources/whats-new/unboxed-2025-introducing-ads-agent",
-    "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation"],
-    "pricing": "usage-based",
-    "companyType": "public",
-    "founded": null,
+    "founded": 2024,
     "social": {
       "linkedin": null,
       "twitter": null
@@ -603,17 +967,21 @@
     "id": "meta-business-ai",
     "slug": "meta-business-ai",
     "name": "Meta Business AI",
-    "tagline": "AI-powered sales agent across Meta platforms",
-    "description": "Always-on sales agent guiding customers from discovery to purchase across Meta ads, messaging apps, and websites. Learns from posts and campaigns to deliver personalized responses. No coding required. Handles customer conversations in Messenger, WhatsApp, Facebook Reels, and Instagram Stories. Voice interaction and return handling capabilities.",
-    "logo": "https://www.facebook.com/favicon.ico",
+    "tagline": "AI tools for Meta advertising",
+    "description": "Suite of AI-powered tools for Facebook and Instagram advertisers including Advantage+ shopping campaigns, AI-generated ad variations, automated audience targeting, and predictive analytics to help businesses maximize ad performance and reach.",
+    "logo": "https://cdn.brandfetch.io/idpKX136kp/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.facebook.com/business/ai/business-ai",
     "category": "activate",
-    "subcategory": "shopping-assistants",
-    "useCases": ["chatbots", "personalization"],
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "ad-creative",
+      "audience-discovery"
+    ],
     "pricing": "free",
     "companyType": "public",
-    "founded": null,
+    "founded": 2023,
     "social": {
       "linkedin": null,
       "twitter": null
@@ -623,17 +991,43 @@
     "id": "meta-business-assistant",
     "slug": "meta-business-assistant",
     "name": "Meta Business Assistant",
-    "tagline": "AI-powered campaign recommendations in Ads Manager",
-    "description": "Personalized campaign recommendations AI in Ads Manager. Provides insights unique to Meta through seamless chat experience. Helps with campaign optimization, creative suggestions, audience insights, and performance analysis.",
-    "logo": "https://www.facebook.com/favicon.ico",
+    "tagline": "AI assistant for Meta Business Suite",
+    "description": "Conversational AI assistant for Meta advertisers that helps manage campaigns, provides recommendations, answers questions about ad performance, and assists with campaign setup through chat interface integrated into Meta Business Suite.",
+    "logo": "https://cdn.brandfetch.io/idpKX136kp/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.facebook.com/business/ai/business-assistant",
-    "category": "activate",
-    "subcategory": "ai-ad-platforms",
-    "useCases": ["campaign-automation", "ad-creative"],
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "reporting",
+      "campaign-automation"
+    ],
     "pricing": "free",
     "companyType": "public",
-    "founded": null,
+    "founded": 2024,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "amazon-ads-agent",
+    "slug": "amazon-ads-agent",
+    "name": "Amazon Ads Agent",
+    "tagline": "AI agent for Amazon advertising",
+    "description": "AI-powered advertising agent announced at Unboxed 2025 that helps Amazon advertisers optimize campaigns, generate insights, and manage advertising operations through conversational AI interface, streamlining campaign management for sellers and brands.",
+    "logo": "https://cdn.brandfetch.io/idawOgYOsG/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://advertising.amazon.com/resources/whats-new/unboxed-2025-introducing-ads-agent",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": 2024,
     "social": {
       "linkedin": null,
       "twitter": null
@@ -643,39 +1037,576 @@
     "id": "walmart-sparky",
     "slug": "walmart-sparky",
     "name": "Walmart Sparky",
-    "tagline": "AI Shopping Assistant",
-    "description": "Walmart's AI shopping assistant available in Walmart mobile app. Helps users make purchasing decisions by reading reviews, providing product recommendations, and reducing purchase surprises. Available as in-app feature for shoppers.",
-    "logo": "https://www.walmart.com/favicon.ico",
+    "tagline": "AI shopping assistant for Walmart",
+    "description": "AI-powered shopping assistant and conversational commerce tool for Walmart that helps customers find products, get recommendations, and make purchasing decisions through natural language conversations on Walmart's platform.",
+    "logo": "https://cdn.brandfetch.io/idoGsFQrHx/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.walmart.com/cp/sparky/5291783",
     "category": "activate",
     "subcategory": "shopping-assistants",
-    "useCases": ["chatbots", "personalization"],
+    "useCases": [
+      "chatbots",
+      "personalization"
+    ],
     "pricing": "free",
     "companyType": "public",
-    "founded": null,
+    "founded": 2024,
     "social": {
       "linkedin": null,
       "twitter": null
     }
   },
   {
-    "id": "branch-ivy",
-    "slug": "branch-ivy",
-    "name": "Branch Ivy",
-    "tagline": "Your strategic AI partner",
-    "description": "Integrated AI system transforming how marketers work. Turns complex data into clear insights to reveal campaign performance drivers. Features include intelligent link creation with accurate tags, campaign analysis, personalized actionable recommendations, automated data analysis, and smart workflow streamlining. Privacy-safe processing with enterprise-grade security.",
-    "logo": "https://www.branch.io/favicon.ico",
+    "id": "branch-ivy-ai",
+    "slug": "branch-ivy-ai",
+    "name": "Branch Ivy AI",
+    "tagline": "AI assistant for mobile app marketing",
+    "description": "AI-powered mobile marketing assistant that helps app marketers analyze attribution data, optimize campaigns, and get actionable insights through conversational interface, integrated with Branch's mobile measurement and deep linking platform.",
+    "logo": "https://cdn.brandfetch.io/idN7LWxlVW/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
     "screenshot": null,
     "website": "https://www.branch.io/ivyai/",
-    "category": "measure",
-    "subcategory": "analytics",
-    "useCases": ["reporting", "campaign-automation"],
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "attribution",
+      "reporting",
+      "campaign-automation"
+    ],
     "pricing": "subscription",
     "companyType": "private",
-    "founded": null,
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/branch-metrics/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "singular-mcp",
+    "slug": "singular-mcp",
+    "name": "Singular MCP",
+    "tagline": "MCP server for Singular attribution platform",
+    "description": "Model Context Protocol server for Singular mobile attribution platform that enables AI agents to interact with Singular's measurement and analytics data through standardized MCP interfaces for conversational campaign analysis and reporting.",
+    "logo": "https://cdn.brandfetch.io/idimpwF13n/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://support.singular.net/hc/en-us/articles/37923459892507-Singular-MCP",
+    "category": "measure",
+    "subcategory": "attribution",
+    "useCases": [
+      "attribution",
+      "reporting"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2024,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/singular/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "appsflyer-agentic-ai",
+    "slug": "appsflyer-agentic-ai",
+    "name": "AppsFlyer Agentic AI",
+    "tagline": "Agentic AI for mobile marketing",
+    "description": "Agentic AI suite for mobile app marketers that provides autonomous campaign optimization, predictive analytics, and intelligent automation for user acquisition, attribution, and marketing measurement across the mobile app ecosystem.",
+    "logo": "https://cdn.brandfetch.io/idfRPs1zxg/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.appsflyer.com/products/agentic-ai/",
+    "category": "measure",
+    "subcategory": "attribution",
+    "useCases": [
+      "attribution",
+      "campaign-automation",
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/appsflyer/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "triple-whale-moby",
+    "slug": "triple-whale-moby",
+    "name": "Triple Whale Moby",
+    "tagline": "AI assistant for e-commerce marketing",
+    "description": "AI assistant for e-commerce brands that combines chat interface, AI agents, and analytics across Shopify and advertising platforms to provide insights, automate reporting, and help optimize marketing performance for DTC brands.",
+    "logo": "https://cdn.brandfetch.io/id4RWiZqcZ/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.triplewhale.com/moby-ai",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "reporting",
+      "attribution",
+      "campaign-automation"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2022,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/triplewhale/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "supermetrics",
+    "slug": "supermetrics",
+    "name": "Supermetrics",
+    "tagline": "Marketing data pipeline to analytics tools",
+    "description": "Marketing data pipeline platform that automates data collection from 150+ marketing and sales platforms into analytics tools, data warehouses, and BI platforms, enabling centralized reporting and analysis without manual data exports.",
+    "logo": "https://cdn.brandfetch.io/id5cb28dFI/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://supermetrics.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/supermetrics/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "funnel-io",
+    "slug": "funnel-io",
+    "name": "Funnel.io",
+    "tagline": "Marketing data hub for centralized reporting",
+    "description": "Marketing data hub that automatically collects, prepares, and stores marketing data from 500+ platforms, enabling centralized reporting, custom dashboards, and data exports to BI tools or data warehouses for analysis.",
+    "logo": "https://cdn.brandfetch.io/idT8V0r6MR/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://funnel.io/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/funnel-io/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "adverity",
+    "slug": "adverity",
+    "name": "Adverity",
+    "tagline": "Marketing intelligence and data integration platform",
+    "description": "Enterprise marketing intelligence platform that connects 600+ data sources, automates data transformation, and provides AI-powered insights through centralized dashboards for data-driven marketing decisions at scale.",
+    "logo": "https://cdn.brandfetch.io/idkFnzvz-H/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.adverity.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/adverity/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "agencyanalytics",
+    "slug": "agencyanalytics",
+    "name": "AgencyAnalytics",
+    "tagline": "All-in-one marketing dashboard for agencies",
+    "description": "All-in-one marketing reporting platform for agencies that integrates 80+ marketing channels, automates client reporting, tracks SEO rankings, and monitors website uptime with white-label dashboards and custom reports.",
+    "logo": "https://cdn.brandfetch.io/idzUDn0u-H/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://agencyanalytics.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "seo-content"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2019,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/agencyanalytics/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "improvado",
+    "slug": "improvado",
+    "name": "Improvado",
+    "tagline": "Marketing analytics for enterprise",
+    "description": "Enterprise marketing analytics platform that extracts data from 500+ marketing and sales sources, transforms it into analysis-ready datasets, and loads it into BI tools or data warehouses with AI-powered insights and automated reporting.",
+    "logo": "https://cdn.brandfetch.io/idMg5JS4mv/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://improvado.io/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2018,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/improvado/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "gaql-app",
+    "slug": "gaql-app",
+    "name": "GAQL App",
+    "tagline": "GAQL query builder for Google Ads",
+    "description": "Google Ads Query Language (GAQL) builder and testing tool that helps marketers write, test, and debug GAQL queries for Google Ads API and reporting, providing syntax highlighting, autocomplete, and query validation for advanced campaign analysis.",
+    "logo": "https://cdn.brandfetch.io/idUkUd9DeO/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://gaql.app/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": 2022,
     "social": {
       "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "wren-ai",
+    "slug": "wren-ai",
+    "name": "Wren AI",
+    "tagline": "Text-to-SQL for business intelligence",
+    "description": "Open-source AI-powered SQL interface that enables natural language queries for business intelligence and marketing analytics, allowing teams to ask questions about their data without writing SQL code with support for various data warehouses.",
+    "logo": "https://cdn.brandfetch.io/idQN-6af0M/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://getwren.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/wren-ai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "xandr-copilot",
+    "slug": "xandr-copilot",
+    "name": "Xandr Copilot",
+    "tagline": "AI copilot for Xandr programmatic advertising",
+    "description": "AI assistant integrated into Microsoft Xandr Monetize platform that helps publishers and advertisers optimize programmatic advertising operations through conversational interface, providing insights and recommendations for yield management and campaign optimization.",
+    "logo": "https://cdn.brandfetch.io/idchmboHEZ/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://learn.microsoft.com/en-us/xandr/monetize/copilot-in-microsoft-monetize",
+    "category": "plan",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
+    "pricing": "subscription",
+    "companyType": "public",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/xandr/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "ppc-io-mcp",
+    "slug": "ppc-io-mcp",
+    "name": "PPC.io Google Ads MCP",
+    "tagline": "Google Ads MCP server for AI agents",
+    "description": "MCP server implementation for Google Ads developed by PPC.io that enables conversational access to Google Ads data through Model Context Protocol, allowing AI agents to query campaign performance and metrics through standardized interfaces.",
+    "logo": "https://cdn.brandfetch.io/idTG1CmA1t/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://ppc.io/blog/google-ads-mcp",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": 2024,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/ppc-io/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "feedmob-mcp-servers",
+    "slug": "feedmob-mcp-servers",
+    "name": "FeedMob MCP Servers",
+    "tagline": "MCP servers for mobile advertising",
+    "description": "Open-source collection of Model Context Protocol servers for mobile advertising and app marketing platforms, enabling AI agents to interact with mobile marketing data through standardized MCP interfaces for analytics and campaign management.",
+    "logo": "https://cdn.brandfetch.io/idZAyF9rlg/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://github.com/feed-mob/fm-mcp-servers",
+    "category": "measure",
+    "subcategory": "attribution",
+    "useCases": [
+      "attribution",
+      "reporting"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": 2024,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/feedmob/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "otto",
+    "slug": "otto",
+    "name": "Otto",
+    "tagline": "AI assistant for revenue operations",
+    "description": "AI-powered revenue operations assistant for product-led growth companies that automates data enrichment, lead scoring, and workflow automation across marketing and sales tools to improve conversion rates and pipeline efficiency.",
+    "logo": "https://cdn.brandfetch.io/idv5McGJpK/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.hireotto.com/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "audience-discovery"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/hireotto/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "posthog-max",
+    "slug": "posthog-max",
+    "name": "PostHog Max",
+    "tagline": "AI product analyst for PostHog",
+    "description": "AI product analyst built into PostHog that answers questions about product analytics, user behavior, and feature usage through conversational interface, helping teams make data-driven product decisions without SQL knowledge.",
+    "logo": "https://cdn.brandfetch.io/id2veLU_gI/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://posthog.com/max",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/posthog/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "jellyfish-agents",
+    "slug": "jellyfish-agents",
+    "name": "Jellyfish Agents",
+    "tagline": "AI agents for engineering productivity",
+    "description": "AI agents for engineering productivity and software delivery that analyze development metrics, provide insights on engineering efficiency, and help teams optimize software delivery processes through autonomous analysis and recommendations.",
+    "logo": "https://cdn.brandfetch.io/idCvcNaUPG/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.jellyfish.com/en-us/agents/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2022,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/jellyfish/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "julius-ai",
+    "slug": "julius-ai",
+    "name": "Julius AI",
+    "tagline": "AI data analyst for everyone",
+    "description": "AI-powered data analyst that connects to various data sources, answers analytical questions through natural language, creates visualizations, and generates insights for marketing and business analytics without requiring coding or SQL knowledge.",
+    "logo": "https://cdn.brandfetch.io/idmMVVyFKP/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://julius.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/julius-ai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "nex-ad",
+    "slug": "nex-ad",
+    "name": "Nex.ad",
+    "tagline": "AI-powered programmatic advertising",
+    "description": "Programmatic advertising platform that combines human expertise with AI-powered optimization for display, video, and native advertising campaigns, providing automated bidding, creative optimization, and performance analytics for digital advertisers.",
+    "logo": "https://cdn.brandfetch.io/id9paZ8Dd8/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.nex.ad/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "ad-creative"
+    ],
+    "pricing": "enterprise",
+    "companyType": "private",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/nex-ad/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "akkio",
+    "slug": "akkio",
+    "name": "Akkio",
+    "tagline": "No-code AI for marketing predictions",
+    "description": "No-code AI platform for agencies and marketers that predicts campaign performance, churn, and customer behavior through automated machine learning models built from marketing data without requiring data science expertise.",
+    "logo": "https://cdn.brandfetch.io/idqJwBRwYT/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.akkio.com/",
+    "category": "plan",
+    "subcategory": "audience-intelligence",
+    "useCases": [
+      "research",
+      "audience-discovery"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/akkio/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "bluealpha-ai",
+    "slug": "bluealpha-ai",
+    "name": "BlueAlpha AI",
+    "tagline": "AI for B2B account-based marketing",
+    "description": "AI-powered B2B marketing platform that automates account-based marketing workflows, identifies high-intent accounts, and personalizes outreach at scale using predictive analytics and machine learning for enterprise sales and marketing teams.",
+    "logo": "https://cdn.brandfetch.io/id5imU32ha/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://bluealpha.ai/",
+    "category": "activate",
+    "subcategory": "email-outreach",
+    "useCases": [
+      "email-marketing",
+      "outreach",
+      "audience-discovery"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": 2021,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/bluealphaai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "massive-dynamic",
+    "slug": "massive-dynamic",
+    "name": "Massive Dynamic",
+    "tagline": "AI creative intelligence for advertising",
+    "description": "AI-driven creative intelligence platform that analyzes advertising creative performance across channels, provides predictive scoring for new creatives, and delivers data-driven recommendations to optimize ad creative strategy and improve campaign ROI.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
+    "screenshot": null,
+    "website": "https://www.massive-dynamic.ai/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "reporting",
+      "competitive-analysis"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2021,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/massive-dynamic-ai/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "koah-labs",
+    "slug": "koah-labs",
+    "name": "Koah Labs",
+    "tagline": "AI marketing automation and customer engagement",
+    "description": "AI-powered marketing automation platform that combines conversational AI with workflow automation to help businesses optimize customer engagement, lead nurturing, and campaign performance through intelligent automation and data-driven insights.",
+    "logo": "https://cdn.brandfetch.io/idbrI5Z0Py/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.koahlabs.com/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "chatbots",
+      "personalization"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2022,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/koahlabs/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "agentmark",
+    "slug": "agentmark",
+    "name": "AgentMark",
+    "tagline": "AI marketing agents for autonomous operations",
+    "description": "AI marketing agent platform that automates marketing workflows, content creation, and campaign management for small businesses and agencies, providing autonomous marketing operations with minimal human oversight through intelligent agents.",
+    "logo": "https://cdn.brandfetch.io/id_x1OMi9V/w/400/h/400/icon.png?c=1bxdafbx28vgze276lpefjbasklKGVEChwz",
+    "screenshot": null,
+    "website": "https://www.agentmark.ai/",
+    "category": "create",
+    "subcategory": "copywriting-seo",
+    "useCases": [
+      "campaign-automation",
+      "copywriting",
+      "social-content"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2023,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/agentmark/",
       "twitter": null
     }
   }
