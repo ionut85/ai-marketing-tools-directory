@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { LogoFallback } from "./LogoFallback";
 import type { Tool, Category } from "@/lib/types";
@@ -22,13 +23,14 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
       <div className="inline-flex gap-4 min-w-max">
         {sortedCategories.map((category) => (
           <div key={category.id} className="w-64 flex-shrink-0">
-            <div
-              className="mb-3 rounded-md px-3 py-2 text-sm font-semibold text-white"
+            <Link
+              href={`/category/${category.id}`}
+              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-white hover:opacity-90 transition-opacity cursor-pointer"
               style={{ backgroundColor: category.color }}
               data-testid={`landscape-category-${category.id}`}
             >
               {category.name}
-            </div>
+            </Link>
 
             <div className="space-y-3">
               {category.subcategories
