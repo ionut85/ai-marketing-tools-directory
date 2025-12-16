@@ -28,7 +28,7 @@ export function Footer() {
             <p className="text-sm font-medium">Resources</p>
             <nav className="flex flex-col gap-2">
               <a
-                href="https://uof.digital/introducing-the-u-of-digitals-ai-in-ad-tech-knowledgescape/"
+                href="https://lumapartners.com/lumascapes/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
