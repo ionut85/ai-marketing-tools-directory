@@ -1097,10 +1097,10 @@
     ],
     "pricing": "subscription",
     "companyType": "private",
-    "founded": 2024,
+    "founded": 2014,
     "social": {
-      "linkedin": "https://www.linkedin.com/company/singular/",
-      "twitter": null
+      "linkedin": "https://www.linkedin.com/company/singular-labs/",
+      "twitter": "https://x.com/TweetSingular"
     }
   },
   {
@@ -1607,6 +1607,30 @@
     "founded": 2023,
     "social": {
       "linkedin": "https://www.linkedin.com/company/agentmark/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "kai-kayzen",
+    "slug": "kai-kayzen",
+    "name": "kAI",
+    "tagline": "Your GenAI Assistant for In-App Media Planning",
+    "description": "Say hello to kAI: Your 24/7 Programmatic GenAI Assistant. What if instead of waiting for the next report, you could just ask? kAI transforms how you explore programmatic in-app supply. No more static snapshots. No more waiting. Just real-time answers to the questions that matter most to your campaigns. Think of it as having a data scientist who never sleeps, with instant access to 280,000+ apps across the ecosystem, 1.9B+ unique users worth of behavioral data, and 180+ countries of market intelligence.",
+    "logo": "https://kayzen.io/wp-content/uploads/2025/05/cropped-Kayzen-logo-1200-by-1200-32x32.png",
+    "screenshot": null,
+    "website": "https://kayzen.io/blog/introducing-kai",
+    "category": "plan",
+    "subcategory": "audience-intelligence",
+    "useCases": [
+      "audience-discovery",
+      "research",
+      "reporting"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": 2018,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/kayzen/",
       "twitter": null
     }
   }
