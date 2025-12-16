@@ -2,7 +2,7 @@
   {
     "id": "plan",
     "name": "Plan",
-    "color": "#000000",
+    "color": "#ea580c",
     "order": 1,
     "subcategories": [
       { "id": "market-research", "name": "Market Research", "order": 1 },
@@ -14,7 +14,7 @@
   {
     "id": "create",
     "name": "Create",
-    "color": "#374151",
+    "color": "#f97316",
     "order": 2,
     "subcategories": [
       { "id": "ad-creative", "name": "Ad Creative", "order": 1 },
@@ -26,7 +26,7 @@
   {
     "id": "activate",
     "name": "Activate",
-    "color": "#6B7280",
+    "color": "#fb923c",
     "order": 3,
     "subcategories": [
       { "id": "campaign-management", "name": "Campaign Management", "order": 1 },
@@ -38,7 +38,7 @@
   {
     "id": "measure",
     "name": "Measure",
-    "color": "#9CA3AF",
+    "color": "#fdba74",
     "order": 4,
     "subcategories": [
       { "id": "attribution", "name": "Attribution", "order": 1 },
