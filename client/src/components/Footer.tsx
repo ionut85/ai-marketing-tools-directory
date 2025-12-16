@@ -25,6 +25,48 @@ export function Footer() {
           </div>
 
           <div className="space-y-3">
+            <p className="text-sm font-medium">Resources</p>
+            <nav className="flex flex-col gap-2">
+              <a
+                href="https://uof.digital/introducing-the-u-of-digitals-ai-in-ad-tech-knowledgescape/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-ai-lumascape"
+              >
+                AI Lumascape
+              </a>
+              <a
+                href="https://uof.digital/introducing-the-u-of-digitals-ai-in-ad-tech-knowledgescape/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-ai-knowledgescape"
+              >
+                AI Knowledgescape
+              </a>
+              <a
+                href="https://phiture.com/mobilegrowthstack/what-is-the-mobile-growth-stack/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-mobile-growth-stack"
+              >
+                Mobile Growth Stack
+              </a>
+              <a
+                href="https://www.linkedin.com/posts/hugo-gersanois-36633619_ai-marketing-tools-landscape-2023-winter-activity-7135700718711181314-PFMw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-ai-marketing-tools"
+              >
+                AI Marketing Tools
+              </a>
+            </nav>
+          </div>
+
+          <div className="space-y-3">
             <p className="text-sm font-medium">Categories</p>
             <nav className="flex flex-col gap-2">
               {categories.map((category) => (
