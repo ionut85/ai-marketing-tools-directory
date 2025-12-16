@@ -168,47 +168,48 @@
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
-/* CHRISTMAS MODE */
+/* CHRISTMAS MODE - Moody Dark Green Theme */
 .christmas {
-  --button-outline: rgba(0,0,0, .10);
-  --badge-outline: rgba(0,0,0, .05);
-  --opaque-button-border-intensity: -8;
-  --elevate-1: rgba(0,0,0, .03);
-  --elevate-2: rgba(0,0,0, .08);
-  --background: 0 0% 100%;
-  --foreground: 121 100% 18%;
-  --border: 4 100% 36%;
-  --card: 44 20% 97%;
-  --card-foreground: 121 100% 18%;
-  --card-border: 4 50% 80%;
-  --sidebar: 121 30% 95%;
-  --sidebar-foreground: 121 100% 18%;
-  --sidebar-border: 4 50% 80%;
-  --sidebar-primary: 4 100% 36%;
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+  --background: 150 40% 10%;
+  --foreground: 0 0% 95%;
+  --foreground-heading: 0 0% 100%;
+  --border: 350 60% 30%;
+  --card: 44 25% 90%;
+  --card-foreground: 150 40% 15%;
+  --card-border: 350 50% 40%;
+  --sidebar: 150 35% 15%;
+  --sidebar-foreground: 44 30% 75%;
+  --sidebar-border: 350 50% 35%;
+  --sidebar-primary: 22 91% 55%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 121 30% 90%;
-  --sidebar-accent-foreground: 121 100% 18%;
-  --sidebar-ring: 4 100% 36%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 121 100% 18%;
-  --popover-border: 4 50% 80%;
-  --primary: 4 100% 36%;
+  --sidebar-accent: 150 30% 20%;
+  --sidebar-accent-foreground: 44 30% 80%;
+  --sidebar-ring: 22 91% 55%;
+  --popover: 44 25% 90%;
+  --popover-foreground: 150 40% 15%;
+  --popover-border: 350 50% 40%;
+  --primary: 22 91% 55%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 121 30% 90%;
-  --secondary-foreground: 121 100% 18%;
-  --muted: 44 30% 92%;
-  --muted-foreground: 121 50% 30%;
-  --accent: 44 98% 39%;
-  --accent-foreground: 0 0% 100%;
-  --destructive: 4 100% 36%;
+  --secondary: 150 30% 18%;
+  --secondary-foreground: 44 30% 75%;
+  --muted: 150 25% 15%;
+  --muted-foreground: 44 35% 65%;
+  --accent: 44 70% 50%;
+  --accent-foreground: 150 40% 10%;
+  --destructive: 350 70% 40%;
   --destructive-foreground: 0 0% 100%;
-  --input: 121 30% 70%;
-  --ring: 4 100% 36%;
-  --chart-1: 4 100% 36%;
-  --chart-2: 121 100% 18%;
-  --chart-3: 44 98% 39%;
-  --chart-4: 4 80% 50%;
-  --chart-5: 121 80% 30%;
+  --input: 150 25% 25%;
+  --ring: 22 91% 55%;
+  --chart-1: 22 91% 55%;
+  --chart-2: 350 60% 45%;
+  --chart-3: 44 70% 50%;
+  --chart-4: 150 50% 40%;
+  --chart-5: 44 50% 65%;
 
   /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));
