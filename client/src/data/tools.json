@@ -864,7 +864,7 @@
     ],
     "pricing": "free",
     "companyType": "private",
-    "founded": 2020,
+    "founded": 2011,
     "social": {
       "linkedin": "https://www.linkedin.com/company/kochava/",
       "twitter": null
@@ -1613,7 +1613,7 @@
   {
     "id": "kai-kayzen",
     "slug": "kai-kayzen",
-    "name": "kAI",
+    "name": "kAI by Kayzen",
     "tagline": "Your GenAI Assistant for In-App Media Planning",
     "description": "Say hello to kAI: Your 24/7 Programmatic GenAI Assistant. What if instead of waiting for the next report, you could just ask? kAI transforms how you explore programmatic in-app supply. No more static snapshots. No more waiting. Just real-time answers to the questions that matter most to your campaigns. Think of it as having a data scientist who never sleeps, with instant access to 280,000+ apps across the ecosystem, 1.9B+ unique users worth of behavioral data, and 180+ countries of market intelligence.",
     "logo": "https://kayzen.io/wp-content/uploads/2025/05/cropped-Kayzen-logo-1200-by-1200-32x32.png",
@@ -1631,6 +1631,75 @@
     "founded": 2018,
     "social": {
       "linkedin": "https://www.linkedin.com/company/kayzen/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "hera",
+    "slug": "hera",
+    "name": "Hera",
+    "tagline": "Your AI Motion Designer",
+    "description": "Hera is the first AI motion designer that creates professional animations in seconds. Unlike video-gen tools, Hera generates code-based animations where every parameter can be fine-tuned. Since launching 2 weeks ago, Hera users have created 200K+ animations.",
+    "logo": "https://hera.video/favicon.ico",
+    "screenshot": null,
+    "website": "https://hera.video",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "video-generation"
+    ],
+    "pricing": "usage-based",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/heravideo/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "viral-app",
+    "slug": "viral-app",
+    "name": "viral.app",
+    "tagline": "Track, Manage, and Optimize Your UGC Marketing.",
+    "description": "viral.app is the leading tracking & analytics tool for viral short-form marketing on TikTok, Instagram Reels and Youtube Shorts. Track unlimited accounts & videos and get deep insights into your performance and engagement metrics.",
+    "logo": "https://viral.app/favicon.ico",
+    "screenshot": null,
+    "website": "https://viral.app/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "brand-monitoring",
+      "ugc-creation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/viral-app/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "mindchain-hypermindz",
+    "slug": "mindchain-hypermindz",
+    "name": "Mindchain by Hypermindz",
+    "tagline": "The Governed Agentic Backend for Media Platforms",
+    "description": "What we build: A governance-first orchestration layer that lets enterprises deploy, audit, and scale multi-agent systems with runtime evidence and policy controls built in.\n\nWhy now: The agent economy is arriving unevenly—point tools everywhere, trust nowhere. Mindchain gives enterprises an industrial-grade foundation to run agents with proof, not promises.",
+    "logo": "https://www.hypermindz.ai/images/hypermindz-logo-white.webp",
+    "screenshot": null,
+    "website": "https://www.hypermindz.ai/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/hypermindz/",
       "twitter": null
     }
   }
