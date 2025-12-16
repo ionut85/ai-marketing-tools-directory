@@ -198,7 +198,7 @@
   --secondary: 150 30% 18%;
   --secondary-foreground: 44 30% 75%;
   --muted: 150 25% 15%;
-  --muted-foreground: 44 35% 65%;
+  --muted-foreground: 44 50% 35%;
   --accent: 44 70% 50%;
   --accent-foreground: 150 40% 10%;
   --destructive: 350 70% 40%;
@@ -238,6 +238,16 @@
   /* Fallback for older browsers */
   --destructive-border: hsl(var(--destructive));
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
+/* Christmas theme: Override headings inside cards to use dark green instead of white */
+.christmas .shadcn-card h1,
+.christmas .shadcn-card h2,
+.christmas .shadcn-card h3,
+.christmas .shadcn-card h4,
+.christmas .shadcn-card h5,
+.christmas .shadcn-card h6 {
+  color: hsl(150 40% 20%);
 }
 
 @layer base {
