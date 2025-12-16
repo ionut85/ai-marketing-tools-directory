@@ -1702,5 +1702,51 @@
       "linkedin": "https://www.linkedin.com/company/hypermindz/",
       "twitter": null
     }
+  },
+  {
+    "id": "buyer-agent-scope3",
+    "slug": "buyer-agent-scope3",
+    "name": "Buyer Agent by Scope3",
+    "tagline": "The platform for agentic advertising.",
+    "description": "Ultimate control to grow your brand.\nYour brand is unique—your agent should be too.\nWe empower you to build custom brand agents that manage your brand across all media touchpoints, collaborating with you and your advertising partners to translate your marketing strategy into media decisions that drive measurable brand lift.",
+    "logo": "https://cdn.brandfetch.io/id0NT-J8F-/w/400/h/400/theme/dark/icon.jpeg",
+    "screenshot": null,
+    "website": "https://scope3.com/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/scope3data/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "samba-tv-adcp",
+    "slug": "samba-tv-adcp",
+    "name": "Samba TV - AdCP Server",
+    "tagline": "We create data at the heart of TV",
+    "description": "Why Samba Built the First AdCP-Native Audience Manager\nAt Samba, this mission is part of our DNA. We've spent years helping brands and publishers understand audiences through advanced first-party viewership, behavioral, and contextual data from over 50 countries and 50 million smart TVs.\nNow, by connecting that data through AdCP, we're enabling agentic AI to work with Samba insights in real time - helping marketers discover audiences, build segments, and activate campaigns with outcomes they can trust.\nToday, we're proud to showcase the Samba Audience Manager MCP Server - the first production-ready implementation of AdCP for audience intelligence.",
+    "logo": "https://cdn.brandfetch.io/idBzFgnZJm/w/300/h/300/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1668277494027",
+    "screenshot": null,
+    "website": "https://www.samba.tv/resources/adcp-the-open-standard-for-agentic-advertising",
+    "category": "plan",
+    "subcategory": "audience-intelligence",
+    "useCases": [
+      "audience-discovery",
+      "research"
+    ],
+    "pricing": "unknown",
+    "companyType": "private",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/sambatv/",
+      "twitter": null
+    }
   }
 ]
