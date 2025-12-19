@@ -103,9 +103,9 @@ export async function registerRoutes(
 
   app.get("/robots.txt", (req, res) => {
     const baseUrl = getBaseUrl(req);
-    
+
     const robots = `# GenAI Marketing Landscape
-# https://genaimarketing.tools
+# https://tools.hypd.ai
 
 User-agent: *
 Allow: /

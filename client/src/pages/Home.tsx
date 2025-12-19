@@ -16,7 +16,7 @@ import toolsData from "@/data/tools.json";
 import categoriesData from "@/data/categories.json";
 import useCasesData from "@/data/useCases.json";
 
-const TOOLS_PER_PAGE = 12;
+const TOOLS_PER_PAGE = 15;
 
 export default function Home() {
   const [, setLocation] = useLocation();
