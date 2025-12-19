@@ -113,13 +113,15 @@ export default function CategoryPage() {
             <p className="mt-4 text-lg text-muted-foreground" data-testid="text-category-description">
               {categoryInfo.longDescription}
             </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {category.subcategories.map((sub) => (
-                <Badge key={sub.id} variant="secondary" data-testid={`badge-subcategory-${sub.id}`}>
-                  {sub.name}
-                </Badge>
-              ))}
-            </div>
+            {category.subcategories.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {category.subcategories.map((sub) => (
+                  <Badge key={sub.id} variant="secondary" data-testid={`badge-subcategory-${sub.id}`}>
+                    {sub.name}
+                  </Badge>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>

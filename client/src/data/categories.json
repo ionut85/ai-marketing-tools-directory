@@ -45,5 +45,12 @@
       { "id": "analytics", "name": "Analytics", "order": 2 },
       { "id": "ai-visibility", "name": "AI Visibility", "order": 3 }
     ]
+  },
+  {
+    "id": "general",
+    "name": "General",
+    "color": "#fdba74",
+    "order": 5,
+    "subcategories": []
   }
 ]

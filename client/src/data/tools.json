@@ -956,7 +956,7 @@
             "attribution"
         ],
         "pricing": "free",
-        "companyType": "public",
+        "companyType": "open-source",
         "founded": 2024,
         "social": {
             "linkedin": null,
@@ -1350,7 +1350,7 @@
             "reporting"
         ],
         "pricing": "free",
-        "companyType": "startup",
+        "companyType": "open-source",
         "founded": 2024,
         "social": {
             "linkedin": "https://www.linkedin.com/company/feedmob/",
@@ -2091,6 +2091,219 @@
     "social": {
       "linkedin": "https://www.linkedin.com/company/promptwatch",
       "twitter": "https://x.com/promptwatch"
+    }
+  },
+  {
+    "id": "v0-vercel",
+    "slug": "v0-vercel",
+    "name": "V0 by Vercel",
+    "tagline": "Your collaborative AI assistant to design, iterate, and scale full-stack applications",
+    "description": "Collaborative AI assistant to design, iterate, and scale full-stack applications for the web. V0 helps teams rapidly prototype and build web applications using AI-powered code generation and design tools.",
+    "logo": "https://cdn.brandfetch.io/idDpCfN4VD/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1759982772575",
+    "screenshot": null,
+    "website": "https://v0.app/",
+    "category": "create",
+    "subcategory": "landing-pages",
+    "useCases": [
+      "web-development",
+      "landing-pages"
+    ],
+    "pricing": "subscription",
+    "companyType": "established",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/vercel/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "pomelli-google",
+    "slug": "pomelli-google",
+    "name": "Pomelli by Google Labs",
+    "tagline": "Generate on-brand content with AI",
+    "description": "Easily generate on-brand content for your business. Pomelli uses AI to help businesses create consistent, branded content that maintains their unique voice and visual identity.",
+    "logo": "https://cdn.brandfetch.io/id6O2oGzv-/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1731911483528",
+    "screenshot": null,
+    "website": "https://labs.google.com/pomelli/about/",
+    "category": "create",
+    "subcategory": "copywriting-seo",
+    "useCases": [
+      "copywriting",
+      "social-content"
+    ],
+    "pricing": "free",
+    "companyType": "established",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "lindy",
+    "slug": "lindy",
+    "name": "Lindy",
+    "tagline": "Meet your first AI employee",
+    "description": "The simplest way for businesses to create, manage, and share agents. Now with just a prompt. Lindy enables teams to build custom AI agents that automate workflows across multiple business functions without coding.",
+    "logo": "https://cdn.brandfetch.io/idVWnbyH38/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1761157018705",
+    "screenshot": null,
+    "website": "https://www.lindy.ai/",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation",
+      "campaign-automation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/lindyai",
+      "twitter": "https://x.com/getlindy"
+    }
+  },
+  {
+    "id": "ava-artisan",
+    "slug": "ava-artisan",
+    "name": "Ava by Artisan",
+    "tagline": "Meet Ava, the Top-Rated AI SDR On the Market",
+    "description": "AI sales agent who automates the entire outbound demand generation process. Operates on the Artisan platform with email deliverability, data mining, and multi-channel automation to help sales teams reach prospects at scale.",
+    "logo": "https://cdn.brandfetch.io/idGIe-mhxY/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1741333552097",
+    "screenshot": null,
+    "website": "https://www.artisan.co/ai-sales-agent",
+    "category": "activate",
+    "subcategory": "email-outreach",
+    "useCases": [
+      "sales-automation",
+      "outreach",
+      "email-marketing"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/artisan-ai/",
+      "twitter": "https://twitter.com/artisan_ai"
+    }
+  },
+  {
+    "id": "n8n",
+    "slug": "n8n",
+    "name": "n8n",
+    "tagline": "Go from prompt to possibility with AI Workflow Builder",
+    "description": "Extendable workflow automation tool which enables you to connect anything to everything via its open, fair-code model. Now with AI Workflow Builder capabilities that allow teams to build complex automations from simple prompts.",
+    "logo": "https://cdn.brandfetch.io/idO6_6uqJ9/w/600/h/600/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1763457410569",
+    "screenshot": null,
+    "website": "https://n8n.io/",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "workflow-automation",
+      "campaign-automation",
+      "ai-agents"
+    ],
+    "pricing": "freemium",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/n8n-io/",
+      "twitter": "https://x.com/n8n_io"
+    }
+  },
+  {
+    "id": "zapier-agents",
+    "slug": "zapier-agents",
+    "name": "Zapier Agents",
+    "tagline": "Superhuman teammates in minutes",
+    "description": "Empower your team with AI agents equipped with company knowledge to automate work across 8,000+ apps on command. Zapier Agents brings intelligent automation to any workflow with pre-built integrations and custom AI capabilities.",
+    "logo": "https://cdn.brandfetch.io/idNMs_nMA0/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1667563370395",
+    "screenshot": null,
+    "website": "https://zapier.com/agents",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation",
+      "campaign-automation"
+    ],
+    "pricing": "freemium",
+    "companyType": "established",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/zapier/",
+      "twitter": "https://twitter.com/zapier"
+    }
+  },
+  {
+    "id": "agent-ai-hubspot",
+    "slug": "agent-ai-hubspot",
+    "name": "Agent AI by HubSpot",
+    "tagline": "Professional Network for AI Agents",
+    "description": "The #1 professional network where professionals build, find, and use AI agents that get real work done. Agent AI connects business users with purpose-built AI agents for various workflows and use cases.",
+    "logo": "https://cdn.brandfetch.io/idc2-z6XNk/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1760882859928",
+    "screenshot": null,
+    "website": "https://agent.ai/",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation"
+    ],
+    "pricing": "free",
+    "companyType": "established",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/agentai/",
+      "twitter": "https://twitter.com/agentai"
+    }
+  },
+  {
+    "id": "figma",
+    "slug": "figma",
+    "name": "Figma",
+    "tagline": "Make anything possible, all in Figma",
+    "description": "Figma is a collaborative interface design tool that allows teams to brainstorm, design, and build products together. It provides a platform for creating interactive prototypes, design systems, and sharing them across organizations, enabling seamless collaboration between designers and developers.",
+    "logo": "https://www.figma.com/assets/web/af5075f51071c6f5877d.svg",
+    "screenshot": null,
+    "website": "https://www.figma.com/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "landing-pages",
+      "web-development"
+    ],
+    "pricing": "freemium",
+    "companyType": "established",
+    "founded": 2012,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/figma",
+      "twitter": "https://x.com/figma"
+    }
+  },
+  {
+    "id": "canva",
+    "slug": "canva",
+    "name": "Canva",
+    "tagline": "What will you design today?",
+    "description": "Canva is a visual design platform that empowers individuals and businesses to create professional-quality graphics, presentations, videos, and marketing materials through an intuitive interface. It combines thousands of customizable templates, powerful AI-driven design tools, and collaborative features to enable teams to create compelling visual content faster and more efficiently. By democratizing design capabilities, Canva helps businesses elevate their brand presence and streamline their creative workflows without requiring professional design expertise.",
+    "logo": "https://static.canva.com/web/images/856bac30504ecac8dbd38dbee61de1f1.svg",
+    "screenshot": null,
+    "website": "https://canva.com/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "social-content",
+      "image-generation"
+    ],
+    "pricing": "freemium",
+    "companyType": "established",
+    "founded": 2013,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/canva",
+      "twitter": "https://x.com/canva"
     }
   }
 ]
