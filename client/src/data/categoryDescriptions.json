@@ -22,5 +22,11 @@
     "description": "Track, analyze, and optimize with AI-powered measurement tools for attribution, analytics, and AI visibility. These tools help marketers understand performance and make data-driven improvements.",
     "longDescription": "The Measure category provides AI tools for understanding marketing performance. Attribution platforms accurately assign credit across customer touchpoints. Analytics tools surface actionable insights and predict trends. AI Visibility tools monitor how your brand appears in AI search results and recommendations.",
     "keywords": ["marketing attribution", "AI analytics", "performance measurement", "AI visibility", "marketing ROI", "brand monitoring"]
+  },
+  "general": {
+    "title": "General - GenAI Marketing Tools",
+    "description": "Versatile AI tools that work across categories and subcategories for specific workflows and broader business applications beyond traditional marketing.",
+    "longDescription": "The General category features GenAI tools that have functionalities across different marketing disciplines. These multi-purpose platforms can be applied across Plan, Create, Activate, and Measure workflows, supporting specific use cases and broader business applications. From general-purpose AI assistants to cross-functional automation tools, these solutions provide flexibility for diverse marketing and business needs.",
+    "keywords": ["general AI tools", "cross-functional AI", "versatile marketing tools", "multi-purpose AI", "AI workflow automation", "general business AI"]
   }
 }

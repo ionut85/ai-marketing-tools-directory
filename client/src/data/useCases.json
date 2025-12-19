@@ -20,5 +20,10 @@
   { "id": "attribution", "name": "Attribution" },
   { "id": "reporting", "name": "Reporting" },
   { "id": "ai-visibility", "name": "AI Visibility" },
-  { "id": "brand-monitoring", "name": "Brand Monitoring" }
+  { "id": "brand-monitoring", "name": "Brand Monitoring" },
+  { "id": "workflow-automation", "name": "Workflow Automation" },
+  { "id": "ai-agents", "name": "AI Agents" },
+  { "id": "web-development", "name": "Web Development" },
+  { "id": "sales-automation", "name": "Sales Automation" },
+  { "id": "seo", "name": "SEO" }
 ]
