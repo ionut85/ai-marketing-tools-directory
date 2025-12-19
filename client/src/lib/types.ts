@@ -10,12 +10,13 @@ export interface Tool {
   category: string;
   subcategory: string;
   useCases: string[];
-  pricing: "free" | "subscription" | "usage-based" | "performance";
+  pricing: "free" | "open-source" | "subscription" | "usage-based" | "performance" | "unknown";
   companyType: "indie" | "startup" | "private" | "public" | "oss";
   founded: number;
   social: {
     linkedin?: string;
     twitter?: string;
+    github?: string;
   };
 }
 

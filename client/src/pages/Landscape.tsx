@@ -32,10 +32,10 @@ export default function Landscape() {
         <div className="mx-auto max-w-7xl px-4 py-12 md:px-6">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl" data-testid="text-landscape-title">
-              AI x Marketing Landscape
+              GenAI x Marketing Landscape
             </h1>
             <p className="mt-2 text-muted-foreground">
-              Explore the ecosystem of AI-powered marketing tools by category
+              Explore the ecosystem of GenAI-powered marketing tools by category
             </p>
           </div>
 

@@ -102,7 +102,7 @@
     "description": "AI-driven marketing platform focused on automating media planning and optimization by using data-driven insights and predictive models for performance marketing teams (archived product).",
     "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
-    "website": "https://cldr.ai/",
+    "website": "https://web.archive.org/web/20240418194525/https://cldr.ai/",
     "category": "plan",
     "subcategory": "ai-assistants",
     "useCases": [
@@ -956,7 +956,7 @@
       "attribution"
     ],
     "pricing": "free",
-    "companyType": "public",
+    "companyType": "oss",
     "founded": 2024,
     "social": {
       "linkedin": null,
@@ -1372,7 +1372,7 @@
       "reporting"
     ],
     "pricing": "free",
-    "companyType": "startup",
+    "companyType": "oss",
     "founded": 2024,
     "social": {
       "linkedin": "https://www.linkedin.com/company/feedmob/",
@@ -1613,22 +1613,22 @@
   {
     "id": "kai-kayzen",
     "slug": "kai-kayzen",
-    "name": "kAI by Kayzen",
-    "tagline": "Your GenAI Assistant for In-App Media Planning",
-    "description": "Say hello to kAI: Your 24/7 Programmatic GenAI Assistant. What if instead of waiting for the next report, you could just ask? kAI transforms how you explore programmatic in-app supply. No more static snapshots. No more waiting. Just real-time answers to the questions that matter most to your campaigns. Think of it as having a data scientist who never sleeps, with instant access to 280,000+ apps across the ecosystem, 1.9B+ unique users worth of behavioral data, and 180+ countries of market intelligence.",
-    "logo": "https://kayzen.io/wp-content/uploads/2025/05/cropped-Kayzen-logo-1200-by-1200-32x32.png",
+    "name": "kAI Explorer by Kayzen",
+    "tagline": "Explore in-app inventory. Uncover opportunities.",
+    "description": "kAI Explorer is Kayzen's AI assistant for instant mobile in-app inventory discovery. Instead of waiting for reports or digging through dashboards, you can ask simple questions and get instant visibility into inventory availability, pricing signals, ad formats, and reach across markets. kAI Explorer removes friction from early planning and discovery. It helps teams validate assumptions, compare opportunities, and understand supply dynamics before committing spend, all through natural-language prompts. Powered by Kayzen's in-app inventory data across 280k+ apps, 180+ countries, and billions of daily ad requests, kAI Explorer turns inventory discovery into clear, actionable insights in seconds.",
+    "logo": "https://kayzen.io/wp-content/uploads/2025/05/cropped-Kayzen-logo-1200-by-1200.png",
     "screenshot": null,
-    "website": "https://kayzen.io/blog/introducing-kai",
+    "website": "https://kai.kayzen.io/",
     "category": "plan",
     "subcategory": "audience-intelligence",
     "useCases": [
       "audience-discovery",
       "research",
-      "reporting"
+      "competitive-analysis"
     ],
-    "pricing": "subscription",
+    "pricing": "free",
     "companyType": "private",
-    "founded": 2018,
+    "founded": 2019,
     "social": {
       "linkedin": "https://www.linkedin.com/company/kayzen/",
       "twitter": null
@@ -1639,7 +1639,7 @@
     "slug": "hera",
     "name": "Hera",
     "tagline": "Your AI Motion Designer",
-    "description": "Hera is the first AI motion designer that creates professional animations in seconds. Unlike video-gen tools, Hera generates code-based animations where every parameter can be fine-tuned. Since launching 2 weeks ago, Hera users have created 200K+ animations.",
+    "description": "Hera is the first AI motion designer that creates professional animations in seconds. Unlike video-gen tools, Hera generates code-based animations where every parameter can be fine-tuned. Since launching 2 weeks ago, Hera users have created 200K+ animations. 🎄🐣🎅",
     "logo": "https://hera.video/favicon.ico",
     "screenshot": null,
     "website": "https://hera.video",
@@ -1747,6 +1747,372 @@
     "social": {
       "linkedin": "https://www.linkedin.com/company/sambatv/",
       "twitter": null
+    }
+  },
+  {
+    "id": "indiegrow",
+    "slug": "indiegrow",
+    "name": "IndieGrow",
+    "tagline": "Grow Your App's User Base with IndieGrow — No Budget Required!",
+    "description": "IndieGrow helps indie developers boost their app's user base without requiring a large budget. It offers automated competitor analysis, AI-driven App Store Optimization (ASO) suggestions, and tools to identify and engage with relevant online community conversations.",
+    "logo": "https://web.archive.org/web/20250219042624im_/https://indiegrow.dev/images/logo-2x.png",
+    "screenshot": null,
+    "website": "https://web.archive.org/web/20250219042624/https://indiegrow.dev/",
+    "category": "plan",
+    "subcategory": "competitive-analysis",
+    "useCases": [
+      "competitive-analysis",
+      "research"
+    ],
+    "pricing": "free",
+    "companyType": "indie",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "arcads-ai",
+    "slug": "arcads-ai",
+    "name": "Arcads.ai",
+    "tagline": "Create winning ads with AI",
+    "description": "Arcads.ai is an AI marketing tool that enables users to create video ads using AI actors and avatars, offering a library of over 1,000 AI actors or custom avatar creation. The platform includes AI video editing, emotion control, and localization in 30+ languages.",
+    "logo": "https://cdn.brandfetch.io/idOYWwLzFh/w/512/h/512/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1710405170790",
+    "screenshot": null,
+    "website": "https://arcads.ai",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "video-generation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/arcads-ai",
+      "twitter": "https://twitter.com/arcads_ai"
+    }
+  },
+  {
+    "id": "poolday-ai",
+    "slug": "poolday-ai",
+    "name": "Poolday AI",
+    "tagline": "The world's most powerful video editing agents.",
+    "description": "Poolday AI offers the world's most powerful video editing agents, capable of handling single videos or hundreds in parallel. They automate cuts, captions, B-roll, translations, variations, stitching, and formatting, allowing users to delegate video editing tasks end-to-end.",
+    "logo": "https://cdn.brandfetch.io/idht5bpKlr/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1758046424138",
+    "screenshot": null,
+    "website": "https://poolday.ai",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "video-generation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/poolday-ai",
+      "twitter": "https://x.com/pooldayai"
+    }
+  },
+  {
+    "id": "morphiq",
+    "slug": "morphiq",
+    "name": "Morphiq",
+    "tagline": "Meet your performance marketer agent.",
+    "description": "Performance marketer agent generating insights, reports, and recommendations from ad account data",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
+    "screenshot": null,
+    "website": "https://morphiq.xyz/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "campaign-automation"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "vibe",
+    "slug": "vibe",
+    "name": "Vibe",
+    "tagline": "Grow your brand with TV Ads",
+    "description": "AI-powered streaming TV advertising platform designed for brands of all sizes. It simplifies the creation and deployment of TV ads, enabling marketers to generate business outcomes like leads, sales, and brand awareness through precise audience targeting and AI optimization.",
+    "logo": "https://www.vibe.co/favicon.ico",
+    "screenshot": null,
+    "website": "https://vibe.co",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "usage-based",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/vibedotco",
+      "twitter": "https://twitter.com/vibedotco"
+    }
+  },
+  {
+    "id": "streamr",
+    "slug": "streamr",
+    "name": "Streamr",
+    "tagline": "Unlock the Power of CTV Advertising",
+    "description": "Bring your business to the big screen with powerful connected TV campaigns. Streamr.ai empowers SMBs to access the same advanced targeting, analytics, and reach as big brands — at a fraction of the cost.",
+    "logo": "https://assets.streamr.lol/app/magnite-logo-inverted.png",
+    "screenshot": null,
+    "website": "https://streamr.ai",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "campaign-automation"
+    ],
+    "pricing": "usage-based",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/streamrai",
+      "twitter": "https://x.com/streamrdotai"
+    }
+  },
+  {
+    "id": "olyzon",
+    "slug": "olyzon",
+    "name": "Olyzon",
+    "tagline": "Thrive With All Eyes On TV",
+    "description": "Transforming CTV into the most powerful advertising channel, Olyzon empowers leading global brands with impactful agentic media solutions that deliver automation, transparency, and scalability.",
+    "logo": "https://olyzon.tv/favicon.ico",
+    "screenshot": null,
+    "website": "https://olyzon.tv/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "campaign-automation"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/olyzon/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "swivel-ad-server",
+    "slug": "swivel-ad-server",
+    "name": "Swivel AI",
+    "tagline": "Operate agentically.",
+    "description": "Swivel is an AI-powered platform designed to turn operator intent into continuous, intelligent action for ad operations. It orchestrates every phase of monetization, from creation to optimization, with precision and control, enhancing human capacity and efficiency in complex advertising environments.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
+    "screenshot": null,
+    "website": "https://swivel.ai/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/swivel-ops/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "growaso",
+    "slug": "growaso",
+    "name": "GrowASO",
+    "tagline": "AI-powered ASO, Market Insights and Research Tools To Grow App Downloads",
+    "description": "AI-driven App Store Optimization (ASO) platform for mobile app entrepreneurs, developers, marketers & publishers. It offers tools for keyword research, competitor analysis, app intelligence, and automated listing creation to help grow app downloads.",
+    "logo": "https://www.growaso.com/assets/images/growASOicon.png",
+    "screenshot": null,
+    "website": "https://www.growaso.com/",
+    "category": "plan",
+    "subcategory": "competitive-analysis",
+    "useCases": [
+      "keyword-research",
+      "competitive-analysis",
+      "research"
+    ],
+    "pricing": "subscription",
+    "companyType": "indie",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": "https://x.com/GrowASO"
+    }
+  },
+  {
+    "id": "alison-ai",
+    "slug": "alison-ai",
+    "name": "Alison",
+    "tagline": "The Intelligence to Guide Your Creative",
+    "description": "Alison provides AI-powered predictive insights, creative scores, and competitor benchmarks to help generate high-impact creatives and optimize campaigns faster. It shifts the advantage from creative ability to the intelligence guiding creation.",
+    "logo": "https://alison.ai/wp-content/uploads/cropped-icon-logo-32x32.png",
+    "screenshot": null,
+    "website": "https://alison.ai/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "competitive-analysis"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/alison-ai/",
+      "twitter": "https://x.com/AlisonAi_"
+    }
+  },
+  {
+    "id": "adcp",
+    "slug": "adcp",
+    "name": "AdCP (Ad Context Protocol)",
+    "tagline": "AdCP: The Open Standard for Agentic Advertising",
+    "description": "AdCP is an open standard protocol for agentic advertising that unifies advertising workflows across all platforms. It simplifies integration and enables AI-powered automation for media buying, creative generation, and data signals.",
+    "logo": "https://adcontextprotocol.org/AAo.svg",
+    "screenshot": null,
+    "website": "https://adcontextprotocol.org/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation"
+    ],
+    "pricing": "open-source",
+    "companyType": "oss",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/adcontextprotocol/adcp"
+    }
+  },
+  {
+    "id": "agentic-commerce-protocol",
+    "slug": "agentic-commerce-protocol",
+    "name": "Agentic Commerce Protocol",
+    "tagline": "An open standard for programmatic commerce flows between buyers, AI agents, and businesses.",
+    "description": "The Agentic Commerce Protocol (ACP) is an open standard for programmatic commerce flows between buyers, AI agents, and businesses. It allows businesses to maintain customer relationships and control product sales while enabling AI agents to facilitate transactions securely. ACP supports various commerce types, including physical and digital goods, subscriptions, and asynchronous purchases.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://www.agenticcommerce.dev/",
+    "category": "activate",
+    "subcategory": "shopping-assistants",
+    "useCases": [
+      "personalization"
+    ],
+    "pricing": "open-source",
+    "companyType": "oss",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol"
+    }
+  },
+  {
+    "id": "maxma",
+    "slug": "maxma",
+    "name": "Maxma",
+    "tagline": "AI-Native Digital Marketing Intelligence",
+    "description": "Maxma is an AI-native digital marketing intelligence platform providing an enterprise-grade marketing data stack. It enables businesses to make confident decisions and achieve scalable growth by turning data into actionable insights, mimicking the capabilities of top performers.",
+    "logo": "https://maxma.ai/company/logo_color.svg",
+    "screenshot": null,
+    "website": "https://maxma.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "usage-based",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/maxmaai",
+      "twitter": null
+    }
+  },
+  {
+    "id": "upside",
+    "slug": "upside",
+    "name": "Upside",
+    "tagline": "Every team has a story. None of them match.",
+    "description": "Upside is a GTM intelligence layer that unifies and structures go-to-market data using AI. It reconstructs customer journeys, identifies deal-influencing moments, and reveals patterns of success across the entire sales funnel.",
+    "logo": "https://cdn.prod.website-files.com/684721fe6fefeb7e9320b880/68475f24599b93b781ab09eb_upside-logo.svg",
+    "screenshot": null,
+    "website": "https://www.upside.tech/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/upsidelabs/",
+      "twitter": null
+    }
+  },
+  {
+    "id": "peec-ai",
+    "slug": "peec-ai",
+    "name": "Peec AI",
+    "tagline": "AI search analytics for marketing teams",
+    "description": "Peec AI is an AI search analytics platform designed to help marketing teams track and improve brand visibility across AI platforms like ChatGPT and Perplexity. It provides comprehensive metrics including Visibility, Position, and Sentiment to enable data-driven decisions for optimizing AI search performance. Trusted by 1500+ marketing teams, Peec AI delivers actionable insights through an intuitive interface that teams actually enjoy using.",
+    "logo": "https://framerusercontent.com/images/rg1SVt6Twqp3a3OEgyHRDcFA.png?width=188&height=30",
+    "screenshot": null,
+    "website": "https://peec.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "seo"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/peec-ai/",
+      "twitter": "https://x.com/peec_ai"
+    }
+  },
+  {
+    "id": "promptwatch",
+    "slug": "promptwatch",
+    "name": "Promptwatch",
+    "tagline": "Make AI Search your next revenue channel",
+    "description": "Promptwatch is an AI search visibility platform that helps businesses track and optimize their presence across AI search engines like ChatGPT, Gemini, Claude, and Perplexity. It provides real-time citation tracking, competitive intelligence, and content gap analysis to improve brand mentions in AI-generated responses. The platform enables companies to drive qualified traffic from AI search engines and maximize visibility in the emerging AI-powered search landscape.",
+    "logo": "https://www.google.com/s2/favicons?domain=promptwatch.com&sz=256",
+    "screenshot": null,
+    "website": "https://promptwatch.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "seo"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/promptwatch",
+      "twitter": "https://x.com/promptwatch"
     }
   }
 ]
