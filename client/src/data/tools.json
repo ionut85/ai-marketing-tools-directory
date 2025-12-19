@@ -956,7 +956,7 @@
             "attribution"
         ],
         "pricing": "free",
-        "companyType": "open-source",
+        "companyType": "oss",
         "founded": 2024,
         "social": {
             "linkedin": null,
@@ -1350,7 +1350,7 @@
             "reporting"
         ],
         "pricing": "free",
-        "companyType": "open-source",
+        "companyType": "oss",
         "founded": 2024,
         "social": {
             "linkedin": "https://www.linkedin.com/company/feedmob/",
