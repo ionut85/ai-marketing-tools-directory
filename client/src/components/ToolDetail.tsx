@@ -6,7 +6,8 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { LogoFallback } from "./LogoFallback";
 import { ToolCard } from "./ToolCard";
-import { SiLinkedin, SiX } from "react-icons/si";
+import { SiLinkedin, SiX, SiGithub } from "react-icons/si";
+import { useTheme } from "./ThemeProvider";
 import type { Tool, Category } from "@/lib/types";
 
 interface ToolDetailProps {
@@ -22,6 +23,7 @@ export function ToolDetail({
   relatedTools,
   onRelatedToolClick,
 }: ToolDetailProps) {
+  const { theme } = useTheme();
   const category = categories.find((c) => c.id === tool.category);
   const subcategory = category?.subcategories.find((s) => s.id === tool.subcategory);
 
@@ -31,6 +33,11 @@ export function ToolDetail({
     paid: "Paid",
     enterprise: "Enterprise",
   };
+
+  // Filter out Christmas emojis if not in Christmas theme
+  const displayDescription = theme === "christmas"
+    ? tool.description
+    : tool.description.replace(/🎄|🐣|🎅/g, '').trim();
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 md:px-6">
@@ -70,7 +77,7 @@ export function ToolDetail({
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <div className="prose prose-neutral dark:prose-invert max-w-none">
-            <p data-testid="text-tool-description">{tool.description}</p>
+            <p data-testid="text-tool-description">{displayDescription}</p>
           </div>
         </div>
 
@@ -103,7 +110,7 @@ export function ToolDetail({
             <Badge>{pricingLabels[tool.pricing] || tool.pricing}</Badge>
           </Card>
 
-          {(tool.social.linkedin || tool.social.twitter) && (
+          {(tool.social.linkedin || tool.social.twitter || tool.social.github) && (
             <Card className="p-4">
               <h3 className="font-medium mb-3">Social</h3>
               <div className="flex gap-2">
@@ -128,6 +135,18 @@ export function ToolDetail({
                       data-testid="link-twitter"
                     >
                       <SiX className="h-4 w-4" />
+                    </a>
+                  </Button>
+                )}
+                {tool.social.github && (
+                  <Button variant="outline" size="icon" asChild>
+                    <a
+                      href={tool.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="link-github"
+                    >
+                      <SiGithub className="h-4 w-4" />
                     </a>
                   </Button>
                 )}

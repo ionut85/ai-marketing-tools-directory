@@ -67,6 +67,48 @@ export function Footer() {
           </div>
 
           <div className="space-y-3">
+            <p className="text-sm font-medium">Marketing News</p>
+            <nav className="flex flex-col gap-2">
+              <a
+                href="https://maddb.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-mad"
+              >
+                M.A.D
+              </a>
+              <a
+                href="https://tipsheet.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-tipsheet"
+              >
+                tipsheet
+              </a>
+              <a
+                href="https://theturingmarketer.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-turing-marketer"
+              >
+                Turing Marketer
+              </a>
+              <a
+                href="https://mobiledevmemo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-mobile-dev-memo"
+              >
+                Mobile Dev Memo
+              </a>
+            </nav>
+          </div>
+
+          <div className="space-y-3">
             <p className="text-sm font-medium">Categories</p>
             <nav className="flex flex-col gap-2">
               {categories.map((category) => (

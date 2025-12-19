@@ -21,7 +21,7 @@ interface CategoryDescription {
   keywords: string[];
 }
 
-const TOOLS_PER_PAGE = 12;
+const TOOLS_PER_PAGE = 15;
 
 export default function CategoryPage() {
   const params = useParams<{ slug: string }>();
