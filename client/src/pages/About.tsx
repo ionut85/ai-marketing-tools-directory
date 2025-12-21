@@ -43,10 +43,10 @@ export default function About() {
                 Know of a great AI marketing tool that should be in our directory?
                 We'd love to hear from you. Send us an email at{" "}
                 <a
-                  href="mailto:submit@aimarketing.tools?subject=Tool%20Submission"
+                  href="mailto:contact@hypd.ai?subject=Tool%20Submission%20%F0%9F%8E%84%F0%9F%90%A3%F0%9F%8E%85"
                   className="text-foreground underline underline-offset-4"
                 >
-                  submit@aimarketing.tools
+                  contact@hypd.ai
                 </a>
               </p>
             </Card>
