@@ -15,7 +15,7 @@ export function Footer() {
               GenAI Marketing Landscape
             </p>
             <a
-              href="mailto:submit@aimarketing.tools?subject=Tool%20Submission"
+              href="mailto:contact@hypd.ai?subject=Tool%20Submission%20%F0%9F%8E%84%F0%9F%90%A3%F0%9F%8E%85"
               className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               data-testid="link-submit-tool"
             >
