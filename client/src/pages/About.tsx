@@ -2,13 +2,14 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { SEO } from "@/components/SEO";
+import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
         title="About"
-        description="Learn about the GenAI Marketing Landscape - your comprehensive resource for discovering the best AI-powered marketing solutions."
+        description="Learn about the GenAI Marketing Landscape - a curated directory of GenAI-powered tools for marketing."
         keywords={["about AI marketing", "marketing tools directory", "AI advertising tools"]}
         canonicalUrl="/about"
       />
@@ -22,28 +23,52 @@ export default function About() {
 
           <div className="mt-8 space-y-6 text-muted-foreground">
             <p>
-              The GenAI Marketing Landscape is a comprehensive resource for discovering
-              the best AI-powered marketing solutions. Our goal is to help marketers,
-              agencies, and businesses find the right tools to enhance their marketing efforts.
+              The GenAI Marketing Landscape is a curated directory of GenAI-powered tools for marketing.
+              The goal is to help marketers, agencies, and businesses discover the right tools to plan,
+              create, activate, and measure marketing—faster and with less manual work.
             </p>
 
+            <p>
+              We started by reviewing tools across startups, indies, scale-ups, and publicly listed companies,
+              and organizing them into a practical taxonomy. The current version is an MVP and will keep evolving.
+            </p>
+
+            <Separator className="my-8" />
+
             <Card className="p-6">
-              <h2 className="text-lg font-semibold text-foreground mb-3">What We Cover</h2>
+              <h2 className="text-lg font-semibold text-foreground mb-3">What you'll find</h2>
               <ul className="space-y-2">
-                <li>Plan - Market research, audience intelligence, competitive analysis, AI assistants</li>
-                <li>Create - Ad creative, copywriting & SEO, landing pages, social & influencers</li>
-                <li>Activate - Campaign management, email & outreach, AI ad platforms, shopping assistants</li>
-                <li>Measure - Attribution, analytics, AI visibility</li>
+                <li><strong>Directory view:</strong> searchable tool cards with categories and use-cases</li>
+                <li><strong>Landscape view:</strong> a category map to understand where tools cluster and how the ecosystem is shifting</li>
+                <li><strong>Coverage:</strong> primarily the application layer (marketing workflows and tooling), not infrastructure/LLM stack</li>
               </ul>
             </Card>
 
             <Card className="p-6">
-              <h2 className="text-lg font-semibold text-foreground mb-3">Submit a Tool</h2>
+              <h2 className="text-lg font-semibold text-foreground mb-3">What we cover</h2>
+              <ul className="space-y-2">
+                <li><strong>Plan:</strong> market research, audience intelligence, competitive analysis, AI assistants</li>
+                <li><strong>Create:</strong> ad creative, copywriting & SEO, landing pages, social & influencers</li>
+                <li><strong>Activate:</strong> campaign management, email & outreach, AI ad platforms, shopping assistants</li>
+                <li><strong>Measure:</strong> attribution, analytics, GenAI Visibility (GEO)</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h2 className="text-lg font-semibold text-foreground mb-3">What's next</h2>
+              <ul className="space-y-2">
+                <li>make the dataset available via MCP and/or a ChatGPT app</li>
+                <li>add popularity/votes and simple comparisons</li>
+                <li>make tool discovery/additions more automated (agentic browsing + structured outputs)</li>
+              </ul>
+            </Card>
+
+            <Card className="p-6">
+              <h2 className="text-lg font-semibold text-foreground mb-3">Submit a tool</h2>
               <p>
-                Know of a great AI marketing tool that should be in our directory?
-                We'd love to hear from you. Send us an email at{" "}
+                Know a tool that should be included? Email{" "}
                 <a
-                  href="mailto:contact@hypd.ai?subject=Tool%20Submission%20%F0%9F%8E%84%F0%9F%90%A3%F0%9F%8E%85"
+                  href="mailto:contact@hypd.ai"
                   className="text-foreground underline underline-offset-4"
                 >
                   contact@hypd.ai

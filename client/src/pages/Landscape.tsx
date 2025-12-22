@@ -21,7 +21,7 @@ export default function Landscape() {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title="AI Marketing Landscape"
+        title="GenAI Marketing Overview"
         description="Explore the complete AI x Marketing ecosystem organized by category. Visual overview of creative, analytics, media, and data tools."
         keywords={["AI marketing landscape", "marketing technology map", "martech ecosystem", "AI advertising landscape"]}
         canonicalUrl="/landscape"

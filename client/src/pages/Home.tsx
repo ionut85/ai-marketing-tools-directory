@@ -116,7 +116,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title="Discover the Best GenAI Marketing Tools"
+        title="Discover Practical GenAI Marketing Tools"
         description="Explore the GenAI Marketing Landscape - discover AI-powered tools to plan, create, activate, and measure your marketing campaigns."
         keywords={["AI marketing tools", "marketing automation", "AI advertising", "marketing analytics", "creative AI"]}
         canonicalUrl="/"
