@@ -199,7 +199,7 @@
         "category": "create",
         "subcategory": "copywriting-seo",
         "useCases": [
-            "copywriting",
+            "seo-content",
             "campaign-automation",
             "research"
         ],
@@ -271,7 +271,7 @@
         "useCases": [
             "campaign-automation",
             "ad-creative",
-            "copywriting",
+            "seo-content",
             "landing-pages"
         ],
         "pricing": "subscription",
@@ -343,7 +343,7 @@
         "useCases": [
             "ad-creative",
             "personalization",
-            "copywriting"
+            "seo-content"
         ],
         "pricing": "enterprise",
         "companyType": "private",
@@ -719,7 +719,6 @@
         "subcategory": "ai-visibility",
         "useCases": [
             "ai-visibility",
-            "brand-monitoring",
             "seo-content"
         ],
         "pricing": "enterprise",
@@ -1045,6 +1044,7 @@
         "category": "activate",
         "subcategory": "shopping-assistants",
         "useCases": [
+            "agentic-commerce",
             "chatbots",
             "personalization"
         ],
@@ -1577,7 +1577,7 @@
         "subcategory": "copywriting-seo",
         "useCases": [
             "campaign-automation",
-            "copywriting",
+            "seo-content",
             "social-content"
         ],
         "pricing": "subscription",
@@ -1648,7 +1648,6 @@
         "subcategory": "analytics",
         "useCases": [
             "reporting",
-            "brand-monitoring",
             "ugc-creation"
         ],
         "pricing": "subscription",
@@ -1990,6 +1989,7 @@
     "category": "activate",
     "subcategory": "shopping-assistants",
     "useCases": [
+      "agentic-commerce",
       "personalization"
     ],
     "pricing": "free",
@@ -2053,14 +2053,15 @@
     "name": "Peec AI",
     "tagline": "AI search analytics for marketing teams",
     "description": "Peec AI is an AI search analytics platform designed to help marketing teams track and improve brand visibility across AI platforms like ChatGPT and Perplexity. It provides comprehensive metrics including Visibility, Position, and Sentiment to enable data-driven decisions for optimizing AI search performance. Trusted by 1500+ marketing teams, Peec AI delivers actionable insights through an intuitive interface that teams actually enjoy using.",
-    "logo": "https://framerusercontent.com/images/rg1SVt6Twqp3a3OEgyHRDcFA.png?width=188&height=30",
+    "logo": "https://img.logo.dev/peec.ai?token=live_6a1a28fd-6420-4492-aeb0-b297461d9de2&size=128&retina=false&format=png&theme=light",
     "screenshot": null,
     "website": "https://peec.ai/",
     "category": "measure",
-    "subcategory": "analytics",
+    "subcategory": "ai-visibility",
     "useCases": [
+      "ai-visibility",
       "reporting",
-      "seo"
+      "seo-content"
     ],
     "pricing": "subscription",
     "companyType": "startup",
@@ -2083,7 +2084,7 @@
     "subcategory": "analytics",
     "useCases": [
       "reporting",
-      "seo"
+      "seo-content"
     ],
     "pricing": "subscription",
     "companyType": "startup",
@@ -2105,7 +2106,6 @@
     "category": "create",
     "subcategory": "landing-pages",
     "useCases": [
-      "web-development",
       "landing-pages"
     ],
     "pricing": "subscription",
@@ -2128,7 +2128,7 @@
     "category": "create",
     "subcategory": "copywriting-seo",
     "useCases": [
-      "copywriting",
+      "seo-content",
       "social-content"
     ],
     "pricing": "free",
@@ -2271,8 +2271,7 @@
     "subcategory": "ad-creative",
     "useCases": [
       "ad-creative",
-      "landing-pages",
-      "web-development"
+      "landing-pages"
     ],
     "pricing": "freemium",
     "companyType": "established",
@@ -2304,6 +2303,195 @@
     "social": {
       "linkedin": "https://www.linkedin.com/company/canva",
       "twitter": "https://x.com/canva"
+    }
+  },
+  {
+    "id": "criteo-mcp-server",
+    "slug": "criteo-mcp-server",
+    "name": "Criteo MCP Server",
+    "tagline": "For the love of commerce.",
+    "description": "Criteo MCP Server is a Model Context Protocol implementation that enables AI assistants and agents to interact with Criteo's advertising and commerce platform APIs. The server provides tools for managing advertising campaigns, accessing commerce data, and leveraging Criteo's commerce intelligence through standardized MCP protocols, making it easier to integrate Criteo's advertising capabilities into AI-powered workflows.",
+    "logo": "https://www.criteo.com/wp-content/themes/criteo2017/img/criteo-logo-orange.svg",
+    "screenshot": null,
+    "website": "https://www.criteo.com/",
+    "category": "activate",
+    "subcategory": "shopping-assistants",
+    "useCases": [
+      "agentic-commerce",
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/criteo",
+      "twitter": "https://twitter.com/criteo"
+    }
+  },
+  {
+    "id": "pubmatic-mcp",
+    "slug": "pubmatic-mcp",
+    "name": "PubMatic MCP (Model Context Protocol)",
+    "tagline": "PubMatic maximizes customer value by delivering digital advertising's supply chain of the future.",
+    "description": "PubMatic's MCP (Model Context Protocol) is an open draft specification designed to enable AI agent-to-agent communication in programmatic advertising. It allows AI agents to collaborate directly and autonomously, moving beyond traditional communication methods like email and static APIs to improve transaction efficiency and reduce friction in the digital advertising supply chain.",
+    "logo": "https://pubmatic.com/wp-content/themes/pubmatic/imgs/logo-black.svg",
+    "screenshot": null,
+    "website": "https://pubmatic.com/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "campaign-automation",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "public",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/PubMatic",
+      "twitter": "https://x.com/PubMatic"
+    }
+  },
+  {
+    "id": "cloudx",
+    "slug": "cloudx",
+    "name": "CloudX",
+    "tagline": "Ad Infrastructure for the Intelligence Era",
+    "description": "CloudX is an ad infrastructure platform designed for the intelligence era, serving as a supply-side platform for mobile and AI publishers. It aims to boost publisher revenue through AI-powered workflows and a liquid marketplace, offering transparent auctions and enhanced control over ad operations.",
+    "logo": "https://www.cloudx.io/cloudx-logo.svg",
+    "screenshot": null,
+    "website": "https://www.cloudx.io/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "ai-native-media",
+      "campaign-automation"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/cloudxinc/",
+      "twitter": "https://x.com/cloudx"
+    }
+  },
+  {
+    "id": "gojiberry-ai",
+    "slug": "gojiberry-ai",
+    "name": "Gojiberry AI Agent",
+    "tagline": "The new way to do outreach",
+    "description": "Gojiberry is an AI-powered outreach automation platform that helps businesses streamline their sales and marketing communications. The platform uses artificial intelligence to personalize and automate outreach campaigns, enabling teams to scale their prospecting efforts while maintaining authenticity and relevance in their messaging.",
+    "logo": "https://framerusercontent.com/images/YiudC3aNfp2EvSLur9HAMZdWk.png?scale-down-to=512&width=1568&height=479",
+    "screenshot": null,
+    "website": "https://gojiberry.ai/",
+    "category": "activate",
+    "subcategory": "email-outreach",
+    "useCases": [
+      "outreach",
+      "email-marketing",
+      "personalization",
+      "sales-automation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/gojiberryai",
+      "twitter": null
+    }
+  },
+  {
+    "id": "amp-free",
+    "slug": "amp-free",
+    "name": "Amp Free",
+    "tagline": "Engineered For The Frontier",
+    "description": "Amp Free is a new free mode of Amp that is free of charge and supported by advertisements. It combines system prompts, tools, and a selection of top open-source and frontier AI models with limited context windows, making agentic programming more accessible to everyone. The free mode meets stringent security standards and does not require users to share their data for training.",
+    "logo": "https://workos.imgix.net/app-branding/environment_01JNSEYKD59Q5R7RF6C9QX9N7V/01JQ9JNKEBSBQPRW7QKVN3VX5F",
+    "screenshot": null,
+    "website": "https://ampcode.com/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "ai-native-media",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": null,
+      "twitter": "https://x.com/ampcode"
+    }
+  },
+  {
+    "id": "thrad",
+    "slug": "thrad",
+    "name": "Thrad",
+    "tagline": "Building bullet proof Marketing For the AI Era",
+    "description": "Thrad is a performance marketing platform that integrates ads into live AI conversations. It enables chatbots to act as brand ambassadors and serves ads contextually within user interactions, aiming to outperform traditional ad formats with highly engaging ad experiences and improved click-through rates.",
+    "logo": "https://framerusercontent.com/images/gPH6ltgXqaTwN2paE8Z0YjlzRQY.jpeg?width=200&height=200",
+    "screenshot": null,
+    "website": "https://www.thrad.ai/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "ai-native-media",
+      "chatbots",
+      "personalization"
+    ],
+    "pricing": "performance",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/thrads/",
+      "twitter": "https://x.com/thrad_ai?s=11"
+    }
+  },
+  {
+    "id": "revenuecat-mcp-server",
+    "slug": "revenuecat-mcp-server",
+    "name": "RevenueCat MCP Server",
+    "tagline": "Build and grow your app business",
+    "description": "The RevenueCat MCP Server is a Model Context Protocol implementation that enables developers to interact with RevenueCat's subscription management platform using natural language. It allows AI assistants to query subscription data, retrieve customer information, and analyze app revenue metrics through conversational commands.",
+    "logo": "https://www.revenuecat.com/static/logo-10968976818e28fd8eee91f66d535d9a.svg",
+    "screenshot": null,
+    "website": "https://revenuecat.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "attribution"
+    ],
+    "pricing": "subscription",
+    "companyType": "private",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/revenuecat",
+      "twitter": "https://twitter.com/revenuecat"
+    }
+  },
+  {
+    "id": "newton-research",
+    "slug": "newton-research",
+    "name": "Marketing Analytics Agents / Newton",
+    "tagline": "Meet Newton, your team of marketing analytics agents",
+    "description": "Newton Research offers AI-powered marketing analytics agents that help businesses supercharge their analytics workflows and improve marketing outcomes. Companies can deploy Newton's pre-trained agents or build and train custom AI agents in days, not months.",
+    "logo": "https://cdn.prod.website-files.com/675abf0afaec64b833d93565/675ede0f321ce7c467a85554_Logo.svg",
+    "screenshot": null,
+    "website": "https://newtonresearch.ai/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "ai-agents",
+      "attribution"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/newton-research",
+      "twitter": "https://twitter.com/NewtonResearch"
     }
   }
 ]

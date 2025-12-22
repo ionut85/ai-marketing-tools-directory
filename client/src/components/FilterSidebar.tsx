@@ -154,7 +154,7 @@ export function FilterSidebar({
           />
         </CollapsibleTrigger>
         <CollapsibleContent className="space-y-2 pt-2 max-h-64 overflow-y-auto">
-          {useCases.slice(0, 15).map((useCase) => (
+          {useCases.map((useCase) => (
             <label
               key={useCase.id}
               className="flex cursor-pointer items-center gap-2"
