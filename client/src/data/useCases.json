@@ -1,10 +1,9 @@
 [
   { "id": "research", "name": "Research" },
   { "id": "keyword-research", "name": "Keyword Research" },
-  { "id": "audience-discovery", "name": "Audience Discovery" },
+  { "id": "audience-discovery", "name": "ICP & Segmentation" },
   { "id": "competitive-analysis", "name": "Competitive Analysis" },
-  { "id": "copywriting", "name": "Copywriting" },
-  { "id": "seo-content", "name": "SEO Content" },
+  { "id": "seo-content", "name": "SEO Content & Copywriting" },
   { "id": "ad-creative", "name": "Ad Creative" },
   { "id": "video-generation", "name": "Video Generation" },
   { "id": "image-generation", "name": "Image Generation" },
@@ -20,10 +19,9 @@
   { "id": "attribution", "name": "Attribution" },
   { "id": "reporting", "name": "Reporting" },
   { "id": "ai-visibility", "name": "GenAI Visibility (GEO)" },
-  { "id": "brand-monitoring", "name": "Brand Monitoring" },
+  { "id": "ai-native-media", "name": "AI-Native Media" },
   { "id": "workflow-automation", "name": "Workflow Automation" },
   { "id": "ai-agents", "name": "AI Agents" },
-  { "id": "web-development", "name": "Web Development" },
-  { "id": "sales-automation", "name": "Sales Automation" },
-  { "id": "seo", "name": "SEO" }
+  { "id": "agentic-commerce", "name": "Agentic Commerce" },
+  { "id": "sales-automation", "name": "Sales Automation" }
 ]
