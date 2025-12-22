@@ -2,31 +2,31 @@
   "plan": {
     "title": "Plan - GenAI Marketing Tools",
     "description": "Research, analyze, and strategize with AI-powered market research, audience intelligence, and competitive analysis tools. These solutions help marketers make data-driven decisions and develop winning strategies.",
-    "longDescription": "The Plan category encompasses AI tools that help marketers understand their market landscape before taking action. Market Research tools leverage AI to uncover trends and insights. Audience Intelligence platforms analyze customer behavior and preferences. Competitive Analysis tools track and analyze competitor strategies. AI Assistants provide on-demand strategic guidance and insights.",
+    "longDescription": "The Plan category includes AI tools that help marketers make better decisions before execution. Market Research tools surface trends and insights. Audience Intelligence platforms identify customer segments, behaviors, and intent signals. Competitive Analysis tools track competitors and shifts in positioning, spend, and messaging. AI Assistants act as on-demand analysts for planning, hypotheses, and next-best actions.",
     "keywords": ["market research AI", "audience intelligence", "competitive analysis", "AI marketing strategy", "marketing planning tools", "AI assistants"]
   },
   "create": {
     "title": "Create - GenAI Marketing Tools",
     "description": "Generate compelling content with AI-powered creative tools for ads, copy, landing pages, and social media. These tools help marketers produce high-quality content faster and at scale.",
-    "longDescription": "The Create category features AI tools that transform how marketing content is produced. Ad Creative tools generate high-performing ad variations. Copywriting & SEO platforms create optimized content for search and conversion. Landing Page builders use AI for rapid page creation. Social & Influencer tools help discover and create social content.",
+    "longDescription": "The Create category includes AI tools that speed up and standardize content production across channels. Ad Creative tools generate and iterate on ad variations. Copywriting & SEO platforms produce search- and conversion-optimized copy. Landing Page builders enable rapid page creation and testing. Social & Influencer tools support creator discovery, content ideation, and repurposing.",
     "keywords": ["AI ad creative", "AI copywriting", "SEO content AI", "landing page AI", "social content creation", "influencer marketing AI"]
   },
   "activate": {
     "title": "Activate - GenAI Marketing Tools",
     "description": "Launch and manage campaigns with AI-powered activation tools for campaign management, email, ad platforms, and personalized shopping experiences. These tools help marketers reach customers efficiently.",
-    "longDescription": "The Activate category includes AI tools that power marketing execution. Campaign Management platforms automate and optimize multi-channel campaigns. Email & Outreach tools personalize communication at scale. AI Ad Platforms leverage machine learning for smarter media buying. Shopping Assistants provide personalized product recommendations and conversational commerce.",
+    "longDescription": "The Activate category includes AI tools that power go-to-market execution and performance. Campaign Management platforms automate setup, monitoring, and optimization across channels. Email & Outreach tools personalize messaging and follow-ups at scale. AI Ad Platforms support smarter media buying through automated targeting, bidding, and budget pacing. Shopping Assistants enable conversational product discovery and recommendations, bridging marketing and commerce.",
     "keywords": ["campaign automation", "AI email marketing", "AI ad platforms", "shopping assistants", "marketing activation", "outreach automation"]
   },
   "measure": {
     "title": "Measure - GenAI Marketing Tools",
-    "description": "Track, analyze, and optimize with AI-powered measurement tools for attribution, analytics, and AI visibility. These tools help marketers understand performance and make data-driven improvements.",
-    "longDescription": "The Measure category provides AI tools for understanding marketing performance. Attribution platforms accurately assign credit across customer touchpoints. Analytics tools surface actionable insights and predict trends. AI Visibility tools monitor how your brand appears in AI search results and recommendations.",
-    "keywords": ["marketing attribution", "AI analytics", "performance measurement", "AI visibility", "marketing ROI", "brand monitoring"]
+    "description": "Track, analyze, and optimize with AI-powered measurement tools for attribution, analytics, and GenAI visibility. These tools help marketers understand performance and make data-driven improvements.",
+    "longDescription": "The Measure category includes AI tools for understanding and improving marketing performance. Attribution platforms assign credit across customer touchpoints. Analytics tools surface actionable insights and predict trends. GenAI Visibility (GEO) tools monitor how your brand appears in AI-powered search, answers, and recommendations.",
+    "keywords": ["marketing attribution", "AI analytics", "performance measurement", "GenAI visibility", "GEO", "marketing ROI", "brand monitoring"]
   },
   "general": {
     "title": "General - GenAI Marketing Tools",
     "description": "Versatile AI tools that work across categories and subcategories for specific workflows and broader business applications beyond traditional marketing.",
-    "longDescription": "The General category features GenAI tools that have functionalities across different marketing disciplines. These multi-purpose platforms can be applied across Plan, Create, Activate, and Measure workflows, supporting specific use cases and broader business applications. From general-purpose AI assistants to cross-functional automation tools, these solutions provide flexibility for diverse marketing and business needs.",
+    "longDescription": "The General category includes GenAI tools that cut across multiple marketing disciplines. These multi-purpose platforms support Plan, Create, Activate, and Measure workflows, spanning both specific use cases and broader business applications. From general-purpose AI assistants to cross-functional automation and workflow tools, these solutions provide flexibility across teams and contexts.",
     "keywords": ["general AI tools", "cross-functional AI", "versatile marketing tools", "multi-purpose AI", "AI workflow automation", "general business AI"]
   }
 }

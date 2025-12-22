@@ -19,7 +19,7 @@
   { "id": "personalization", "name": "Personalization" },
   { "id": "attribution", "name": "Attribution" },
   { "id": "reporting", "name": "Reporting" },
-  { "id": "ai-visibility", "name": "AI Visibility" },
+  { "id": "ai-visibility", "name": "GenAI Visibility (GEO)" },
   { "id": "brand-monitoring", "name": "Brand Monitoring" },
   { "id": "workflow-automation", "name": "Workflow Automation" },
   { "id": "ai-agents", "name": "AI Agents" },

@@ -43,7 +43,7 @@
     "subcategories": [
       { "id": "attribution", "name": "Attribution", "order": 1 },
       { "id": "analytics", "name": "Analytics", "order": 2 },
-      { "id": "ai-visibility", "name": "AI Visibility", "order": 3 }
+      { "id": "ai-visibility", "name": "GenAI Visibility (GEO)", "order": 3 }
     ]
   },
   {
