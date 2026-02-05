@@ -2493,5 +2493,189 @@
       "linkedin": "https://www.linkedin.com/company/newton-research",
       "twitter": "https://twitter.com/NewtonResearch"
     }
+  },
+  {
+    "id": "satori-ads",
+    "slug": "satori-ads",
+    "name": "Satori Ads",
+    "tagline": "Driving Sales and Building Loyalty for Brands",
+    "description": "Wallet-based advertising platform that bridges online ads to offline transactions using Apple and Google Wallet. Offers Drive to Store (discount coupons from rich media ads) and Loyalty Booster (frictionless digital loyalty cards) with measurable ROAS tracking through in-store redemptions.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
+    "screenshot": null,
+    "website": "https://satoriads.com/",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "campaign-automation",
+      "personalization"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": 2025,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/satori-ads",
+      "twitter": null
+    }
+  },
+  {
+    "id": "teknalab-ai",
+    "slug": "teknalab-ai",
+    "name": "TeknaLab.ai",
+    "tagline": "The Future of AI-Powered Media Intelligence",
+    "description": "All-in-one marketing intelligence platform that unifies AI Visibility tracking (how AI platforms mention your brand), AI Benchmarking (competitive positioning), and AI Media Activation (autonomous agents for media buying) into one intelligent workflow.",
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
+    "screenshot": null,
+    "website": "https://teknalab.ai/",
+    "category": "measure",
+    "subcategory": "ai-visibility",
+    "useCases": [
+      "competitive-analysis",
+      "research",
+      "campaign-automation"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": 2025,
+    "social": {
+      "linkedin": null,
+      "twitter": null
+    }
+  },
+  {
+    "id": "mediamint",
+    "slug": "mediamint",
+    "name": "MediaMint",
+    "tagline": "Transforming Growth Operations with Agentic Intelligence",
+    "description": "AI-powered revenue operations company helping media companies, brands, and platforms scale. Offers Mia AI agent plus services across Media Operations, Marketing Operations, Sales Operations, Customer Success, Platform Operations, Content & Creative, and Data/AI/Engineering.",
+    "logo": "https://www.google.com/s2/favicons?domain=mediamint.com&sz=128",
+    "screenshot": null,
+    "website": "https://mediamint.com/",
+    "category": "activate",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "established",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/mediamint/",
+      "twitter": "https://x.com/media_mint"
+    }
+  },
+  {
+    "id": "fluent",
+    "slug": "fluent",
+    "name": "Fluent",
+    "tagline": "Automated client reporting for marketing agencies",
+    "description": "AI-powered reporting tool that helps marketing agencies turn performance data into polished reports instantly. Learns your tone and style from sample reports. Connects to Meta, Google Ads, GA4, TikTok, LinkedIn, Bing Ads, Shopify and 20+ more sources.",
+    "logo": "https://www.google.com/s2/favicons?domain=fluenthq.com&sz=128",
+    "screenshot": null,
+    "website": "https://fluenthq.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting"
+    ],
+    "pricing": "freemium",
+    "companyType": "startup",
+    "founded": 2021,
+    "social": {
+      "linkedin": "https://uk.linkedin.com/company/fluentdatahq",
+      "twitter": "https://x.com/fluenthqdata"
+    }
+  },
+  {
+    "id": "fload",
+    "slug": "fload",
+    "name": "Fload",
+    "tagline": "The AI Employee for Mobile Apps",
+    "description": "AI-powered mobile app management platform that consolidates data from iOS, Android, Web, Ads, and Analytics into one dashboard. Provides instant insights, 24/7 performance monitoring, anomaly detection, and actionable recommendations through a conversational AI interface. Integrates with Meta, Google Ads, GA4, TikTok, and 30+ data sources.",
+    "logo": "https://www.google.com/s2/favicons?domain=fload.com&sz=128",
+    "screenshot": null,
+    "website": "https://fload.com/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "research"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/floadapps",
+      "twitter": null
+    }
+  },
+  {
+    "id": "toast-iq",
+    "slug": "toast-iq",
+    "name": "Toast IQ",
+    "tagline": "The AI Assistant that takes action",
+    "description": "Conversational AI assistant for restaurants built into Toast POS platform. Enables operators to ask questions in plain language, get personalized insights from real-time data, and take actions like updating menus or editing shifts directly in chat. Understands hospitality shorthand (e.g., '86 all items with avocado').",
+    "logo": "https://www.google.com/s2/favicons?domain=toasttab.com&sz=128",
+    "screenshot": null,
+    "website": "https://pos.toasttab.com/products/toast-iq",
+    "category": "activate",
+    "subcategory": "ai-assistants",
+    "useCases": [
+      "campaign-automation",
+      "reporting"
+    ],
+    "pricing": "enterprise",
+    "companyType": "enterprise",
+    "founded": 2011,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/toast-inc",
+      "twitter": "https://twitter.com/toaborstware"
+    }
+  },
+  {
+    "id": "rill-mcp",
+    "slug": "rill-mcp",
+    "name": "Rill MCP Server",
+    "tagline": "Conversational BI is here",
+    "description": "MCP server that enables AI agents to perform natural language business intelligence queries. Built on Rill's in-memory OLAP engine, it provides curated metrics views and connects directly to data lakes and warehouses. AI agents can explore dashboards, run queries, and deliver insights conversationally without users needing to learn SQL or dashboard tools.",
+    "logo": "https://www.google.com/s2/favicons?domain=rilldata.com&sz=128",
+    "screenshot": null,
+    "website": "https://www.rilldata.com/mcp",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "reporting",
+      "research"
+    ],
+    "pricing": "freemium",
+    "companyType": "startup",
+    "founded": 2020,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/rilldata",
+      "twitter": "https://x.com/RillData"
+    }
+  },
+  {
+    "id": "llm-council",
+    "slug": "llm-council",
+    "name": "Council of Marketeer LLMs",
+    "tagline": "A diagnosis—produced by a system that argues before it advises",
+    "description": "Creative performance diagnosis tool for performance marketers. Upload an ad creative and get a score plus detailed diagnosis powered by a Council-of-LLMs. Multiple AI models analyze your creative independently through different lenses (copy clarity, CTA intent, visuals, format/platform fit), then deliberate—challenging weak reasoning and down-ranking overconfident takes—before a Chairman model synthesizes everything into one verdict.",
+    "logo": "https://www.google.com/s2/favicons?domain=morphiq.xyz&sz=128",
+    "screenshot": null,
+    "website": "https://llmcouncil.morphiq.xyz/",
+    "category": "measure",
+    "subcategory": "analytics",
+    "useCases": [
+      "ad-creative",
+      "research"
+    ],
+    "pricing": "free",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/morphiq-xyz",
+      "twitter": null
+    }
   }
 ]
