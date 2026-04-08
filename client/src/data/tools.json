@@ -2717,7 +2717,7 @@
     "name": "Claude Plugins",
     "tagline": "Official plugin ecosystem for Claude Code & Cowork",
     "description": "Anthropic's official plugin system for Claude Code, Cowork, and related Claude products. Plugins bundle MCP servers, skills, and tools into installable units, and are quickly becoming a core distribution channel for marketing-focused Claude tooling.",
-    "logo": null,
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
     "website": "https://docs.claude.com/en/docs/claude-code/plugins",
     "category": "general",
@@ -2931,7 +2931,7 @@
     "name": "Signal Stack",
     "tagline": "Measurement and signal tooling for growth teams",
     "description": "Signal Stack, built by Evgeny Popov, sits in the measurement and analytics space. Full tagline and long-form copy are pending a follow-up scraping pass (signal-stack.io currently blocks automated requests). Listed here as a stub so the author-level profile is discoverable; details will be backfilled in a later Cowork session.",
-    "logo": null,
+    "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
     "website": "https://www.signal-stack.io/",
     "category": "general",
@@ -2958,11 +2958,11 @@
     "id": "webmcp",
     "slug": "webmcp",
     "name": "WebMCP",
-    "tagline": "MCP for the browser — expose any webpage's tools to AI agents",
-    "description": "Browser-native Model Context Protocol specification surfaced in parallel threads from Pietro Schirano (@skirano) and François Beaufort (@firt, Chrome DevRel). Treat as a protocol/standard entry until a canonical URL and repo are resolved in a follow-up pass.",
-    "logo": null,
+    "tagline": "Web pages expose JavaScript tools that AI agents can invoke",
+    "description": "W3C Web Machine Learning Community Group proposal (first published August 2025) for a JavaScript interface that lets web developers expose application functionality as \"tools\" — JS functions with natural language descriptions and structured schemas that can be invoked by AI agents, browser assistants, and assistive technologies. Pages that use WebMCP can be thought of as Model Context Protocol servers that implement tools in client-side script instead of on the backend, enabling collaborative human-in-the-loop workflows that share context with the user. Authored by engineers from Microsoft and Google.",
+    "logo": "/logos/webmcp.png",
     "screenshot": null,
-    "website": "https://x.com/skirano/status/2022387763421810989",
+    "website": "https://github.com/webmachinelearning/webmcp",
     "category": "general",
     "subcategory": null,
     "useCases": [
@@ -2971,15 +2971,11 @@
     ],
     "pricing": "free",
     "companyType": "oss",
-    "founded": 2026,
+    "founded": 2025,
     "social": {
       "linkedin": null,
       "twitter": null,
-      "github": null,
-      "authorName": "Pietro Schirano",
-      "authorLinkedin": null,
-      "authorTwitter": "https://x.com/skirano",
-      "authorGithub": null
+      "github": "https://github.com/webmachinelearning/webmcp"
     }
   },
   {
