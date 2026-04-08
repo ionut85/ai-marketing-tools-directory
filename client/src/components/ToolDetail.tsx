@@ -7,7 +7,6 @@ import { Separator } from "@/components/ui/separator";
 import { LogoFallback } from "./LogoFallback";
 import { ToolCard } from "./ToolCard";
 import { SiLinkedin, SiX, SiGithub } from "react-icons/si";
-import { useTheme } from "./ThemeProvider";
 import type { Tool, Category } from "@/lib/types";
 
 interface ToolDetailProps {
@@ -23,7 +22,6 @@ export function ToolDetail({
   relatedTools,
   onRelatedToolClick,
 }: ToolDetailProps) {
-  const { theme } = useTheme();
   const category = categories.find((c) => c.id === tool.category);
   const subcategory = category?.subcategories.find((s) => s.id === tool.subcategory);
 
@@ -34,10 +32,8 @@ export function ToolDetail({
     enterprise: "Enterprise",
   };
 
-  // Filter out Christmas emojis if not in Christmas theme
-  const displayDescription = theme === "christmas"
-    ? tool.description
-    : tool.description.replace(/🎄|🐣|🎅/g, '').trim();
+  // Christmas theme is hidden from the switcher (HYP-527); strip legacy holiday emojis unconditionally
+  const displayDescription = tool.description.replace(/🎄|🐣|🎅/g, '').trim();
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 md:px-6">
@@ -85,7 +81,9 @@ export function ToolDetail({
           <Card className="p-4">
             <h3 className="font-medium mb-3">Category</h3>
             <div className="space-y-2">
-              <Badge variant="secondary">{category?.name || tool.category}</Badge>
+              <Badge className="border-primary/50 bg-primary/15 text-foreground">
+                {category?.name || tool.category}
+              </Badge>
               {subcategory && (
                 <Badge variant="outline" className="ml-2">
                   {subcategory.name}
@@ -107,7 +105,9 @@ export function ToolDetail({
 
           <Card className="p-4">
             <h3 className="font-medium mb-3">Pricing</h3>
-            <Badge>{pricingLabels[tool.pricing] || tool.pricing}</Badge>
+            <Badge className="border-primary/50 bg-primary/15 text-foreground">
+              {pricingLabels[tool.pricing] || tool.pricing}
+            </Badge>
           </Card>
 
           {(() => {

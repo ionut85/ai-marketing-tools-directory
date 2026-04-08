@@ -16,9 +16,10 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
   const regularCategories = sortedCategories.filter(cat => cat.subcategories.length > 0);
   const generalCategory = sortedCategories.find(cat => cat.id === 'general');
 
-  // Gradient colors from Plan to Measure
-  const gradientStart = '#ea580c'; // Plan orange
-  const gradientEnd = '#fdba74';   // Measure orange
+  // Gradient colors for the General header — derived from the first/last regular
+  // category so a palette swap in categories.json flows through automatically.
+  const gradientStart = regularCategories[0]?.color ?? '#fbbf25';
+  const gradientEnd = regularCategories[regularCategories.length - 1]?.color ?? '#fbbf25';
 
   const getToolsBySubcategory = (categoryId: string, subcategoryId: string) => {
     return tools.filter(
@@ -32,15 +33,15 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
 
   return (
     <div className="pb-4 flex flex-col items-center gap-4" data-testid="landscape-grid">
-      {/* Regular categories in horizontal scroll */}
-      <div className="overflow-x-auto w-full flex justify-center">
-        <div className="inline-flex gap-4 min-w-max">
+      {/* Regular categories: vertical stack on mobile, horizontal scroll on lg+ */}
+      <div className="w-full flex justify-center lg:overflow-x-auto">
+        <div className="flex flex-col gap-4 w-full lg:inline-flex lg:flex-row lg:min-w-max lg:w-auto">
           {/* Regular categories (Plan, Create, Activate, Measure) */}
           {regularCategories.map((category) => (
-          <div key={category.id} className="w-64 flex-shrink-0">
+          <div key={category.id} className="w-full lg:w-64 lg:flex-shrink-0">
             <Link
               href={`/category/${category.id}`}
-              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-white hover:opacity-90 transition-opacity cursor-pointer"
+              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-neutral-900 hover:opacity-90 transition-opacity cursor-pointer"
               style={{ backgroundColor: category.color }}
               data-testid={`landscape-category-${category.id}`}
             >
@@ -113,13 +114,13 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
         return (
           <div
             key={generalCategory.id}
-            className="w-full max-w-[1088px] px-4"
+            className="w-full lg:max-w-[1072px]"
             data-testid="landscape-category-general"
           >
             {/* Mobile: solid color */}
             <Link
               href="/category/general"
-              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-white hover:opacity-90 transition-opacity cursor-pointer lg:hidden"
+              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-neutral-900 hover:opacity-90 transition-opacity cursor-pointer lg:hidden"
               style={{ backgroundColor: generalCategory.color }}
             >
               {generalCategory.name}
@@ -128,7 +129,7 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
             {/* Desktop: gradient */}
             <Link
               href="/category/general"
-              className="mb-3 hidden rounded-md px-3 py-2 text-sm font-semibold text-white hover:opacity-90 transition-opacity cursor-pointer lg:block"
+              className="mb-3 hidden rounded-md px-3 py-2 text-sm font-semibold text-neutral-900 hover:opacity-90 transition-opacity cursor-pointer lg:block"
               style={{
                 background: `linear-gradient(to right, ${gradientStart}, ${gradientEnd})`
               }}

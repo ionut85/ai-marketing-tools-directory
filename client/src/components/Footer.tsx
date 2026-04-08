@@ -127,7 +127,7 @@ export function Footer() {
 
         <div className="mt-8 border-t pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            Discover the best GenAI marketing tools
+            Built for marketers navigating the GenAI stack · HYPD AI
           </p>
         </div>
       </div>

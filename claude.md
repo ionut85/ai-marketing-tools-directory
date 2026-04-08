@@ -329,6 +329,38 @@ When making changes:
 6. Test search and filter functionality manually
 7. Verify SEO tags on new pages
 
+### Design change verification
+
+When making any design, theme, color, or layout change, do **not** stop at the
+first page you happened to edit — shared components render on multiple routes
+and a "fix" in one place can regress another.
+
+Before asking for review, walk through **every route** in the preview:
+
+- `/` — Home (hero, search, filters sidebar + mobile filters sheet, tool grid, pagination)
+- `/tools/:slug` — Tool detail (header, description, Category / Use Cases / Pricing / Social / Founded cards, related tools)
+- `/category/:slug` — Category landing page
+- `/landscape` — Visual landscape grid (regular categories row + General section)
+- `/about` — About page
+
+For each route, check **both breakpoints**:
+
+- **Mobile** (≤ 640px, e.g. 375px) — stacked layouts, `MobileFilters` sheet, mobile variants of `LandscapeGrid` (vertical flow), `Header` hamburger state if applicable
+- **Desktop** (≥ 1024px, e.g. 1280px) — sidebar filters, landscape horizontal scroll, hover states
+
+And all three themes: **Light / Dark / Easter**. Several layout bugs have shipped
+because a change looked right in the default theme at the default viewport but
+broke in another theme or at another width.
+
+Shared components that appear on multiple pages — if you touch any of these,
+assume you need to re-verify every route above:
+
+- `Header`, `Footer`, `ThemeToggle`
+- `SearchBar`, `FilterSidebar`, `MobileFilters`
+- `ToolCard`, `ToolGrid`, `LogoFallback`
+- `Badge`, `Card`, `Button` (and any `ui/*` primitive)
+- `client/src/index.css` token values (every theme class)
+
 ## Deployment
 
 ### Build Process

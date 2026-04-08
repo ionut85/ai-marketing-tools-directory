@@ -37,7 +37,9 @@ export function ToolCard({ tool, categories, onClick }: ToolCardProps) {
         {tool.tagline}
       </p>
       <div className="flex flex-wrap gap-1">
-        <Badge variant="secondary" className="text-xs px-1.5 py-0">
+        <Badge
+          className="text-xs px-1.5 py-0 border-primary/50 bg-primary/15 text-foreground"
+        >
           {categoryName}
         </Badge>
         {tool.useCases.slice(0, 1).map((useCase) => (

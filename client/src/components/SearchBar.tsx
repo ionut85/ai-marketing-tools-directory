@@ -16,7 +16,7 @@ export function SearchBar({
 }: SearchBarProps) {
   return (
     <div
-      className={`flex h-12 w-full max-w-2xl items-center gap-3 rounded-md border border-input bg-background px-4 focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 ring-offset-background ${className ?? ""}`}
+      className={`flex h-12 w-full max-w-2xl items-center gap-3 rounded-md border [border-color:var(--button-outline)] bg-background px-4 focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 ring-offset-background ${className ?? ""}`}
     >
       <Search className="h-5 w-5 flex-shrink-0 text-muted-foreground" />
       <input
