@@ -110,49 +110,124 @@ export function ToolDetail({
             <Badge>{pricingLabels[tool.pricing] || tool.pricing}</Badge>
           </Card>
 
-          {(tool.social.linkedin || tool.social.twitter || tool.social.github) && (
-            <Card className="p-4">
-              <h3 className="font-medium mb-3">Social</h3>
-              <div className="flex gap-2">
-                {tool.social.linkedin && (
-                  <Button variant="outline" size="icon" asChild>
-                    <a
-                      href={tool.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      data-testid="link-linkedin"
-                    >
-                      <SiLinkedin className="h-4 w-4" />
-                    </a>
-                  </Button>
+          {(() => {
+            const {
+              linkedin,
+              twitter,
+              github,
+              authorName,
+              authorLinkedin,
+              authorTwitter,
+              authorGithub,
+            } = tool.social;
+
+            // Author-level links only show when the equivalent company-level link is missing.
+            const showAuthorLinkedin = !linkedin && authorLinkedin;
+            const showAuthorTwitter = !twitter && authorTwitter;
+            const showAuthorGithub = !github && authorGithub;
+
+            const hasCompanyLinks = linkedin || twitter || github;
+            const hasAuthorLinks = showAuthorLinkedin || showAuthorTwitter || showAuthorGithub;
+
+            if (!hasCompanyLinks && !hasAuthorLinks) return null;
+
+            return (
+              <Card className="p-4">
+                <h3 className="font-medium mb-3">Social</h3>
+                {hasCompanyLinks && (
+                  <div className="flex gap-2">
+                    {linkedin && (
+                      <Button variant="outline" size="icon" asChild>
+                        <a
+                          href={linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          data-testid="link-linkedin"
+                        >
+                          <SiLinkedin className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
+                    {twitter && (
+                      <Button variant="outline" size="icon" asChild>
+                        <a
+                          href={twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          data-testid="link-twitter"
+                        >
+                          <SiX className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
+                    {github && (
+                      <Button variant="outline" size="icon" asChild>
+                        <a
+                          href={github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          data-testid="link-github"
+                        >
+                          <SiGithub className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
+                  </div>
                 )}
-                {tool.social.twitter && (
-                  <Button variant="outline" size="icon" asChild>
-                    <a
-                      href={tool.social.twitter}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      data-testid="link-twitter"
-                    >
-                      <SiX className="h-4 w-4" />
-                    </a>
-                  </Button>
+
+                {hasAuthorLinks && (
+                  <div className={hasCompanyLinks ? "mt-4" : ""}>
+                    {authorName && (
+                      <p
+                        className="text-xs text-muted-foreground mb-2"
+                        data-testid="text-author-prefix"
+                      >
+                        by {authorName}
+                      </p>
+                    )}
+                    <div className="flex gap-2">
+                      {showAuthorLinkedin && (
+                        <Button variant="outline" size="icon" asChild>
+                          <a
+                            href={authorLinkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-testid="link-author-linkedin"
+                          >
+                            <SiLinkedin className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
+                      {showAuthorTwitter && (
+                        <Button variant="outline" size="icon" asChild>
+                          <a
+                            href={authorTwitter}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-testid="link-author-twitter"
+                          >
+                            <SiX className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
+                      {showAuthorGithub && (
+                        <Button variant="outline" size="icon" asChild>
+                          <a
+                            href={authorGithub}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-testid="link-author-github"
+                          >
+                            <SiGithub className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
+                    </div>
+                  </div>
                 )}
-                {tool.social.github && (
-                  <Button variant="outline" size="icon" asChild>
-                    <a
-                      href={tool.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      data-testid="link-github"
-                    >
-                      <SiGithub className="h-4 w-4" />
-                    </a>
-                  </Button>
-                )}
-              </div>
-            </Card>
-          )}
+              </Card>
+            );
+          })()}
 
           <Card className="p-4">
             <h3 className="font-medium mb-2">Founded</h3>
