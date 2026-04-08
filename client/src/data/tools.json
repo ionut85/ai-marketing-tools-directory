@@ -2719,7 +2719,7 @@
     "description": "Anthropic's official plugin system for Claude Code, Cowork, and related Claude products. Plugins bundle MCP servers, skills, and tools into installable units, and are quickly becoming a core distribution channel for marketing-focused Claude tooling.",
     "logo": "https://toppng.com/uploads/preview/emoji-sparkles-11549728403dof4lzjx9u.png",
     "screenshot": null,
-    "website": "https://docs.claude.com/en/docs/claude-code/plugins",
+    "website": "https://claude.com/plugins/marketing",
     "category": "general",
     "subcategory": null,
     "useCases": [
