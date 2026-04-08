@@ -2473,7 +2473,7 @@
     "name": "Marketing Skills by Corey Haines",
     "tagline": "Marketing skills for Claude Code and AI agents — CRO, copywriting, SEO, analytics, growth engineering",
     "description": "40+ markdown-based skills for conversion optimization, content creation, SEO, paid advertising, analytics, and growth engineering. Built by Corey Haines of Conversion Factory (agency) and Swipe Files (newsletter). Related product: Magister, an autonomous AI CMO using these skills. MIT licensed.",
-    "logo": "/logos/corey-haines-marketingskills.jpg",
+    "logo": "/logos/corey-haines-marketingskills.png",
     "screenshot": null,
     "website": "https://github.com/coreyhaines31/marketingskills",
     "category": "general",
@@ -2643,7 +2643,7 @@
     "description": "The newest IAB Tech Lab agentic standard, defining how large language models and autonomous agents can transact in real time without performance degradation. Uses a containerized architecture for faster communication and more efficient data exchange between technologies operating within the same data center. Currently in public comment. Sits alongside the Agentic Advertising Roadmap as a concrete technical spec.",
     "logo": "/logos/iab-artf-v1.png",
     "screenshot": null,
-    "website": "https://www.prnewswire.com/news-releases/iab-tech-lab-announces-agentic-rtb-framework-artf-v1-0-for-public-comment-302613712.html",
+    "website": "https://iabtechlab.com/standards/artf/",
     "category": "general",
     "subcategory": null,
     "useCases": [
