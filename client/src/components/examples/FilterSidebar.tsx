@@ -18,7 +18,8 @@ const mockUseCases: UseCase[] = [
 const mockCounts = {
   categories: { "creative-delivery": 8, "measurement-analytics": 5, "data-enablement": 4 },
   useCases: { copywriting: 6, analytics: 4, attribution: 3, automation: 2 },
-  pricing: { free: 2, freemium: 5, paid: 8, enterprise: 3 },
+  pricing: { free: 2, freemium: 5, subscription: 8, enterprise: 3 },
+  companyType: { startup: 7, indie: 3, oss: 2 },
 };
 
 export default function FilterSidebarExample() {
@@ -26,6 +27,7 @@ export default function FilterSidebarExample() {
     categories: [],
     useCases: [],
     pricing: [],
+    companyType: [],
     search: "",
   });
 

@@ -25,5 +25,7 @@
   { "id": "ai-agents", "name": "AI Agents" },
   { "id": "web-development", "name": "Web Development" },
   { "id": "sales-automation", "name": "Sales Automation" },
-  { "id": "seo", "name": "SEO" }
+  { "id": "seo", "name": "SEO" },
+  { "id": "ai-native-media", "name": "AI-Native Media" },
+  { "id": "agentic-commerce", "name": "Agentic Commerce" }
 ]

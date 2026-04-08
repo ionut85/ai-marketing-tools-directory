@@ -8,15 +8,21 @@ export interface Tool {
   screenshot: string | null;
   website: string;
   category: string;
-  subcategory: string;
+  subcategory: string | null;
   useCases: string[];
-  pricing: "free" | "open-source" | "subscription" | "usage-based" | "performance" | "unknown";
-  companyType: "indie" | "startup" | "private" | "public" | "oss";
-  founded: number;
+  pricing: "free" | "freemium" | "subscription" | "usage-based" | "enterprise" | "unknown";
+  companyType: "indie" | "startup" | "private" | "public" | "established" | "oss";
+  founded: number | null;
   social: {
-    linkedin?: string;
-    twitter?: string;
-    github?: string;
+    // Company-level handles
+    linkedin?: string | null;
+    twitter?: string | null;
+    github?: string | null;
+    // Author-level handles (for tools published by an individual rather than a company)
+    authorName?: string | null;
+    authorLinkedin?: string | null;
+    authorTwitter?: string | null;
+    authorGithub?: string | null;
   };
 }
 

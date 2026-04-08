@@ -1956,29 +1956,6 @@
     }
   },
   {
-    "id": "adcp",
-    "slug": "adcp",
-    "name": "AdCP (Ad Context Protocol)",
-    "tagline": "AdCP: The Open Standard for Agentic Advertising",
-    "description": "AdCP is an open standard protocol for agentic advertising that unifies advertising workflows across all platforms. It simplifies integration and enables AI-powered automation for media buying, creative generation, and data signals.",
-    "logo": "https://adcontextprotocol.org/AAo.svg",
-    "screenshot": null,
-    "website": "https://adcontextprotocol.org/",
-    "category": "activate",
-    "subcategory": "campaign-management",
-    "useCases": [
-      "campaign-automation"
-    ],
-    "pricing": "free",
-    "companyType": "oss",
-    "founded": null,
-    "social": {
-      "linkedin": null,
-      "twitter": null,
-      "github": "https://github.com/adcontextprotocol/adcp"
-    }
-  },
-  {
     "id": "agentic-commerce-protocol",
     "slug": "agentic-commerce-protocol",
     "name": "Agentic Commerce Protocol",
@@ -2304,6 +2281,383 @@
     "social": {
       "linkedin": "https://www.linkedin.com/company/canva",
       "twitter": "https://x.com/canva"
+    }
+  },
+  {
+    "id": "openclaw",
+    "slug": "openclaw",
+    "name": "OpenClaw",
+    "tagline": "Locally-running, open-source Claude-powered agent",
+    "description": "Viral open-source personal AI assistant created by Peter Steinberger. Originally released as Clawdbot in November 2025, renamed to Moltbot after an Anthropic trademark complaint, and now shipping as OpenClaw. Runs locally, bundles tools, and became a de-facto showcase for the community-built skills movement — one of the first real-world use cases for it was marketing.",
+    "logo": "/logos/openclaw.png",
+    "screenshot": null,
+    "website": "https://openclaw.dev",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2025,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/openclaw",
+      "authorName": "Peter Steinberger",
+      "authorLinkedin": "https://www.linkedin.com/in/steipete",
+      "authorTwitter": "https://x.com/steipete",
+      "authorGithub": "https://github.com/steipete"
+    }
+  },
+  {
+    "id": "awesome-openclaw-skills",
+    "slug": "awesome-openclaw-skills",
+    "name": "Awesome OpenClaw Skills",
+    "tagline": "5,200+ community-built OpenClaw skills, organized by category",
+    "description": "Curated collection of 5,211 community skills pulled from ClawHub (the public skills registry). VoltAgent filters out spam, duplicates, low-quality, and malicious entries, leaving a high-signal index covering 23 categories — including marketing-relevant ones. 45k stars, 4.4k forks, and effectively the de-facto marketplace for OpenClaw skills.",
+    "logo": "/logos/awesome-openclaw-skills.png",
+    "screenshot": null,
+    "website": "https://github.com/VoltAgent/awesome-openclaw-skills",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2025,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "authorName": "VoltAgent",
+      "authorLinkedin": null,
+      "authorTwitter": null,
+      "authorGithub": "https://github.com/VoltAgent"
+    }
+  },
+  {
+    "id": "claude-plugins",
+    "slug": "claude-plugins",
+    "name": "Claude Plugins",
+    "tagline": "Official plugin ecosystem for Claude Code & Cowork",
+    "description": "Anthropic's official plugin system for Claude Code, Cowork, and related Claude products. Plugins bundle MCP servers, skills, and tools into installable units, and are quickly becoming a core distribution channel for marketing-focused Claude tooling.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://docs.claude.com/en/docs/claude-code/plugins",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation",
+      "ai-native-media"
+    ],
+    "pricing": "free",
+    "companyType": "private",
+    "founded": 2025,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/anthropicresearch",
+      "twitter": "https://x.com/AnthropicAI",
+      "github": null
+    }
+  },
+  {
+    "id": "iab-agentic-advertising-roadmap",
+    "slug": "iab-agentic-advertising-roadmap",
+    "name": "IAB Agentic Advertising Roadmap",
+    "tagline": "The industry roadmap for agent-to-agent advertising",
+    "description": "IAB Tech Lab's January 2026 roadmap defining how the advertising industry will scale agentic buying and selling. Extends established standards (OpenRTB, VAST, etc.) with new agentic and high-performance protocols, integrating Model Context Protocol, Agent2Agent, and gRPC. 2026 initiatives include open-source buyer/seller agent reference implementations, a neutral MCP reference server, standardized agent profiles, and new trust, provenance, and measurement signals.",
+    "logo": "/logos/iab-agentic-advertising-roadmap.png",
+    "screenshot": null,
+    "website": "https://iabtechlab.com/press-releases/iab-tech-lab-unveils-agentic-roadmap-for-digital-advertising/",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-native-media",
+      "agentic-commerce"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2026,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/iab-tech-lab",
+      "twitter": "https://x.com/IABTechLab",
+      "github": null
+    }
+  },
+  {
+    "id": "adcp",
+    "slug": "adcp",
+    "name": "AdCP (Ad Context Protocol)",
+    "tagline": "Open protocol for agent-to-agent advertising",
+    "description": "Open protocol enabling AI agents to discover, plan, buy, sell, and measure media across ad channels. Published by AgenticAdvertising.org with 23+ member companies including Yahoo, PubMatic, Scope3, Samba TV, LG Ads, Kargo, Wunderkind, and Sightly. Ships with Addie, a companion AI assistant that teaches the protocol and runs the certification program.",
+    "logo": "/logos/adcp.svg",
+    "screenshot": null,
+    "website": "https://adcontextprotocol.org",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-native-media",
+      "agentic-commerce",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2025,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/adcontextprotocol/adcp"
+    }
+  },
+  {
+    "id": "klaw-sh",
+    "slug": "klaw-sh",
+    "name": "klaw.sh",
+    "tagline": "kubectl for AI Agents",
+    "description": "Enterprise AI agent orchestration platform packaged as a single Go binary. Provides Kubernetes-style ops for agents: lifecycle management, cron scheduling, namespace isolation, and Slack/CLI control. Supports 300+ LLM models via Anthropic, OpenAI, each::labs, and OpenRouter, with an on-prem deployment focus.",
+    "logo": "/logos/klaw-sh.png",
+    "screenshot": null,
+    "website": "https://klaw.sh",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-agents",
+      "workflow-automation"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2026,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/klawsh/klaw.sh"
+    }
+  },
+  {
+    "id": "brian-wagner-ai-marketing-skills",
+    "slug": "brian-wagner-ai-marketing-skills",
+    "name": "AI Marketing Skills by Brian Wagner",
+    "tagline": "Marketing frameworks that Claude Code actually executes",
+    "description": "A library of 23+ free and premium Agent Skills packaging marketing expertise for Claude Code, OpenClaw, Cursor, and Copilot. Covers positioning, content generation, LinkedIn authority systems, competitive research, homepage audits, cold outreach sequences, case studies, and newsletters. Built by Brian R Wagner, an AI Marketing Architect with 15+ years in Fortune 500 and startup marketing systems.",
+    "logo": "/logos/brian-wagner-ai-marketing-skills.png",
+    "screenshot": null,
+    "website": "https://github.com/BrianRWagner/ai-marketing-skills",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "seo-content",
+      "campaign-automation",
+      "outreach",
+      "ai-agents"
+    ],
+    "pricing": "freemium",
+    "companyType": "indie",
+    "founded": 2026,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/BrianRWagner/ai-marketing-skills",
+      "authorName": "Brian R Wagner",
+      "authorLinkedin": "https://www.linkedin.com/in/brianrwagner",
+      "authorTwitter": "https://x.com/BrianRWagner",
+      "authorGithub": "https://github.com/BrianRWagner"
+    }
+  },
+  {
+    "id": "corey-haines-marketingskills",
+    "slug": "corey-haines-marketingskills",
+    "name": "Marketing Skills by Corey Haines",
+    "tagline": "Marketing skills for Claude Code and AI agents — CRO, copywriting, SEO, analytics, growth engineering",
+    "description": "40+ markdown-based skills for conversion optimization, content creation, SEO, paid advertising, analytics, and growth engineering. Built by Corey Haines of Conversion Factory (agency) and Swipe Files (newsletter). Related product: Magister, an autonomous AI CMO using these skills. MIT licensed.",
+    "logo": "/logos/corey-haines-marketingskills.jpg",
+    "screenshot": null,
+    "website": "https://github.com/coreyhaines31/marketingskills",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "seo-content",
+      "ad-creative",
+      "reporting",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "indie",
+    "founded": 2026,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/coreyhaines31/marketingskills",
+      "authorName": "Corey Haines",
+      "authorLinkedin": null,
+      "authorTwitter": null,
+      "authorGithub": "https://github.com/coreyhaines31"
+    }
+  },
+  {
+    "id": "gooseworks",
+    "slug": "gooseworks",
+    "name": "Gooseworks",
+    "tagline": "AI Coworkers That Run Your GTM",
+    "description": "YC-backed startup offering autonomous \"Goose\" AI coworkers, each with their own filesystem, mailbox, and memory. Unlike chat-only assistants, Geese run GTM workflows end-to-end: SEO management, content creation at scale, lead gen, outbound campaigns, competitor research, and email sequencing. Communication happens via Slack, Telegram, WhatsApp, email, or the web app. Companion repo goose-skills is a public library of GTM skills for Claude Code, Codex, and Cursor.",
+    "logo": "/logos/gooseworks.png",
+    "screenshot": null,
+    "website": "https://gooseworks.ai",
+    "category": "activate",
+    "subcategory": "campaign-management",
+    "useCases": [
+      "ai-agents",
+      "outreach",
+      "seo-content",
+      "workflow-automation",
+      "campaign-automation"
+    ],
+    "pricing": "freemium",
+    "companyType": "startup",
+    "founded": 2025,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/gooseworks-ai",
+      "twitter": "https://x.com/notaigoose",
+      "github": "https://github.com/athina-ai/goose-skills"
+    }
+  },
+  {
+    "id": "clawe",
+    "slug": "clawe",
+    "name": "Clawe",
+    "tagline": "AI agents that grow your organic traffic instead of a $10k/mo SEO agency",
+    "description": "AI-powered SEO platform with 4 autonomous agents coordinating via a task board. 15-minute cycle: keyword research → writing → landing page design → ranking optimization, with human approval before publishing. Ships 50+ pages/month vs 4-8 from a typical human agency. Built on OpenClaw by the team behind ChartDB.io, with early access from $99/mo.",
+    "logo": "/logos/clawe.png",
+    "screenshot": null,
+    "website": "https://www.clawe.ai",
+    "category": "create",
+    "subcategory": "copywriting-seo",
+    "useCases": [
+      "seo-content",
+      "landing-pages",
+      "keyword-research"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": 2026,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/getclawe/clawe",
+      "authorName": "Jonathan Fishner",
+      "authorLinkedin": null,
+      "authorTwitter": "https://x.com/jonathanfishner",
+      "authorGithub": null
+    }
+  },
+  {
+    "id": "signal-stack",
+    "slug": "signal-stack",
+    "name": "Signal Stack",
+    "tagline": "Measurement and signal tooling for growth teams",
+    "description": "Signal Stack, built by Evgeny Popov, sits in the measurement and analytics space. Full tagline and long-form copy are pending a follow-up scraping pass (signal-stack.io currently blocks automated requests). Listed here as a stub so the author-level profile is discoverable; details will be backfilled in a later Cowork session.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://www.signal-stack.io/",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "reporting",
+      "attribution",
+      "ai-visibility"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": 2025,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": null,
+      "authorName": "Evgeny Popov",
+      "authorLinkedin": "https://www.linkedin.com/in/evgenypopov",
+      "authorTwitter": null,
+      "authorGithub": null
+    }
+  },
+  {
+    "id": "webmcp",
+    "slug": "webmcp",
+    "name": "WebMCP",
+    "tagline": "MCP for the browser — expose any webpage's tools to AI agents",
+    "description": "Browser-native Model Context Protocol specification surfaced in parallel threads from Pietro Schirano (@skirano) and François Beaufort (@firt, Chrome DevRel). Treat as a protocol/standard entry until a canonical URL and repo are resolved in a follow-up pass.",
+    "logo": null,
+    "screenshot": null,
+    "website": "https://x.com/skirano/status/2022387763421810989",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "workflow-automation",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2026,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": null,
+      "authorName": "Pietro Schirano",
+      "authorLinkedin": null,
+      "authorTwitter": "https://x.com/skirano",
+      "authorGithub": null
+    }
+  },
+  {
+    "id": "iab-ai-in-advertising-use-case-map",
+    "slug": "iab-ai-in-advertising-use-case-map",
+    "name": "IAB AI in Advertising Use Case Map",
+    "tagline": "The industry map of real-world AI use cases in advertising",
+    "description": "Released by IAB on September 3, 2025 and developed with industry leaders. Organizes real-world AI implementations across the ad/media ecosystem by category, maturity (established vs. emerging), and detailed descriptions, helping organizations benchmark adoption, identify capabilities to test, and inform strategic planning. Presented through an interactive Flourish visualization.",
+    "logo": "/logos/iab-ai-in-advertising-use-case-map.svg",
+    "screenshot": null,
+    "website": "https://www.iab.com/guidelines/ai-in-advertising-use-case-map/",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-native-media",
+      "agentic-commerce",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2025,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/iab",
+      "twitter": "https://x.com/iab",
+      "github": null
+    }
+  },
+  {
+    "id": "iab-artf-v1",
+    "slug": "iab-artf-v1",
+    "name": "IAB Agentic RTB Framework (ARTF) v1.0",
+    "tagline": "Real-time bidding for AI agents",
+    "description": "The newest IAB Tech Lab agentic standard, defining how large language models and autonomous agents can transact in real time without performance degradation. Uses a containerized architecture for faster communication and more efficient data exchange between technologies operating within the same data center. Currently in public comment. Sits alongside the Agentic Advertising Roadmap as a concrete technical spec.",
+    "logo": "/logos/iab-artf-v1.png",
+    "screenshot": null,
+    "website": "https://www.prnewswire.com/news-releases/iab-tech-lab-announces-agentic-rtb-framework-artf-v1-0-for-public-comment-302613712.html",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-native-media",
+      "agentic-commerce",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2025,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/iab-tech-lab",
+      "twitter": "https://x.com/IABTechLab",
+      "github": null
     }
   }
 ]
