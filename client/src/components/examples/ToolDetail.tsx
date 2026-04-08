@@ -13,7 +13,8 @@ const mockTool: Tool = {
   category: "creative-delivery",
   subcategory: "content-creation",
   useCases: ["copywriting", "content-generation", "brand-voice"],
-  pricing: "paid",
+  pricing: "subscription",
+  companyType: "startup",
   founded: 2021,
   social: {
     linkedin: "https://linkedin.com/company/jasper-ai",
@@ -47,6 +48,7 @@ const mockRelated: Tool[] = [
     subcategory: "content-creation",
     useCases: ["copywriting"],
     pricing: "freemium",
+    companyType: "startup",
     founded: 2020,
     social: {},
   },

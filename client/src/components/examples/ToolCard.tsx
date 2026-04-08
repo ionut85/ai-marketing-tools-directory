@@ -13,7 +13,8 @@ const mockTool: Tool = {
   category: "creative-delivery",
   subcategory: "content-creation",
   useCases: ["copywriting", "content-generation"],
-  pricing: "paid",
+  pricing: "subscription",
+  companyType: "startup",
   founded: 2021,
   social: {},
 };
