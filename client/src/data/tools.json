@@ -3027,5 +3027,56 @@
       "twitter": "https://x.com/IABTechLab",
       "github": null
     }
+  },
+  {
+    "id": "prebid-salesagent",
+    "slug": "prebid-salesagent",
+    "name": "Prebid Sales Agent",
+    "tagline": "AdCP reference implementation for publisher-side AI agents",
+    "description": "Official Prebid.org reference implementation of the Ad Context Protocol (AdCP) sales agent — the sell-side component that exposes publisher ad inventory to AI buying agents via a standardized MCP interface. Covers the full media-buying lifecycle from discovery through reporting, with MCP and A2A (Agent-to-Agent JSON-RPC 2.0) support, Google Ad Manager integration, an admin dashboard, and end-to-end campaign management. Prebid took over the sell-side code from the AdCP project in early 2026 to bring the same open-standard approach that made header bidding ubiquitous to publisher-side AI agents.",
+    "logo": "/logos/prebid-salesagent.png",
+    "screenshot": null,
+    "website": "https://github.com/prebid/salesagent",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "ai-native-media",
+      "agentic-commerce",
+      "ai-agents",
+      "campaign-automation"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2026,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/prebid/",
+      "twitter": null,
+      "github": "https://github.com/prebid/salesagent"
+    }
+  },
+  {
+    "id": "ask-addie",
+    "slug": "ask-addie",
+    "name": "Ask Addie",
+    "tagline": "Your AI guide to agentic advertising",
+    "description": "Official AdCP chat assistant from AgenticAdvertising.org — a conversational AI guide that teaches the Ad Context Protocol, answers questions about agentic advertising concepts, and helps developers get started building on AdCP. Features streaming responses, conversation history, per-message and session-level feedback, and Slack/video integrations. Available to anonymous users with message limits or to authenticated users for full access. Source lives in the AdCP server repo under server/src/addie.",
+    "logo": "/logos/ask-addie.svg",
+    "screenshot": null,
+    "website": "https://adcontextprotocol.org/chat",
+    "category": "general",
+    "subcategory": null,
+    "useCases": [
+      "ai-native-media",
+      "agentic-commerce",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": 2025,
+    "social": {
+      "linkedin": null,
+      "twitter": null,
+      "github": "https://github.com/adcontextprotocol/adcp"
+    }
   }
 ]
