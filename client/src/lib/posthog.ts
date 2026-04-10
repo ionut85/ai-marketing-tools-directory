@@ -15,13 +15,8 @@ export const initPostHog = () => {
   if (typeof window === 'undefined') return;
   if (window.__POSTHOG_INITIALIZED__) return;
 
-  const apiKey = import.meta.env.VITE_POSTHOG_API_KEY;
-  const apiHost = import.meta.env.VITE_POSTHOG_HOST || 'https://us.i.posthog.com';
-
-  if (!apiKey) {
-    console.warn('Missing required PostHog key: VITE_POSTHOG_API_KEY');
-    return;
-  }
+  const apiKey = import.meta.env.VITE_POSTHOG_API_KEY || 'phc_rQVSJNxjtLdUfBGi8Wspgjv7LXMKdCNoF4hGVdkis5r';
+  const apiHost = import.meta.env.VITE_POSTHOG_HOST || 'https://eu.i.posthog.com';
 
   window.__POSTHOG_INITIALIZED__ = true;
 
