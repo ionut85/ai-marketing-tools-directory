@@ -9,6 +9,13 @@ export interface Tool {
   website: string;
   category: string;
   subcategory: string | null;
+  /**
+   * Optional cross-listings. Lets a tool surface under additional
+   * category / subcategory views (e.g. an AI Assistant that also executes in
+   * Activate) without duplicating the entry. The primary `category` /
+   * `subcategory` above stays the tool's canonical home (detail page + URL).
+   */
+  secondaryCategories?: { category: string; subcategory: string | null }[];
   useCases: string[];
   pricing: "free" | "freemium" | "subscription" | "usage-based" | "enterprise" | "unknown";
   companyType: "indie" | "startup" | "private" | "public" | "established" | "oss";

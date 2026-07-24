@@ -1,0 +1,77 @@
+{
+  "market-research": {
+    "title": "AI Market Research Tools",
+    "description": "AI market research tools that size markets, spot demand and trends, and simulate audience reactions before you spend. Compare the options on HYPD.",
+    "keywords": ["AI market research tools", "market sizing", "demand signals", "synthetic research", "trend detection"]
+  },
+  "audience-intelligence": {
+    "title": "AI Audience Intelligence Tools",
+    "description": "AI audience intelligence tools that build segments and personas from real behavior, so you know who to reach and what to say. Compare them on HYPD.",
+    "keywords": ["AI audience intelligence", "customer personas", "audience segmentation", "buyer insights"]
+  },
+  "competitive-analysis": {
+    "title": "AI Competitive Analysis Tools",
+    "description": "AI competitive analysis tools that track rival ads, messaging, pricing, and SEO so you can find the white space. Compare the options on HYPD.",
+    "keywords": ["AI competitive analysis", "competitor tracking", "ad intelligence", "SEO gap analysis"]
+  },
+  "ai-assistants": {
+    "title": "AI Marketing Assistants",
+    "description": "AI marketing assistants that pull research, audience, and campaign data together and help you plan and act. Compare the best options on HYPD.",
+    "keywords": ["AI marketing assistant", "marketing copilot", "AI marketing agent", "planning assistant"]
+  },
+  "ad-creative": {
+    "title": "AI Ad Creative Tools",
+    "description": "AI tools that generate and adapt ad-ready images, video, and copy variants for Meta, Google, and TikTok at performance-marketing volume.",
+    "keywords": ["AI ad creative", "ad variation generator", "creative testing", "dynamic product ads", "ad fatigue refresh"]
+  },
+  "copywriting-seo": {
+    "title": "AI Copywriting & SEO Tools",
+    "description": "AI writing tools built to rank and convert, layering keyword research, SERP analysis, and briefs into a publishing pipeline.",
+    "keywords": ["AI copywriting", "AI SEO content", "SEO writing tool", "content brief generator", "programmatic SEO"]
+  },
+  "landing-pages": {
+    "title": "AI Landing Page Tools",
+    "description": "AI and template-driven page builders with A/B testing, message match, and conversion tracking for campaign-specific pages.",
+    "keywords": ["AI landing page builder", "conversion rate optimization", "A/B testing tool", "message match", "post-click landing page"]
+  },
+  "social-influencers": {
+    "title": "AI Social & Influencer Tools",
+    "description": "Tools for scheduling platform-native social content and discovering, vetting, and managing creators for influencer campaigns.",
+    "keywords": ["AI social content", "social media scheduler", "influencer discovery", "creator marketing", "fake follower detection"]
+  },
+  "campaign-management": {
+    "title": "AI Campaign Management Tools",
+    "description": "AI tools that monitor and optimize live paid campaigns across channels, adjusting budget, bids, and pacing in real time.",
+    "keywords": ["campaign management software", "cross-channel budget optimization", "ad campaign automation", "paid media orchestration"]
+  },
+  "email-outreach": {
+    "title": "AI Email & Outreach Tools",
+    "description": "AI tools that draft, personalize, and send cold email, sales sequences, and lifecycle campaigns at scale.",
+    "keywords": ["AI email outreach", "sales sequence automation", "cold email tools", "lifecycle email marketing", "deliverability optimization"]
+  },
+  "ai-ad-platforms": {
+    "title": "AI Ad Platforms",
+    "description": "Autonomous ad platforms that handle targeting, bidding, and budget across networks with minimal manual setup.",
+    "keywords": ["autonomous ad buying", "AI media buying platform", "programmatic ad automation", "ROAS optimization tools"]
+  },
+  "shopping-assistants": {
+    "title": "AI Shopping Assistants",
+    "description": "AI agents that guide shoppers through product discovery and purchase directly on ecommerce sites.",
+    "keywords": ["AI shopping assistant", "conversational commerce", "ecommerce chatbot", "product recommendation AI", "conversion rate optimization"]
+  },
+  "attribution": {
+    "title": "AI Attribution Tools",
+    "description": "AI attribution tools that assign conversion credit across paid, email, organic, and referral touchpoints, from multi-touch models to marketing mix modeling.",
+    "keywords": ["marketing attribution", "multi-touch attribution", "marketing mix modeling", "first-party tracking", "revenue attribution"]
+  },
+  "analytics": {
+    "title": "AI Analytics Tools",
+    "description": "AI analytics tools that aggregate and visualize marketing performance across channels into dashboards, automated reports, and AI summaries.",
+    "keywords": ["marketing analytics", "cross-channel reporting", "agency reporting", "AI dashboards", "anomaly detection"]
+  },
+  "ai-visibility": {
+    "title": "GenAI Visibility Tools",
+    "description": "Track whether and how your brand appears inside AI-generated answers from ChatGPT, Perplexity, Claude, and Google AI Overviews.",
+    "keywords": ["GenAI visibility", "GEO", "generative engine optimization", "AI search visibility", "brand mentions in AI"]
+  }
+}

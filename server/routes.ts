@@ -82,6 +82,16 @@ export async function registerRoutes(
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>`;
+
+      for (const sub of category.subcategories) {
+        sitemap += `
+  <url>
+    <loc>${baseUrl}/category/${category.id}/${sub.id}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+      }
     }
     
     for (const tool of tools) {
@@ -152,7 +162,7 @@ This directory helps marketing professionals find and evaluate AI tools across f
       for (const sub of category.subcategories) {
         const subTools = tools.filter(t => t.category === category.id && t.subcategory === sub.id);
         if (subTools.length > 0) {
-          llms += `  - ${sub.name}: ${subTools.length} tools\n`;
+          llms += `  - [${sub.name}](${baseUrl}/category/${category.id}/${sub.id}): ${subTools.length} tools\n`;
         }
       }
     }

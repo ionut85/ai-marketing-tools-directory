@@ -2,31 +2,31 @@
   "plan": {
     "title": "Plan - GenAI Marketing Tools",
     "description": "Research, analyze, and strategize with AI-powered market research, audience intelligence, and competitive analysis tools. These solutions help marketers make data-driven decisions and develop winning strategies.",
-    "longDescription": "The Plan category includes AI tools that help marketers make better decisions before execution. Market Research tools surface trends and insights. Audience Intelligence platforms identify customer segments, behaviors, and intent signals. Competitive Analysis tools track competitors and shifts in positioning, spend, and messaging. AI Assistants act as on-demand analysts for planning, hypotheses, and next-best actions.",
+    "longDescription": "Plan tools sit at the front of the marketing workflow, before a single ad runs. They pull demand signals, audience data, and competitor moves into one place so you can decide where to spend and what to say. The four subcategories cover market research, audience intelligence, competitive analysis, and the AI assistants that tie them together.",
     "keywords": ["market research AI", "audience intelligence", "competitive analysis", "AI marketing strategy", "marketing planning tools", "AI assistants"]
   },
   "create": {
     "title": "Create - GenAI Marketing Tools",
     "description": "Generate compelling content with AI-powered creative tools for ads, copy, landing pages, and social media. These tools help marketers produce high-quality content faster and at scale.",
-    "longDescription": "The Create category includes AI tools that speed up and standardize content production across channels. Ad Creative tools generate and iterate on ad variations. Copywriting & SEO platforms produce search- and conversion-optimized copy. Landing Page builders enable rapid page creation and testing. Social & Influencer tools support creator discovery, content ideation, and repurposing.",
+    "longDescription": "Create tools are where a campaign turns into shippable assets: ad creative, landing page and SEO copy, social posts, and the variations you test them with. They range from lightweight AI writing assistants to full systems that generate and adapt creative across formats, so small teams ship more without a matching jump in headcount.",
     "keywords": ["AI ad creative", "AI copywriting", "SEO content AI", "landing page AI", "social content creation", "influencer marketing AI"]
   },
   "activate": {
     "title": "Activate - GenAI Marketing Tools",
     "description": "Launch and manage campaigns with AI-powered activation tools for campaign management, email, ad platforms, and personalized shopping experiences. These tools help marketers reach customers efficiently.",
-    "longDescription": "The Activate category includes AI tools that power go-to-market execution and performance. Campaign Management platforms automate setup, monitoring, and optimization across channels. Email & Outreach tools personalize messaging and follow-ups at scale. AI Ad Platforms support smarter media buying through automated targeting, bidding, and budget pacing. Shopping Assistants enable conversational product discovery and recommendations, bridging marketing and commerce.",
+    "longDescription": "Activate tools take a finished plan and turn it into a live campaign. They launch ads, send outreach, manage spend, and keep campaigns optimized in market, across campaign management, email and outreach, AI ad platforms, and shopping assistants. The point is to close the gap between strategy and execution, so teams spend their hours on judgment instead of manual work.",
     "keywords": ["campaign automation", "AI email marketing", "AI ad platforms", "shopping assistants", "marketing activation", "outreach automation"]
   },
   "measure": {
     "title": "Measure - GenAI Marketing Tools",
     "description": "Track, analyze, and optimize with AI-powered measurement tools for attribution, analytics, and GenAI visibility. These tools help marketers understand performance and make data-driven improvements.",
-    "longDescription": "The Measure category includes AI tools for understanding and improving marketing performance. Attribution platforms assign credit across customer touchpoints. Analytics tools surface actionable insights and predict trends. GenAI Visibility (GEO) tools monitor how your brand appears in AI-powered search, answers, and recommendations.",
+    "longDescription": "Measure tools turn spend, traffic, conversions, and revenue scattered across platforms into something you can act on. Attribution assigns credit across touchpoints, analytics aggregates performance into dashboards, and GenAI visibility tracks how your brand shows up inside AI answers from ChatGPT, Perplexity, and Google's AI Overviews.",
     "keywords": ["marketing attribution", "AI analytics", "performance measurement", "GenAI visibility", "GEO", "marketing ROI", "brand monitoring"]
   },
   "general": {
     "title": "General - GenAI Marketing Tools",
     "description": "Versatile AI tools that work across categories and subcategories for specific workflows and broader business applications beyond traditional marketing.",
-    "longDescription": "The General category includes GenAI tools that cut across multiple marketing disciplines. These multi-purpose platforms support Plan, Create, Activate, and Measure workflows, spanning both specific use cases and broader business applications. From general-purpose AI assistants to cross-functional automation and workflow tools, these solutions provide flexibility across teams and contexts.",
+    "longDescription": "General tools are the multi-use ones: connectors, agents, and workflow builders that touch Plan, Create, Activate, and Measure rather than specializing in one. They move work between the specialist tools, from no-code automation canvases to AI employees that own a recurring task, plus open-source agents you host yourself.",
     "keywords": ["general AI tools", "cross-functional AI", "versatile marketing tools", "multi-purpose AI", "AI workflow automation", "general business AI"]
   }
 }

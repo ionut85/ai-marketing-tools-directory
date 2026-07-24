@@ -11,6 +11,7 @@ import { useAnalytics } from "@/hooks/use-analytics";
 import Home from "@/pages/Home";
 import ToolDetailPage from "@/pages/ToolDetailPage";
 import CategoryPage from "@/pages/CategoryPage";
+import SubcategoryPage from "@/pages/SubcategoryPage";
 import Landscape from "@/pages/Landscape";
 import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
@@ -22,6 +23,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/tools/:slug" component={ToolDetailPage} />
+      <Route path="/category/:slug/:subcategory" component={SubcategoryPage} />
       <Route path="/category/:slug" component={CategoryPage} />
       <Route path="/landscape" component={Landscape} />
       <Route path="/about" component={About} />

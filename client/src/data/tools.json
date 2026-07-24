@@ -1,5 +1,28 @@
 [
   {
+    "id": "artificial-societies",
+    "slug": "artificial-societies",
+    "name": "Artificial Societies",
+    "tagline": "Human behavior, simulated",
+    "description": "Artificial Societies builds networks of interconnected AI personas to simulate how a market or audience reacts before you spend. Marketers and strategists use it to pressure-test messaging, positioning, and concepts against a simulated population, and to survey hard-to-reach groups like executives and specialists. Each project runs on purpose-built networks of hundreds to thousands of personas grounded in real-world social behavior data.",
+    "logo": "https://www.google.com/s2/favicons?domain=societies.io&sz=128",
+    "screenshot": null,
+    "website": "https://societies.io/",
+    "category": "plan",
+    "subcategory": "market-research",
+    "useCases": [
+      "research",
+      "audience-discovery"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": 2024,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/artificial-societies",
+      "twitter": "https://twitter.com/societiesio"
+    }
+  },
+  {
     "id": "withmarket-ai",
     "slug": "withmarket-ai",
     "name": "WithMarket.ai (Acquired)",
@@ -787,6 +810,12 @@
     "website": "https://www.gomarble.ai/",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "reporting",
       "ad-creative",
@@ -857,6 +886,12 @@
     "website": "https://www.kochava.com/stationone/",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -904,6 +939,12 @@
     "website": "https://support.google.com/google-ads/answer/16574983",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "reporting",
       "campaign-automation"
@@ -997,6 +1038,12 @@
     "website": "https://www.facebook.com/business/ai/business-assistant",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "reporting",
       "campaign-automation"
@@ -1020,6 +1067,12 @@
     "website": "https://advertising.amazon.com/resources/whats-new/unboxed-2025-introducing-ads-agent",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "ai-ad-platforms"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -1138,6 +1191,12 @@
     "website": "https://www.triplewhale.com/moby-ai",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "measure",
+        "subcategory": "analytics"
+      }
+    ],
     "useCases": [
       "reporting",
       "attribution",
@@ -1299,6 +1358,12 @@
     "website": "https://learn.microsoft.com/en-us/xandr/monetize/copilot-in-microsoft-monetize",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "ai-ad-platforms"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -2527,8 +2592,14 @@
     "logo": "https://www.google.com/s2/favicons?domain=mediamint.com&sz=128",
     "screenshot": null,
     "website": "https://mediamint.com/",
-    "category": "activate",
+    "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -2595,7 +2666,7 @@
     "logo": "https://www.google.com/s2/favicons?domain=toasttab.com&sz=128",
     "screenshot": null,
     "website": "https://pos.toasttab.com/products/toast-iq",
-    "category": "activate",
+    "category": "plan",
     "subcategory": "ai-assistants",
     "useCases": [
       "campaign-automation",
@@ -3077,6 +3148,75 @@
       "linkedin": null,
       "twitter": null,
       "github": "https://github.com/adcontextprotocol/adcp"
+    }
+  },
+  {
+    "id": "plentylabs",
+    "slug": "plentylabs",
+    "name": "PlentyLabs",
+    "tagline": "AI creative platform for ad-ready social content",
+    "description": "PlentyLabs is an AI-native creative platform that generates images, video, audio, and music for advertising, with thousands of presets and access to a wide range of AI models. It connects to Meta, TikTok, LinkedIn, and Instagram, so marketing teams can brand and localize ad creative for multiple markets in a fraction of the usual production time.",
+    "logo": "https://www.google.com/s2/favicons?domain=plentylabs.com&sz=128",
+    "screenshot": null,
+    "website": "https://www.plentylabs.com/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "image-generation",
+      "video-generation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/plenty-labs/"
+    }
+  },
+  {
+    "id": "hypd-openai-ads-mcp",
+    "slug": "hypd-openai-ads-mcp",
+    "name": "HYPD OpenAI Ads MCP",
+    "tagline": "Open-source MCP server for OpenAI Ads campaign data",
+    "description": "OpenAI Ads MCP is an open-source Model Context Protocol server by HYPD that lets MCP-compatible clients like Claude Desktop, Cursor, and VS Code read OpenAI Ads campaign data. It exposes read-only tools covering accounts, campaigns, ad groups, ads, and performance insights, with pagination and date-range reporting. Write operations are on the roadmap.",
+    "logo": "https://www.google.com/s2/favicons?domain=hypd.ai&sz=128",
+    "screenshot": null,
+    "website": "https://github.com/hypd-ai/openai-ads-mcp",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "reporting",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": null,
+    "social": {
+      "github": "https://github.com/hypd-ai/openai-ads-mcp",
+      "linkedin": "https://www.linkedin.com/company/wearehypd/",
+      "twitter": "https://x.com/hypdai"
+    }
+  },
+  {
+    "id": "velocity-io",
+    "slug": "velocity-io",
+    "name": "Velocity",
+    "tagline": "Ad monetization and intent-matching infrastructure for AI apps",
+    "description": "Velocity is an adtech platform that lets conversational AI applications monetize through native, intent-driven advertising. It analyzes user prompts to match relevant advertisers, generates contextual ad creative, and delivers it natively inside AI conversations through an ad network, a mediation and auction layer, and a conversation-intelligence layer for privacy-safe intent signals.",
+    "logo": "https://www.google.com/s2/favicons?domain=velocity.io&sz=128",
+    "screenshot": null,
+    "website": "https://velocity.io/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "ai-native-media",
+      "personalization"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/velocityofficial/"
     }
   }
 ]
