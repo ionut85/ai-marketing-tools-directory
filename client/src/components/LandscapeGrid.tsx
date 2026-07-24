@@ -65,9 +65,13 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
                       className="rounded-md border bg-card p-3"
                       data-testid={`landscape-subcategory-${subcategory.id}`}
                     >
-                      <div className="mb-2 text-xs font-medium text-muted-foreground">
+                      <Link
+                        href={`/category/${category.id}/${subcategory.id}`}
+                        className="mb-2 block text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+                        data-testid={`landscape-subcategory-link-${subcategory.id}`}
+                      >
                         {subcategory.name}
-                      </div>
+                      </Link>
                       <div className="flex flex-wrap gap-2">
                         {subcategoryTools.map((tool) => (
                           <Tooltip key={tool.id}>

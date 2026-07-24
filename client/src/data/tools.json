@@ -3196,5 +3196,27 @@
       "linkedin": "https://www.linkedin.com/company/wearehypd/",
       "twitter": "https://x.com/hypdai"
     }
+  },
+  {
+    "id": "velocity-io",
+    "slug": "velocity-io",
+    "name": "Velocity",
+    "tagline": "Ad monetization and intent-matching infrastructure for AI apps",
+    "description": "Velocity is an adtech platform that lets conversational AI applications monetize through native, intent-driven advertising. It analyzes user prompts to match relevant advertisers, generates contextual ad creative, and delivers it natively inside AI conversations through an ad network, a mediation and auction layer, and a conversation-intelligence layer for privacy-safe intent signals.",
+    "logo": "https://www.google.com/s2/favicons?domain=velocity.io&sz=128",
+    "screenshot": null,
+    "website": "https://velocity.io/",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "ai-native-media",
+      "personalization"
+    ],
+    "pricing": "unknown",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/velocityofficial/"
+    }
   }
 ]

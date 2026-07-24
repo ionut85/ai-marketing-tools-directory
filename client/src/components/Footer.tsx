@@ -126,6 +126,37 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t pt-6">
+          <p className="mb-4 text-sm font-medium">Browse by subcategory</p>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3 md:grid-cols-4">
+            {categories
+              .filter((category) => category.subcategories.length > 0)
+              .map((category) => (
+                <div key={category.id} className="space-y-2">
+                  <Link
+                    href={`/category/${category.id}`}
+                    className="text-sm font-medium text-foreground/90 transition-colors hover:text-foreground"
+                    data-testid={`link-footer-subcat-group-${category.id}`}
+                  >
+                    {category.name}
+                  </Link>
+                  <nav className="flex flex-col gap-1">
+                    {category.subcategories.map((sub) => (
+                      <Link
+                        key={sub.id}
+                        href={`/category/${category.id}/${sub.id}`}
+                        className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+                        data-testid={`link-footer-subcategory-${sub.id}`}
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        <div className="mt-8 border-t pt-6">
           <p className="text-center text-xs text-muted-foreground">
             Built for marketers navigating the GenAI stack · HYPD AI
           </p>
