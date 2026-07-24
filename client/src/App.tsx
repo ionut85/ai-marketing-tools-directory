@@ -32,12 +32,10 @@ function Router() {
 
 function App() {
   useEffect(() => {
-    if (import.meta.env.VITE_GA_MEASUREMENT_ID) {
-      initGA();
-    }
-    if (import.meta.env.VITE_POSTHOG_API_KEY) {
-      initPostHog();
-    }
+    // Both init helpers fall back to a default key when the env var is
+    // absent, so call them unconditionally and let them decide.
+    initGA();
+    initPostHog();
   }, []);
 
   return (
