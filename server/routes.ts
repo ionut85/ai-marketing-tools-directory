@@ -82,6 +82,16 @@ export async function registerRoutes(
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>`;
+
+      for (const sub of category.subcategories) {
+        sitemap += `
+  <url>
+    <loc>${baseUrl}/category/${category.id}/${sub.id}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+      }
     }
     
     for (const tool of tools) {

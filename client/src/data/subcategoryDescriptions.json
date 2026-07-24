@@ -1,0 +1,22 @@
+{
+  "market-research": {
+    "title": "AI Market Research Tools",
+    "description": "AI market research tools that size markets, spot demand and trends, and simulate audience reactions before you spend. Compare the options on HYPD.",
+    "keywords": ["AI market research tools", "market sizing", "demand signals", "synthetic research", "trend detection"]
+  },
+  "audience-intelligence": {
+    "title": "AI Audience Intelligence Tools",
+    "description": "AI audience intelligence tools that build segments and personas from real behavior, so you know who to reach and what to say. Compare them on HYPD.",
+    "keywords": ["AI audience intelligence", "customer personas", "audience segmentation", "buyer insights"]
+  },
+  "competitive-analysis": {
+    "title": "AI Competitive Analysis Tools",
+    "description": "AI competitive analysis tools that track rival ads, messaging, pricing, and SEO so you can find the white space. Compare the options on HYPD.",
+    "keywords": ["AI competitive analysis", "competitor tracking", "ad intelligence", "SEO gap analysis"]
+  },
+  "ai-assistants": {
+    "title": "AI Marketing Assistants",
+    "description": "AI marketing assistants that pull research, audience, and campaign data together and help you plan and act. Compare the best options on HYPD.",
+    "keywords": ["AI marketing assistant", "marketing copilot", "AI marketing agent", "planning assistant"]
+  }
+}

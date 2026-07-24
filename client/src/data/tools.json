@@ -1,5 +1,28 @@
 [
   {
+    "id": "artificial-societies",
+    "slug": "artificial-societies",
+    "name": "Artificial Societies",
+    "tagline": "Human behavior, simulated",
+    "description": "Artificial Societies builds networks of interconnected AI personas to simulate how a market or audience reacts before you spend. Marketers and strategists use it to pressure-test messaging, positioning, and concepts against a simulated population, and to survey hard-to-reach groups like executives and specialists. Each project runs on purpose-built networks of hundreds to thousands of personas grounded in real-world social behavior data.",
+    "logo": "https://www.google.com/s2/favicons?domain=societies.io&sz=128",
+    "screenshot": null,
+    "website": "https://societies.io/",
+    "category": "plan",
+    "subcategory": "market-research",
+    "useCases": [
+      "research",
+      "audience-discovery"
+    ],
+    "pricing": "enterprise",
+    "companyType": "startup",
+    "founded": 2024,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/artificial-societies",
+      "twitter": "https://twitter.com/societiesio"
+    }
+  },
+  {
     "id": "withmarket-ai",
     "slug": "withmarket-ai",
     "name": "WithMarket.ai (Acquired)",
@@ -2527,7 +2550,7 @@
     "logo": "https://www.google.com/s2/favicons?domain=mediamint.com&sz=128",
     "screenshot": null,
     "website": "https://mediamint.com/",
-    "category": "activate",
+    "category": "plan",
     "subcategory": "ai-assistants",
     "useCases": [
       "campaign-automation",
@@ -2595,7 +2618,7 @@
     "logo": "https://www.google.com/s2/favicons?domain=toasttab.com&sz=128",
     "screenshot": null,
     "website": "https://pos.toasttab.com/products/toast-iq",
-    "category": "activate",
+    "category": "plan",
     "subcategory": "ai-assistants",
     "useCases": [
       "campaign-automation",

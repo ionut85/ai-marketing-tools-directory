@@ -8,65 +8,71 @@ import { ResultsCounter } from "@/components/ResultsCounter";
 import { Markdown } from "@/components/Markdown";
 import { SEO, generateCategoryJsonLd } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { toolInCategory } from "@/lib/toolFilters";
-import { getCategoryContent } from "@/lib/content";
+import { toolInSubcategory } from "@/lib/toolFilters";
+import { getSubcategoryContent } from "@/lib/content";
 import type { Tool, Category } from "@/lib/types";
 
 import toolsData from "@/data/tools.json";
 import categoriesData from "@/data/categories.json";
-import categoryDescriptions from "@/data/categoryDescriptions.json";
+import subcategoryDescriptions from "@/data/subcategoryDescriptions.json";
 
-interface CategoryDescription {
+interface SubcategoryDescription {
   title: string;
   description: string;
-  longDescription: string;
   keywords: string[];
 }
 
 const TOOLS_PER_PAGE = 15;
 
-export default function CategoryPage() {
-  const params = useParams<{ slug: string }>();
+export default function SubcategoryPage() {
+  const params = useParams<{ slug: string; subcategory: string }>();
   const [, setLocation] = useLocation();
   const [currentPage, setCurrentPage] = useState(1);
 
   const tools = toolsData as Tool[];
   const categories = categoriesData as Category[];
-  const descriptions = categoryDescriptions as Record<string, CategoryDescription>;
+  const descriptions = subcategoryDescriptions as Record<
+    string,
+    SubcategoryDescription
+  >;
 
   const category = categories.find((c) => c.id === params.slug);
-  const categoryInfo = descriptions[params.slug || ""];
+  const subcategory = category?.subcategories.find(
+    (s) => s.id === params.subcategory,
+  );
+  const meta = descriptions[params.subcategory || ""];
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [params.slug]);
+  }, [params.slug, params.subcategory]);
 
-  const categoryTools = useMemo(() => {
-    if (!category) return [];
-    return tools.filter((tool) => toolInCategory(tool, category.id));
-  }, [tools, category]);
+  const subcategoryTools = useMemo(() => {
+    if (!category || !subcategory) return [];
+    return tools.filter((tool) =>
+      toolInSubcategory(tool, category.id, subcategory.id),
+    );
+  }, [tools, category, subcategory]);
 
   const paginatedTools = useMemo(() => {
     const startIndex = (currentPage - 1) * TOOLS_PER_PAGE;
-    return categoryTools.slice(startIndex, startIndex + TOOLS_PER_PAGE);
-  }, [categoryTools, currentPage]);
+    return subcategoryTools.slice(startIndex, startIndex + TOOLS_PER_PAGE);
+  }, [subcategoryTools, currentPage]);
 
-  const totalPages = Math.ceil(categoryTools.length / TOOLS_PER_PAGE);
+  const totalPages = Math.ceil(subcategoryTools.length / TOOLS_PER_PAGE);
 
   const handleToolClick = (tool: Tool) => {
     setLocation(`/tools/${tool.slug}`);
   };
 
-  if (!category || !categoryInfo) {
+  if (!category || !subcategory) {
     return (
       <div className="flex min-h-screen flex-col">
         <Header />
         <main className="flex flex-1 items-center justify-center">
           <div className="text-center">
-            <h1 className="text-2xl font-bold">Category Not Found</h1>
+            <h1 className="text-2xl font-bold">Subcategory Not Found</h1>
             <p className="mt-2 text-muted-foreground">
-              The category you're looking for doesn't exist.
+              The subcategory you're looking for doesn't exist.
             </p>
             <Link href="/">
               <Button variant="outline" className="mt-4">
@@ -80,23 +86,28 @@ export default function CategoryPage() {
     );
   }
 
-  const toolsForJsonLd = categoryTools.slice(0, 10).map((tool) => ({
+  const title = meta?.title ?? `${subcategory.name} Tools`;
+  const description =
+    meta?.description ??
+    `Browse ${subcategory.name} tools in the ${category.name} category on HYPD.`;
+
+  const body = getSubcategoryContent(subcategory.id);
+
+  const toolsForJsonLd = subcategoryTools.slice(0, 10).map((tool) => ({
     name: tool.name,
     url: `${typeof window !== "undefined" ? window.location.origin : ""}/tools/${tool.slug}`,
   }));
 
-  const body = getCategoryContent(category.id);
-
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title={categoryInfo.title}
-        description={categoryInfo.description}
-        keywords={categoryInfo.keywords}
-        canonicalUrl={`/category/${category.id}`}
+        title={title}
+        description={description}
+        keywords={meta?.keywords}
+        canonicalUrl={`/category/${category.id}/${subcategory.id}`}
         jsonLd={generateCategoryJsonLd({
-          name: categoryInfo.title,
-          description: categoryInfo.description,
+          name: title,
+          description,
           tools: toolsForJsonLd,
         })}
       />
@@ -104,35 +115,37 @@ export default function CategoryPage() {
 
       <section className="border-b bg-background py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <Link href="/">
-            <Button variant="ghost" size="sm" className="mb-6" data-testid="button-back-home">
+          <Link href={`/category/${category.id}`}>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="mb-6"
+              data-testid="button-back-category"
+            >
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to All Tools
+              Back to {category.name}
             </Button>
           </Link>
 
           <div className="max-w-3xl">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl" data-testid="text-category-title">
-              {categoryInfo.title}
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground" data-testid="text-category-description">
-              {categoryInfo.longDescription}
+            <p
+              className="text-sm font-medium text-muted-foreground"
+              data-testid="text-parent-category"
+            >
+              {category.name}
             </p>
-            {category.subcategories.length > 0 && (
-              <div className="mt-6 flex flex-wrap gap-2">
-                {category.subcategories.map((sub) => (
-                  <Link key={sub.id} href={`/category/${category.id}/${sub.id}`}>
-                    <Badge
-                      variant="secondary"
-                      className="cursor-pointer hover-elevate"
-                      data-testid={`badge-subcategory-${sub.id}`}
-                    >
-                      {sub.name}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            )}
+            <h1
+              className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
+              data-testid="text-subcategory-title"
+            >
+              {title}
+            </h1>
+            <p
+              className="mt-4 text-lg text-muted-foreground"
+              data-testid="text-subcategory-description"
+            >
+              {description}
+            </p>
           </div>
         </div>
       </section>
@@ -140,7 +153,10 @@ export default function CategoryPage() {
       <main className="flex-1">
         <div className="mx-auto max-w-7xl px-4 py-8 md:px-6">
           <div className="mb-6">
-            <ResultsCounter showing={paginatedTools.length} total={categoryTools.length} />
+            <ResultsCounter
+              showing={paginatedTools.length}
+              total={subcategoryTools.length}
+            />
           </div>
 
           <ToolGrid
@@ -150,7 +166,10 @@ export default function CategoryPage() {
           />
 
           {totalPages > 1 && (
-            <div className="mt-8 flex items-center justify-center gap-2" data-testid="pagination-controls">
+            <div
+              className="mt-8 flex items-center justify-center gap-2"
+              data-testid="pagination-controls"
+            >
               <Button
                 variant="outline"
                 size="sm"
@@ -161,17 +180,19 @@ export default function CategoryPage() {
                 Previous
               </Button>
               <div className="flex items-center gap-1">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                  <Button
-                    key={page}
-                    variant={page === currentPage ? "default" : "ghost"}
-                    size="sm"
-                    onClick={() => setCurrentPage(page)}
-                    data-testid={`button-page-${page}`}
-                  >
-                    {page}
-                  </Button>
-                ))}
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                  (page) => (
+                    <Button
+                      key={page}
+                      variant={page === currentPage ? "default" : "ghost"}
+                      size="sm"
+                      onClick={() => setCurrentPage(page)}
+                      data-testid={`button-page-${page}`}
+                    >
+                      {page}
+                    </Button>
+                  ),
+                )}
               </div>
               <Button
                 variant="outline"
@@ -188,7 +209,7 @@ export default function CategoryPage() {
           {body && (
             <section
               className="mt-12 border-t pt-10"
-              data-testid="section-category-content"
+              data-testid="section-subcategory-content"
             >
               <Markdown content={body} />
             </section>
