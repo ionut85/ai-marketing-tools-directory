@@ -810,6 +810,12 @@
     "website": "https://www.gomarble.ai/",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "reporting",
       "ad-creative",
@@ -880,6 +886,12 @@
     "website": "https://www.kochava.com/stationone/",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -927,6 +939,12 @@
     "website": "https://support.google.com/google-ads/answer/16574983",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "reporting",
       "campaign-automation"
@@ -1020,6 +1038,12 @@
     "website": "https://www.facebook.com/business/ai/business-assistant",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "reporting",
       "campaign-automation"
@@ -1043,6 +1067,12 @@
     "website": "https://advertising.amazon.com/resources/whats-new/unboxed-2025-introducing-ads-agent",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "ai-ad-platforms"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -1161,6 +1191,12 @@
     "website": "https://www.triplewhale.com/moby-ai",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "measure",
+        "subcategory": "analytics"
+      }
+    ],
     "useCases": [
       "reporting",
       "attribution",
@@ -1322,6 +1358,12 @@
     "website": "https://learn.microsoft.com/en-us/xandr/monetize/copilot-in-microsoft-monetize",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "ai-ad-platforms"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"
@@ -2552,6 +2594,12 @@
     "website": "https://mediamint.com/",
     "category": "plan",
     "subcategory": "ai-assistants",
+    "secondaryCategories": [
+      {
+        "category": "activate",
+        "subcategory": "campaign-management"
+      }
+    ],
     "useCases": [
       "campaign-automation",
       "reporting"

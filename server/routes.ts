@@ -162,7 +162,7 @@ This directory helps marketing professionals find and evaluate AI tools across f
       for (const sub of category.subcategories) {
         const subTools = tools.filter(t => t.category === category.id && t.subcategory === sub.id);
         if (subTools.length > 0) {
-          llms += `  - ${sub.name}: ${subTools.length} tools\n`;
+          llms += `  - [${sub.name}](${baseUrl}/category/${category.id}/${sub.id}): ${subTools.length} tools\n`;
         }
       }
     }
