@@ -3149,5 +3149,52 @@
       "twitter": null,
       "github": "https://github.com/adcontextprotocol/adcp"
     }
+  },
+  {
+    "id": "plentylabs",
+    "slug": "plentylabs",
+    "name": "PlentyLabs",
+    "tagline": "AI creative platform for ad-ready social content",
+    "description": "PlentyLabs is an AI-native creative platform that generates images, video, audio, and music for advertising, with thousands of presets and access to a wide range of AI models. It connects to Meta, TikTok, LinkedIn, and Instagram, so marketing teams can brand and localize ad creative for multiple markets in a fraction of the usual production time.",
+    "logo": "https://www.google.com/s2/favicons?domain=plentylabs.com&sz=128",
+    "screenshot": null,
+    "website": "https://www.plentylabs.com/",
+    "category": "create",
+    "subcategory": "ad-creative",
+    "useCases": [
+      "ad-creative",
+      "image-generation",
+      "video-generation"
+    ],
+    "pricing": "subscription",
+    "companyType": "startup",
+    "founded": null,
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/plenty-labs/"
+    }
+  },
+  {
+    "id": "hypd-openai-ads-mcp",
+    "slug": "hypd-openai-ads-mcp",
+    "name": "HYPD OpenAI Ads MCP",
+    "tagline": "Open-source MCP server for OpenAI Ads campaign data",
+    "description": "OpenAI Ads MCP is an open-source Model Context Protocol server by HYPD that lets MCP-compatible clients like Claude Desktop, Cursor, and VS Code read OpenAI Ads campaign data. It exposes read-only tools covering accounts, campaigns, ad groups, ads, and performance insights, with pagination and date-range reporting. Write operations are on the roadmap.",
+    "logo": "https://www.google.com/s2/favicons?domain=hypd.ai&sz=128",
+    "screenshot": null,
+    "website": "https://github.com/hypd-ai/openai-ads-mcp",
+    "category": "activate",
+    "subcategory": "ai-ad-platforms",
+    "useCases": [
+      "reporting",
+      "ai-agents"
+    ],
+    "pricing": "free",
+    "companyType": "oss",
+    "founded": null,
+    "social": {
+      "github": "https://github.com/hypd-ai/openai-ads-mcp",
+      "linkedin": "https://www.linkedin.com/company/wearehypd/",
+      "twitter": "https://x.com/hypdai"
+    }
   }
 ]
