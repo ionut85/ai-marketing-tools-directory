@@ -1,6 +1,8 @@
 import { Link } from "wouter";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { LogoFallback } from "./LogoFallback";
+import { readableTextOn } from "@/lib/contrast";
+import { useTheme } from "./ThemeProvider";
 import type { Tool, Category } from "@/lib/types";
 
 interface LandscapeGridProps {
@@ -10,7 +12,13 @@ interface LandscapeGridProps {
 }
 
 export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridProps) {
+  const { theme } = useTheme();
   const sortedCategories = [...categories].sort((a, b) => a.order - b.order);
+
+  // The summer theme swaps category colors for their IAB palette equivalents.
+  // Light and dark keep the base brand colors.
+  const colorFor = (category: Category) =>
+    theme === "summer" ? category.iabColor ?? category.color : category.color;
 
   // Split categories into regular (with subcategories) and general (without)
   const regularCategories = sortedCategories.filter(cat => cat.subcategories.length > 0);
@@ -18,8 +26,12 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
 
   // Gradient colors for the General header — derived from the first/last regular
   // category so a palette swap in categories.json flows through automatically.
-  const gradientStart = regularCategories[0]?.color ?? '#fbbf25';
-  const gradientEnd = regularCategories[regularCategories.length - 1]?.color ?? '#fbbf25';
+  const gradientStart = regularCategories[0]
+    ? colorFor(regularCategories[0])
+    : '#fbbf25';
+  const gradientEnd = regularCategories[regularCategories.length - 1]
+    ? colorFor(regularCategories[regularCategories.length - 1])
+    : '#fbbf25';
 
   const getToolsBySubcategory = (categoryId: string, subcategoryId: string) => {
     return tools.filter(
@@ -41,8 +53,12 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
           <div key={category.id} className="w-full lg:w-64 lg:flex-shrink-0">
             <Link
               href={`/category/${category.id}`}
-              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-neutral-900 hover:opacity-90 transition-opacity cursor-pointer"
-              style={{ backgroundColor: category.color }}
+              className={`mb-3 block rounded-md px-3 py-2 text-sm font-semibold hover:opacity-90 transition-opacity cursor-pointer ${
+                readableTextOn(colorFor(category)) === "light"
+                  ? "text-white"
+                  : "text-neutral-900"
+              }`}
+              style={{ backgroundColor: colorFor(category) }}
               data-testid={`landscape-category-${category.id}`}
             >
               {category.name}
@@ -124,16 +140,24 @@ export function LandscapeGrid({ tools, categories, onToolClick }: LandscapeGridP
             {/* Mobile: solid color */}
             <Link
               href="/category/general"
-              className="mb-3 block rounded-md px-3 py-2 text-sm font-semibold text-neutral-900 hover:opacity-90 transition-opacity cursor-pointer lg:hidden"
-              style={{ backgroundColor: generalCategory.color }}
+              className={`mb-3 block rounded-md px-3 py-2 text-sm font-semibold hover:opacity-90 transition-opacity cursor-pointer lg:hidden ${
+                readableTextOn(colorFor(generalCategory)) === "light"
+                  ? "text-white"
+                  : "text-neutral-900"
+              }`}
+              style={{ backgroundColor: colorFor(generalCategory) }}
             >
               {generalCategory.name}
             </Link>
 
-            {/* Desktop: gradient */}
+            {/* Desktop: gradient — contrast follows the gradient's start color */}
             <Link
               href="/category/general"
-              className="mb-3 hidden rounded-md px-3 py-2 text-sm font-semibold text-neutral-900 hover:opacity-90 transition-opacity cursor-pointer lg:block"
+              className={`mb-3 hidden rounded-md px-3 py-2 text-sm font-semibold hover:opacity-90 transition-opacity cursor-pointer lg:block ${
+                readableTextOn(gradientStart) === "light"
+                  ? "text-white"
+                  : "text-neutral-900"
+              }`}
               style={{
                 background: `linear-gradient(to right, ${gradientStart}, ${gradientEnd})`
               }}

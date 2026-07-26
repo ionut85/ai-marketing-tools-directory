@@ -42,7 +42,13 @@ export interface Subcategory {
 export interface Category {
   id: string;
   name: string;
+  /** Base category color, used in the light and dark themes. */
   color: string;
+  /**
+   * Summer-theme override: the color of the IAB category this one maps to.
+   * Only applied when the summer theme is active; other themes use `color`.
+   */
+  iabColor?: string;
   order: number;
   subcategories: Subcategory[];
 }
