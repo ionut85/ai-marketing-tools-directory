@@ -240,6 +240,78 @@
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
+/* SUMMER MODE - IAB AI in Advertising palette (sand, sky, coral) */
+.summer {
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(0,0,0, .03);
+  --elevate-2: rgba(0,0,0, .08);
+  --background: 38 100% 96%;           /* #fff7eb warm sand */
+  --foreground: 200 25% 12%;           /* deep sea ink */
+  --foreground-heading: 200 30% 10%;
+  --border: 35 55% 88%;
+  --card: 0 0% 100%;                   /* clean white against sand */
+  --card-foreground: 200 25% 12%;
+  --card-border: 35 55% 88%;
+  --sidebar: 38 70% 93%;
+  --sidebar-foreground: 200 20% 25%;
+  --sidebar-border: 35 55% 88%;
+  --sidebar-primary: 43 96% 56%;
+  --sidebar-primary-foreground: 0 0% 4%;
+  --sidebar-accent: 194 77% 61%;
+  --sidebar-accent-foreground: 0 0% 4%;
+  --sidebar-ring: 194 77% 61%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 200 25% 12%;
+  --popover-border: 35 55% 88%;
+  --primary: 43 96% 56%;               /* amber #fbbf25 — brand lock */
+  --primary-foreground: 0 0% 4%;
+  --secondary: 194 75% 87%;            /* pale sky, for badges */
+  --secondary-foreground: 200 30% 15%;
+  --muted: 38 80% 92%;                 /* pale sand */
+  --muted-foreground: 200 15% 35%;
+  --accent: 194 77% 61%;               /* IAB sky #4fc3e8 */
+  --accent-foreground: 0 0% 4%;
+  --destructive: 4 86% 54%;            /* IAB red #ee3124 */
+  --destructive-foreground: 0 0% 100%;
+  --input: 35 55% 88%;
+  --ring: 194 77% 61%;
+  --chart-1: 4 86% 54%;                /* IAB red */
+  --chart-2: 113 58% 40%;              /* IAB green #3aa22b */
+  --chart-3: 194 77% 61%;              /* IAB sky */
+  --chart-4: 43 96% 56%;               /* amber */
+  --chart-5: 245 55% 61%;              /* IAB indigo #6c63d2 */
+
+  /* Fallback for older browsers */
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --primary-border: hsl(var(--primary));
+  --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --secondary-border: hsl(var(--secondary));
+  --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --muted-border: hsl(var(--muted));
+  --muted-border: hsl(from hsl(var(--muted)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --accent-border: hsl(var(--accent));
+  --accent-border: hsl(from hsl(var(--accent)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --destructive-border: hsl(var(--destructive));
+  --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+}
+
 /* CHRISTMAS MODE - Moody Dark Green Theme */
 .christmas {
   --button-outline: rgba(255,255,255, .10);
