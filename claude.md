@@ -348,7 +348,7 @@ For each route, check **both breakpoints**:
 - **Mobile** (≤ 640px, e.g. 375px) — stacked layouts, `MobileFilters` sheet, mobile variants of `LandscapeGrid` (vertical flow), `Header` hamburger state if applicable
 - **Desktop** (≥ 1024px, e.g. 1280px) — sidebar filters, landscape horizontal scroll, hover states
 
-And all three themes: **Light / Dark / Easter**. Several layout bugs have shipped
+And all three themes: **Light / Dark / Summer**. Several layout bugs have shipped
 because a change looked right in the default theme at the default viewport but
 broke in another theme or at another width.
 

@@ -1,4 +1,4 @@
-import { Egg, Moon, Sun } from "lucide-react";
+import { Moon, Sun, TreePalm } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "./ThemeProvider";
 
@@ -14,7 +14,7 @@ export function ThemeToggle() {
     >
       {theme === "light" && <Sun className="h-5 w-5" />}
       {theme === "dark" && <Moon className="h-5 w-5" />}
-      {theme === "easter" && <Egg className="h-5 w-5" />}
+      {theme === "summer" && <TreePalm className="h-5 w-5" />}
     </Button>
   );
 }

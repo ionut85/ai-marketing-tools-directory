@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "light" | "dark" | "easter";
+type Theme = "light" | "dark" | "summer";
 
 interface ThemeContextType {
   theme: Theme;
@@ -14,11 +14,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
       const stored = localStorage.getItem("theme");
-      if (stored === "light" || stored === "dark" || stored === "easter") {
+      if (stored === "light" || stored === "dark" || stored === "summer") {
         return stored;
       }
-      // Graceful fallback: legacy "christmas" (hidden from switcher) → light
-      if (stored === "christmas") return "light";
+      // Graceful fallback: legacy seasonal themes (hidden from switcher) → light
+      if (stored === "christmas" || stored === "easter") return "light";
       return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     return "light";
@@ -26,11 +26,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const root = document.documentElement;
-    root.classList.remove("dark", "christmas", "easter");
+    root.classList.remove("dark", "christmas", "easter", "summer");
     if (theme === "dark") {
       root.classList.add("dark");
-    } else if (theme === "easter") {
-      root.classList.add("easter");
+    } else if (theme === "summer") {
+      root.classList.add("summer");
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
@@ -38,7 +38,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const toggleTheme = () => {
     setTheme((current) => {
       if (current === "light") return "dark";
-      if (current === "dark") return "easter";
+      if (current === "dark") return "summer";
       return "light";
     });
   };
