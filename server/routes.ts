@@ -29,13 +29,13 @@ interface CategoryDescription {
   keywords: string[];
 }
 
-function loadJsonData<T>(filename: string): T {
+export function loadJsonData<T>(filename: string): T {
   const filePath = path.join(process.cwd(), "client", "src", "data", filename);
   const data = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(data) as T;
 }
 
-function getBaseUrl(req: Express["request"]): string {
+export function getBaseUrl(req: Express["request"]): string {
   const protocol = req.headers["x-forwarded-proto"] || req.protocol || "https";
   const host = req.headers["x-forwarded-host"] || req.headers.host || "localhost";
   return `${protocol}://${host}`;

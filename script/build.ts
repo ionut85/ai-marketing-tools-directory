@@ -24,6 +24,8 @@ const allowlist = [
   "passport",
   "passport-local",
   "pg",
+  "react-markdown",
+  "remark-gfm",
   "stripe",
   "uuid",
   "ws",
