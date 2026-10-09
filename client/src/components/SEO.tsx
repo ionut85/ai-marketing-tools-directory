@@ -10,7 +10,7 @@ interface SEOProps {
   jsonLd?: object;
 }
 
-const BASE_TITLE = "GenAI Marketing Landscape";
+export const BASE_TITLE = "GenAI Marketing Landscape";
 const BASE_DESCRIPTION = "Explore the GenAI Marketing Landscape - your comprehensive directory of AI-powered marketing tools for planning, creating, activating, and measuring campaigns.";
 const BASE_URL = typeof window !== "undefined" ? window.location.origin : "";
 
