@@ -32,6 +32,7 @@ export default function ToolDetailPage() {
   if (!tool) {
     return (
       <div className="flex min-h-screen flex-col">
+        <SEO title="Tool Not Found" noindex />
         <Header />
         <main className="flex flex-1 items-center justify-center">
           <div className="text-center">
