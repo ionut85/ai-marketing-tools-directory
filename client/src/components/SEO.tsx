@@ -8,6 +8,8 @@ interface SEOProps {
   ogImage?: string;
   canonicalUrl?: string;
   jsonLd?: object;
+  /** Keep the page out of search results (not-found states). */
+  noindex?: boolean;
 }
 
 const BASE_TITLE = "GenAI Marketing Landscape";
@@ -22,6 +24,7 @@ export function SEO({
   ogImage,
   canonicalUrl,
   jsonLd,
+  noindex = false,
 }: SEOProps) {
   const fullTitle = title ? `${title} | ${BASE_TITLE}` : BASE_TITLE;
   const fullUrl = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : BASE_URL;
@@ -41,6 +44,15 @@ export function SEO({
     };
 
     updateMeta("description", description);
+
+    // The server sets robots=noindex on 404s; clear it again when the visitor
+    // navigates on to a real page.
+    const robotsMeta = document.querySelector('meta[name="robots"]');
+    if (noindex) {
+      updateMeta("robots", "noindex");
+    } else if (robotsMeta) {
+      robotsMeta.remove();
+    }
     const keywordsMeta = document.querySelector('meta[name="keywords"]');
     if (keywords.length > 0) {
       updateMeta("keywords", keywords.join(", "));
@@ -89,7 +101,7 @@ export function SEO({
         jsonLdScript.remove();
       }
     };
-  }, [fullTitle, description, keywords, ogType, ogImage, fullUrl, jsonLd]);
+  }, [fullTitle, description, keywords, ogType, ogImage, fullUrl, jsonLd, noindex]);
 
   return null;
 }

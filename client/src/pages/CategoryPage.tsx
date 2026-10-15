@@ -61,6 +61,7 @@ export default function CategoryPage() {
   if (!category || !categoryInfo) {
     return (
       <div className="flex min-h-screen flex-col">
+        <SEO title="Category Not Found" noindex />
         <Header />
         <main className="flex flex-1 items-center justify-center">
           <div className="text-center">
