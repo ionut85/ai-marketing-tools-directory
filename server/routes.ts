@@ -118,6 +118,7 @@ export async function registerRoutes(
 # https://tools.hypd.ai
 
 User-agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Allow: /
 
 # Sitemaps
