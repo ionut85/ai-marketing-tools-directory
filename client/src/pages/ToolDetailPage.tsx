@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ToolDetail } from "@/components/ToolDetail";
 import { SEO, generateToolJsonLd } from "@/components/SEO";
 import type { Tool, Category } from "@/lib/types";
+import { relatedTools as pickRelated } from "@shared/relatedTools";
 
 import toolsData from "@/data/tools.json";
 import categoriesData from "@/data/categories.json";
@@ -18,16 +19,7 @@ export default function ToolDetailPage() {
 
   const tool = tools.find((t) => t.slug === params.slug);
 
-  const relatedTools = useMemo(() => {
-    if (!tool) return [];
-    return tools
-      .filter(
-        (t) =>
-          t.id !== tool.id &&
-          (t.category === tool.category || t.useCases.some((uc) => tool.useCases.includes(uc)))
-      )
-      .slice(0, 4);
-  }, [tool, tools]);
+  const relatedTools = useMemo(() => (tool ? pickRelated(tool, tools) : []), [tool, tools]);
 
   if (!tool) {
     return (

@@ -207,6 +207,29 @@ export default function SubcategoryPage() {
             </div>
           )}
 
+          {category.subcategories.length > 1 && (
+            <nav
+              aria-label={`More ${category.name} tools`}
+              className="mt-12 border-t pt-8"
+              data-testid="nav-sibling-subcategories"
+            >
+              <h2 className="text-lg font-semibold">More {category.name} tools</h2>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {category.subcategories
+                  .filter((s) => s.id !== subcategory.id)
+                  .map((s) => (
+                    <Link
+                      key={s.id}
+                      href={`/category/${category.id}/${s.id}`}
+                      className="rounded-full border px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {s.name}
+                    </Link>
+                  ))}
+              </div>
+            </nav>
+          )}
+
           {body && (
             <section
               className="mt-12 border-t pt-10"

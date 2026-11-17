@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { relatedTools } from "../shared/relatedTools";
 
 /**
  * Server-side HTML for every page of the directory.
@@ -291,13 +292,7 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
   const useCaseNames = tool.useCases
     .map((id) => c.useCases.find((u) => u.id === id)?.name ?? id)
     .filter(Boolean);
-  const related = c.tools
-    .filter(
-      (t) =>
-        t.id !== tool.id &&
-        (t.category === tool.category || t.useCases.some((uc) => tool.useCases.includes(uc))),
-    )
-    .slice(0, 4);
+  const related = relatedTools(tool, c.tools);
   const description = cleanDescription(tool.description);
   const review = c.toolBodies[tool.slug];
 
@@ -344,7 +339,7 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
     bodyHtml: `${siteNav(c.categories)}<main><article><h1>${escapeHtml(tool.headline ?? tool.name)}</h1>${
       tool.tagline ? `<p>${escapeHtml(tool.tagline)}</p>` : ""
     }${review ? markdownToHtml(review) : `<p>${escapeHtml(description)}</p>`}<ul>${facts}</ul>${
-      related.length ? `<h2>Related tools</h2>${toolLinkList(related)}` : ""
+      related.length ? `<h2>${escapeHtml(tool.name)} alternatives</h2>${toolLinkList(related)}` : ""
     }</article></main>`,
   };
 }
@@ -396,6 +391,7 @@ function renderSubcategory(
     meta?.description ?? `Browse ${subcategory.name} tools in the ${category.name} category on HYPD.`;
   const tools = c.tools.filter((t) => toolInSubcategory(t, category.id, subcategory.id));
   const body = c.subcategoryBodies[subcategory.id];
+  const siblings = category.subcategories.filter((s) => s.id !== subcategory.id);
 
   return {
     status: 200,
@@ -408,8 +404,12 @@ function renderSubcategory(
     bodyHtml: `${siteNav(c.categories)}<main><p><a href="/category/${escapeHtml(category.id)}">${escapeHtml(
       category.name,
     )}</a></p><h1>${escapeHtml(title)}</h1><p>${escapeHtml(description)}</p>${toolLinkList(tools)}${
-      body ? markdownToHtml(body) : ""
-    }</main>`,
+      siblings.length
+        ? `<h2>More ${escapeHtml(category.name)} tools</h2><ul>${siblings
+            .map((s) => `<li><a href="/category/${escapeHtml(category.id)}/${escapeHtml(s.id)}">${escapeHtml(s.name)}</a></li>`)
+            .join("")}</ul>`
+        : ""
+    }${body ? markdownToHtml(body) : ""}</main>`,
   };
 }
 
@@ -495,9 +495,28 @@ function renderAbout(c: Catalogue): RenderedPage {
   };
 }
 
+/** Footer with every subcategory, the landscape, About and hypd.ai (mirrors Footer.tsx). */
+function siteFooter(categories: Category[]): string {
+  const groups = categories
+    .filter((cat) => cat.subcategories.length)
+    .map(
+      (cat) =>
+        `<li><a href="/category/${escapeHtml(cat.id)}">${escapeHtml(cat.name)}</a><ul>${cat.subcategories
+          .map((s) => `<li><a href="/category/${escapeHtml(cat.id)}/${escapeHtml(s.id)}">${escapeHtml(s.name)}</a></li>`)
+          .join("")}</ul></li>`,
+    )
+    .join("");
+  return `<footer><nav aria-label="Footer"><ul>${groups}</ul><p><a href="/landscape">Landscape</a> · <a href="/about">About</a> · <a href="https://www.hypd.ai/">HYPD</a></p></nav></footer>`;
+}
+
 /** Resolve a request path to its server-rendered page. */
 export function renderPage(pathname: string, baseUrl: string): RenderedPage {
   const c = catalogue();
+  const page = route(pathname, baseUrl, c);
+  return { ...page, bodyHtml: page.bodyHtml + siteFooter(c.categories) };
+}
+
+function route(pathname: string, baseUrl: string, c: Catalogue): RenderedPage {
   const clean = pathname.replace(/\/+$/, "") || "/";
   const parts = clean.split("/").filter(Boolean).map((p) => decodeURIComponent(p));
 

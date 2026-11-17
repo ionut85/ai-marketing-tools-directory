@@ -109,13 +109,17 @@ export function ToolDetail({
           <Card className="p-4">
             <h3 className="font-medium mb-3">Category</h3>
             <div className="space-y-2">
-              <Badge className="border-primary/50 bg-primary/15 text-foreground">
-                {category?.name || tool.category}
-              </Badge>
-              {subcategory && (
-                <Badge variant="outline" className="ml-2">
-                  {subcategory.name}
+              <Link href={`/category/${tool.category}`}>
+                <Badge className="border-primary/50 bg-primary/15 text-foreground hover:bg-primary/25">
+                  {category?.name || tool.category}
                 </Badge>
+              </Link>
+              {subcategory && (
+                <Link href={`/category/${tool.category}/${subcategory.id}`}>
+                  <Badge variant="outline" className="ml-2 hover:bg-muted" data-testid="link-tool-subcategory">
+                    {subcategory.name}
+                  </Badge>
+                </Link>
               )}
             </div>
           </Card>
@@ -273,7 +277,7 @@ export function ToolDetail({
         <>
           <Separator className="my-8" />
           <div>
-            <h2 className="text-lg font-semibold mb-4">Related Tools</h2>
+            <h2 className="text-lg font-semibold mb-4">{tool.name} alternatives</h2>
             <div className="flex gap-3 overflow-x-auto pb-2">
               {relatedTools.map((relatedTool) => (
                 <div key={relatedTool.id} className="w-48 flex-shrink-0">
