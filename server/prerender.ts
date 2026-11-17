@@ -339,7 +339,7 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
     bodyHtml: `${siteNav(c.categories)}<main><article><h1>${escapeHtml(tool.headline ?? tool.name)}</h1>${
       tool.tagline ? `<p>${escapeHtml(tool.tagline)}</p>` : ""
     }${review ? markdownToHtml(review) : `<p>${escapeHtml(description)}</p>`}<ul>${facts}</ul>${
-      related.length ? `<h2>${escapeHtml(tool.name)} alternatives</h2>${toolLinkList(related)}` : ""
+      related.length ? `<h2>Similar to ${escapeHtml(tool.name)}</h2>${toolLinkList(related)}` : ""
     }</article></main>`,
   };
 }

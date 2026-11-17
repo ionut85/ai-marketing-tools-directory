@@ -277,7 +277,7 @@ export function ToolDetail({
         <>
           <Separator className="my-8" />
           <div>
-            <h2 className="text-lg font-semibold mb-4">{tool.name} alternatives</h2>
+            <h2 className="text-lg font-semibold mb-4">Similar to {tool.name}</h2>
             <div className="flex gap-3 overflow-x-auto pb-2">
               {relatedTools.map((relatedTool) => (
                 <div key={relatedTool.id} className="w-48 flex-shrink-0">
