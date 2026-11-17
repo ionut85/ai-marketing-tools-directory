@@ -30,8 +30,11 @@ export function ToolDetail({
   const pricingLabels: Record<string, string> = {
     free: "Free",
     freemium: "Freemium",
-    paid: "Paid",
+    subscription: "Subscription",
+    "usage-based": "Usage-based",
     enterprise: "Enterprise",
+    unknown: "Unknown",
+    paid: "Paid",
   };
 
   // Christmas theme is hidden from the switcher (HYP-527); strip legacy holiday emojis unconditionally
@@ -116,6 +119,9 @@ export function ToolDetail({
             <Badge className="border-primary/50 bg-primary/15 text-foreground">
               {pricingLabels[tool.pricing] || tool.pricing}
             </Badge>
+            {tool.priceFrom && (
+              <p className="mt-2 text-sm text-muted-foreground">{tool.priceFrom}</p>
+            )}
           </Card>
 
           {(() => {
@@ -237,10 +243,12 @@ export function ToolDetail({
             );
           })()}
 
-          <Card className="p-4">
-            <h3 className="font-medium mb-2">Founded</h3>
-            <p className="text-muted-foreground">{tool.founded}</p>
-          </Card>
+          {tool.founded && (
+            <Card className="p-4">
+              <h3 className="font-medium mb-2">Founded</h3>
+              <p className="text-muted-foreground">{tool.founded}</p>
+            </Card>
+          )}
         </div>
       </div>
 

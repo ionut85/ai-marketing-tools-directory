@@ -29,6 +29,7 @@ interface Tool {
   seoTitle?: string;
   seoDescription?: string;
   headline?: string;
+  priceFrom?: string;
   logo: string | null;
   website: string;
   category: string;
@@ -308,7 +309,7 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
           : ""
       }</li>`,
     useCaseNames.length && `<li>Use cases: ${escapeHtml(useCaseNames.join(", "))}</li>`,
-    `<li>Pricing: ${escapeHtml(PRICING_LABELS[tool.pricing] ?? tool.pricing)}</li>`,
+    `<li>Pricing: ${escapeHtml(PRICING_LABELS[tool.pricing] ?? tool.pricing)}${tool.priceFrom ? ` (${escapeHtml(tool.priceFrom)})` : ""}</li>`,
     tool.founded && `<li>Founded: ${tool.founded}</li>`,
     `<li>Website: <a href="${escapeHtml(tool.website)}" rel="noopener">${escapeHtml(tool.website)}</a></li>`,
   ]

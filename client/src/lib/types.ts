@@ -8,6 +8,8 @@ export interface Tool {
   seoTitle?: string;
   seoDescription?: string;
   headline?: string;
+  /** Short price line under the pricing badge, e.g. "From $1,250/mo". */
+  priceFrom?: string;
   logo: string | null;
   screenshot: string | null;
   website: string;
