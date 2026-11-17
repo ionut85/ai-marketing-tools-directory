@@ -1,4 +1,4 @@
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -89,6 +89,23 @@ export function ToolDetail({
 
         {/* Sticks below the 56px sticky header on desktop, where the review column is taller. */}
         <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
+          <Card className="border-primary/60 bg-primary/10 p-4" data-testid="card-hypd-cta">
+            <h3 className="font-semibold">Know which ads actually work</h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              HYPD connects Claude or ChatGPT to your ad accounts and ranks your creatives by
+              spend, CTR and ROAS.
+            </p>
+            <Button asChild className="mt-3 w-full" data-testid="button-hypd-cta">
+              <a
+                href={`https://app.hypd.ai/start?utm_source=tools&utm_content=${encodeURIComponent(tool.slug)}&utm_term=sidebar`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Try HYPD free
+                <ArrowRight />
+              </a>
+            </Button>
+          </Card>
           <Card className="p-4">
             <h3 className="font-medium mb-3">Category</h3>
             <div className="space-y-2">
