@@ -252,7 +252,7 @@ function toolLinkList(tools: Tool[]): string {
 function siteNav(categories: Category[]): string {
   return `<nav aria-label="Main"><a href="/">${escapeHtml(BASE_TITLE)}</a> · <a href="/landscape">Landscape</a> · <a href="/about">About</a> · ${categories
     .map((c) => `<a href="/category/${escapeHtml(c.id)}">${escapeHtml(c.name)}</a>`)
-    .join(" · ")}</nav>`;
+    .join(" · ")} · <a href="https://www.hypd.ai/">HYPD</a></nav>`;
 }
 
 function itemListJsonLd(name: string, description: string, tools: Tool[], baseUrl: string) {
