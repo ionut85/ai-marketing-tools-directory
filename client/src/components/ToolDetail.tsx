@@ -84,7 +84,8 @@ export function ToolDetail({
           )}
         </div>
 
-        <div className="space-y-4">
+        {/* Sticks below the 56px sticky header on desktop, where the review column is taller. */}
+        <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
           <Card className="p-4">
             <h3 className="font-medium mb-3">Category</h3>
             <div className="space-y-2">
