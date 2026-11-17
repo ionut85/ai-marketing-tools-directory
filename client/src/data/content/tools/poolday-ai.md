@@ -4,7 +4,9 @@ Poolday is an AI agent that edits your own footage into on-brand video ads, then
 
 **HYPD rating: 3 out of 5.** Worth a look for high-volume creative teams with budget, and too expensive for SMBs and most e-commerce stores.
 
-Before you pay for more video variations, find out which of your current ads actually work. HYPD ranks your Meta and TikTok creatives by spend, CTR and ROAS and flags fatigue. **[Try HYPD free →](https://app.hypd.ai/start?utm_source=tools&utm_content=poolday-ai&utm_term=top)**
+Before you pay for more video variations, find out which of your current ads actually work. HYPD ranks your Meta and TikTok creatives by spend, CTR and ROAS and flags fatigue.
+
+[Try HYPD free](https://app.hypd.ai/start?utm_source=tools&utm_content=poolday-ai&utm_term=top)
 
 ## At a glance
 
@@ -81,7 +83,7 @@ For a sense of scale, Creatify's AI video ad plans run from free to $136 a month
 
 | # | Tool | What it does | From | The catch |
 | --- | --- | --- | --- | --- |
-| **1** | **HYPD** (our tool) · [Try free →](https://app.hypd.ai/start?utm_source=tools&utm_content=poolday-ai&utm_term=table) | Connects Claude or ChatGPT to your Meta, TikTok and Google ad accounts. Ranks your creatives by spend, CTR and ROAS, flags fatigue and tells you what to scale, refresh or cut | Free, then $19.99/mo | Doesn't make videos. It tells you which ones to make |
+| **1** | **HYPD** (our tool) [Try free](https://app.hypd.ai/start?utm_source=tools&utm_content=poolday-ai&utm_term=table) | Connects Claude or ChatGPT to your Meta, TikTok and Google ad accounts. Ranks your creatives by spend, CTR and ROAS, flags fatigue and tells you what to scale, refresh or cut | Free, then $19.99/mo | Doesn't make videos. It tells you which ones to make |
 | 2 | [Creatify](https://www.creatify.ai/pricing) | AI video ads from a product URL, with AI avatars | Free (watermarked), then $10/mo | Credit-based |
 | 3 | Poolday AI | AI agent that edits your own footage into on-brand ad variations | $1,250/mo | See Shortcomings and risks |
 
@@ -107,7 +109,7 @@ If you're deciding whether to spend $1,250 a month on more video, start by findi
 
 HYPD connects Claude and ChatGPT to your Meta, TikTok and Google ad accounts and ranks every creative by what it actually returned. Ask which ads to scale, refresh or cut and get the numbers behind the answer. More than 30,000 people have signed up.
 
-**[Start free →](https://app.hypd.ai/start?utm_source=tools&utm_content=poolday-ai&utm_term=bottom)** · [See the creative analyzer](https://www.hypd.ai/templates/meta-ads-creative-analyzer)
+[Start free](https://app.hypd.ai/start?utm_source=tools&utm_content=poolday-ai&utm_term=bottom) [See the creative analyzer](https://www.hypd.ai/templates/meta-ads-creative-analyzer)
 
 *Last verified 17 November 2026.*
 
