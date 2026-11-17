@@ -26,6 +26,9 @@ interface Tool {
   name: string;
   tagline: string;
   description: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  headline?: string;
   logo: string | null;
   website: string;
   category: string;
@@ -69,6 +72,7 @@ interface Catalogue {
   useCases: UseCase[];
   categoryBodies: Record<string, string>;
   subcategoryBodies: Record<string, string>;
+  toolBodies: Record<string, string>;
 }
 
 export interface RenderedPage {
@@ -128,6 +132,7 @@ function catalogue(): Catalogue {
       useCases: readJson<UseCase[]>("useCases.json"),
       categoryBodies: readMarkdownDir("categories"),
       subcategoryBodies: readMarkdownDir("subcategories"),
+      toolBodies: readMarkdownDir("tools"),
     };
   }
   return cache;
@@ -145,17 +150,19 @@ export function escapeHtml(value: string): string {
 function inline(text: string): string {
   return escapeHtml(text)
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>")
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
 }
 
 /**
- * Minimal markdown for the category/subcategory bodies: headings, paragraphs,
- * bullet lists, bold and links — everything those files use.
+ * Minimal markdown for the category, subcategory and tool review bodies:
+ * headings, paragraphs, bullet lists, pipe tables, bold, italics and links.
  */
 export function markdownToHtml(md: string): string {
   const html: string[] = [];
   let paragraph: string[] = [];
   let list: string[] = [];
+  let table: string[][] = [];
 
   const flush = () => {
     if (paragraph.length) {
@@ -166,13 +173,28 @@ export function markdownToHtml(md: string): string {
       html.push(`<ul>${list.map((item) => `<li>${inline(item)}</li>`).join("")}</ul>`);
       list = [];
     }
+    if (table.length) {
+      // First row is the header; the |---| separator row was skipped on read.
+      const [head, ...rows] = table;
+      const cells = (row: string[], tag: string) =>
+        `<tr>${row.map((cell) => `<${tag}>${inline(cell)}</${tag}>`).join("")}</tr>`;
+      html.push(
+        `<table><thead>${cells(head, "th")}</thead><tbody>${rows.map((r) => cells(r, "td")).join("")}</tbody></table>`,
+      );
+      table = [];
+    }
   };
 
   for (const raw of md.split("\n")) {
     const line = raw.trim();
     const heading = /^(#{1,6})\s+(.*)$/.exec(line);
     const bullet = /^[-*]\s+(.*)$/.exec(line);
-    if (!line) {
+    if (line.startsWith("|")) {
+      if (paragraph.length || list.length) flush();
+      if (!/^\|[\s:|-]+\|$/.test(line)) {
+        table.push(line.slice(1, line.endsWith("|") ? -1 : undefined).split("|").map((c) => c.trim()));
+      }
+    } else if (!line) {
       flush();
     } else if (heading) {
       flush();
@@ -276,6 +298,7 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
     )
     .slice(0, 4);
   const description = cleanDescription(tool.description);
+  const review = c.toolBodies[tool.slug];
 
   const facts = [
     category &&
@@ -295,8 +318,8 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
   return {
     status: 200,
     // Same title shape as ToolDetailPage.tsx.
-    title: `${tool.name} - ${category?.name || "AI Marketing Tool"} | ${BASE_TITLE}`,
-    description: tool.tagline || truncate(description, 160),
+    title: `${tool.seoTitle ?? `${tool.name} - ${category?.name || "AI Marketing Tool"}`} | ${BASE_TITLE}`,
+    description: tool.seoDescription ?? (tool.tagline || truncate(description, 160)),
     canonicalPath: `/tools/${tool.slug}`,
     ogType: "product",
     ogImage: tool.logo ?? undefined,
@@ -317,9 +340,9 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
         availability: "https://schema.org/InStock",
       },
     },
-    bodyHtml: `${siteNav(c.categories)}<main><article><h1>${escapeHtml(tool.name)}</h1>${
+    bodyHtml: `${siteNav(c.categories)}<main><article><h1>${escapeHtml(tool.headline ?? tool.name)}</h1>${
       tool.tagline ? `<p>${escapeHtml(tool.tagline)}</p>` : ""
-    }<p>${escapeHtml(description)}</p><ul>${facts}</ul>${
+    }${review ? markdownToHtml(review) : `<p>${escapeHtml(description)}</p>`}<ul>${facts}</ul>${
       related.length ? `<h2>Related tools</h2>${toolLinkList(related)}` : ""
     }</article></main>`,
   };

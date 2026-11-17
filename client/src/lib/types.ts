@@ -4,6 +4,10 @@ export interface Tool {
   name: string;
   tagline: string;
   description: string;
+  /** Review-page overrides; tools with a content/tools/<slug>.md review set these. */
+  seoTitle?: string;
+  seoDescription?: string;
+  headline?: string;
   logo: string | null;
   screenshot: string | null;
   website: string;

@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { LogoFallback } from "./LogoFallback";
+import { Markdown } from "./Markdown";
+import { getToolContent } from "@/lib/content";
 import { ToolCard } from "./ToolCard";
 import { SiLinkedin, SiX, SiGithub } from "react-icons/si";
 import type { Tool, Category } from "@/lib/types";
@@ -34,6 +36,7 @@ export function ToolDetail({
 
   // Christmas theme is hidden from the switcher (HYP-527); strip legacy holiday emojis unconditionally
   const displayDescription = tool.description.replace(/🎄|🐣|🎅/g, '').trim();
+  const review = getToolContent(tool.slug);
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 md:px-6">
@@ -62,7 +65,7 @@ export function ToolDetail({
         )}
         <div>
           <h1 className="text-2xl font-bold" data-testid="text-tool-detail-name">
-            {tool.name}
+            {tool.headline ?? tool.name}
           </h1>
           <p className="text-muted-foreground" data-testid="text-tool-detail-tagline">
             {tool.tagline}
@@ -72,9 +75,13 @@ export function ToolDetail({
 
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <div className="prose prose-neutral dark:prose-invert max-w-none">
-            <p data-testid="text-tool-description">{displayDescription}</p>
-          </div>
+          {review ? (
+            <Markdown content={review} />
+          ) : (
+            <div className="prose prose-neutral dark:prose-invert max-w-none">
+              <p data-testid="text-tool-description">{displayDescription}</p>
+            </div>
+          )}
         </div>
 
         <div className="space-y-4">

@@ -52,8 +52,8 @@ export default function ToolDetailPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <SEO
-        title={`${tool.name} - ${category?.name || "AI Marketing Tool"}`}
-        description={tool.tagline || tool.description.slice(0, 160)}
+        title={tool.seoTitle ?? `${tool.name} - ${category?.name || "AI Marketing Tool"}`}
+        description={tool.seoDescription ?? (tool.tagline || tool.description.slice(0, 160))}
         keywords={[tool.name, ...tool.useCases, category?.name || "", "AI marketing tool"]}
         ogType="product"
         ogImage={tool.logo || undefined}
