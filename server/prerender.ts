@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { relatedTools } from "../shared/relatedTools";
 
 /**
  * Server-side HTML for every page of the directory.
@@ -26,6 +27,10 @@ interface Tool {
   name: string;
   tagline: string;
   description: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  headline?: string;
+  priceFrom?: string;
   logo: string | null;
   website: string;
   category: string;
@@ -69,6 +74,7 @@ interface Catalogue {
   useCases: UseCase[];
   categoryBodies: Record<string, string>;
   subcategoryBodies: Record<string, string>;
+  toolBodies: Record<string, string>;
 }
 
 export interface RenderedPage {
@@ -128,6 +134,7 @@ function catalogue(): Catalogue {
       useCases: readJson<UseCase[]>("useCases.json"),
       categoryBodies: readMarkdownDir("categories"),
       subcategoryBodies: readMarkdownDir("subcategories"),
+      toolBodies: readMarkdownDir("tools"),
     };
   }
   return cache;
@@ -145,17 +152,19 @@ export function escapeHtml(value: string): string {
 function inline(text: string): string {
   return escapeHtml(text)
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>")
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
 }
 
 /**
- * Minimal markdown for the category/subcategory bodies: headings, paragraphs,
- * bullet lists, bold and links — everything those files use.
+ * Minimal markdown for the category, subcategory and tool review bodies:
+ * headings, paragraphs, bullet lists, pipe tables, bold, italics and links.
  */
 export function markdownToHtml(md: string): string {
   const html: string[] = [];
   let paragraph: string[] = [];
   let list: string[] = [];
+  let table: string[][] = [];
 
   const flush = () => {
     if (paragraph.length) {
@@ -166,13 +175,28 @@ export function markdownToHtml(md: string): string {
       html.push(`<ul>${list.map((item) => `<li>${inline(item)}</li>`).join("")}</ul>`);
       list = [];
     }
+    if (table.length) {
+      // First row is the header; the |---| separator row was skipped on read.
+      const [head, ...rows] = table;
+      const cells = (row: string[], tag: string) =>
+        `<tr>${row.map((cell) => `<${tag}>${inline(cell)}</${tag}>`).join("")}</tr>`;
+      html.push(
+        `<table><thead>${cells(head, "th")}</thead><tbody>${rows.map((r) => cells(r, "td")).join("")}</tbody></table>`,
+      );
+      table = [];
+    }
   };
 
   for (const raw of md.split("\n")) {
     const line = raw.trim();
     const heading = /^(#{1,6})\s+(.*)$/.exec(line);
     const bullet = /^[-*]\s+(.*)$/.exec(line);
-    if (!line) {
+    if (line.startsWith("|")) {
+      if (paragraph.length || list.length) flush();
+      if (!/^\|[\s:|-]+\|$/.test(line)) {
+        table.push(line.slice(1, line.endsWith("|") ? -1 : undefined).split("|").map((c) => c.trim()));
+      }
+    } else if (!line) {
       flush();
     } else if (heading) {
       flush();
@@ -229,7 +253,7 @@ function toolLinkList(tools: Tool[]): string {
 function siteNav(categories: Category[]): string {
   return `<nav aria-label="Main"><a href="/">${escapeHtml(BASE_TITLE)}</a> · <a href="/landscape">Landscape</a> · <a href="/about">About</a> · ${categories
     .map((c) => `<a href="/category/${escapeHtml(c.id)}">${escapeHtml(c.name)}</a>`)
-    .join(" · ")}</nav>`;
+    .join(" · ")} · <a href="https://www.hypd.ai/">HYPD</a></nav>`;
 }
 
 function itemListJsonLd(name: string, description: string, tools: Tool[], baseUrl: string) {
@@ -268,14 +292,9 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
   const useCaseNames = tool.useCases
     .map((id) => c.useCases.find((u) => u.id === id)?.name ?? id)
     .filter(Boolean);
-  const related = c.tools
-    .filter(
-      (t) =>
-        t.id !== tool.id &&
-        (t.category === tool.category || t.useCases.some((uc) => tool.useCases.includes(uc))),
-    )
-    .slice(0, 4);
+  const related = relatedTools(tool, c.tools);
   const description = cleanDescription(tool.description);
+  const review = c.toolBodies[tool.slug];
 
   const facts = [
     category &&
@@ -285,7 +304,7 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
           : ""
       }</li>`,
     useCaseNames.length && `<li>Use cases: ${escapeHtml(useCaseNames.join(", "))}</li>`,
-    `<li>Pricing: ${escapeHtml(PRICING_LABELS[tool.pricing] ?? tool.pricing)}</li>`,
+    `<li>Pricing: ${escapeHtml(PRICING_LABELS[tool.pricing] ?? tool.pricing)}${tool.priceFrom ? ` (${escapeHtml(tool.priceFrom)})` : ""}</li>`,
     tool.founded && `<li>Founded: ${tool.founded}</li>`,
     `<li>Website: <a href="${escapeHtml(tool.website)}" rel="noopener">${escapeHtml(tool.website)}</a></li>`,
   ]
@@ -295,8 +314,8 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
   return {
     status: 200,
     // Same title shape as ToolDetailPage.tsx.
-    title: `${tool.name} - ${category?.name || "AI Marketing Tool"} | ${BASE_TITLE}`,
-    description: tool.tagline || truncate(description, 160),
+    title: `${tool.seoTitle ?? `${tool.name} - ${category?.name || "AI Marketing Tool"}`} | ${BASE_TITLE}`,
+    description: tool.seoDescription ?? (tool.tagline || truncate(description, 160)),
     canonicalPath: `/tools/${tool.slug}`,
     ogType: "product",
     ogImage: tool.logo ?? undefined,
@@ -317,10 +336,10 @@ function renderTool(slug: string, c: Catalogue, baseUrl: string): RenderedPage {
         availability: "https://schema.org/InStock",
       },
     },
-    bodyHtml: `${siteNav(c.categories)}<main><article><h1>${escapeHtml(tool.name)}</h1>${
+    bodyHtml: `${siteNav(c.categories)}<main><article><h1>${escapeHtml(tool.headline ?? tool.name)}</h1>${
       tool.tagline ? `<p>${escapeHtml(tool.tagline)}</p>` : ""
-    }<p>${escapeHtml(description)}</p><ul>${facts}</ul>${
-      related.length ? `<h2>Related tools</h2>${toolLinkList(related)}` : ""
+    }${review ? markdownToHtml(review) : `<p>${escapeHtml(description)}</p>`}<ul>${facts}</ul>${
+      related.length ? `<h2>Similar to ${escapeHtml(tool.name)}</h2>${toolLinkList(related)}` : ""
     }</article></main>`,
   };
 }
@@ -372,6 +391,7 @@ function renderSubcategory(
     meta?.description ?? `Browse ${subcategory.name} tools in the ${category.name} category on HYPD.`;
   const tools = c.tools.filter((t) => toolInSubcategory(t, category.id, subcategory.id));
   const body = c.subcategoryBodies[subcategory.id];
+  const siblings = category.subcategories.filter((s) => s.id !== subcategory.id);
 
   return {
     status: 200,
@@ -384,8 +404,12 @@ function renderSubcategory(
     bodyHtml: `${siteNav(c.categories)}<main><p><a href="/category/${escapeHtml(category.id)}">${escapeHtml(
       category.name,
     )}</a></p><h1>${escapeHtml(title)}</h1><p>${escapeHtml(description)}</p>${toolLinkList(tools)}${
-      body ? markdownToHtml(body) : ""
-    }</main>`,
+      siblings.length
+        ? `<h2>More ${escapeHtml(category.name)} tools</h2><ul>${siblings
+            .map((s) => `<li><a href="/category/${escapeHtml(category.id)}/${escapeHtml(s.id)}">${escapeHtml(s.name)}</a></li>`)
+            .join("")}</ul>`
+        : ""
+    }${body ? markdownToHtml(body) : ""}</main>`,
   };
 }
 
@@ -471,9 +495,28 @@ function renderAbout(c: Catalogue): RenderedPage {
   };
 }
 
+/** Footer with every subcategory, the landscape, About and hypd.ai (mirrors Footer.tsx). */
+function siteFooter(categories: Category[]): string {
+  const groups = categories
+    .filter((cat) => cat.subcategories.length)
+    .map(
+      (cat) =>
+        `<li><a href="/category/${escapeHtml(cat.id)}">${escapeHtml(cat.name)}</a><ul>${cat.subcategories
+          .map((s) => `<li><a href="/category/${escapeHtml(cat.id)}/${escapeHtml(s.id)}">${escapeHtml(s.name)}</a></li>`)
+          .join("")}</ul></li>`,
+    )
+    .join("");
+  return `<footer><nav aria-label="Footer"><ul>${groups}</ul><p><a href="/landscape">Landscape</a> · <a href="/about">About</a> · <a href="https://www.hypd.ai/">HYPD</a></p></nav></footer>`;
+}
+
 /** Resolve a request path to its server-rendered page. */
 export function renderPage(pathname: string, baseUrl: string): RenderedPage {
   const c = catalogue();
+  const page = route(pathname, baseUrl, c);
+  return { ...page, bodyHtml: page.bodyHtml + siteFooter(c.categories) };
+}
+
+function route(pathname: string, baseUrl: string, c: Catalogue): RenderedPage {
   const clean = pathname.replace(/\/+$/, "") || "/";
   const parts = clean.split("/").filter(Boolean).map((p) => decodeURIComponent(p));
 

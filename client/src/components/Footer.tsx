@@ -109,8 +109,22 @@ export function Footer() {
           </div>
 
           <div className="space-y-3">
-            <p className="text-sm font-medium">Categories</p>
+            <p className="text-sm font-medium">Browse</p>
             <nav className="flex flex-col gap-2">
+              <Link
+                href="/landscape"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-landscape"
+              >
+                Landscape
+              </Link>
+              <Link
+                href="/about"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                data-testid="link-footer-about"
+              >
+                About
+              </Link>
               {categories.map((category) => (
                 <Link
                   key={category.id}
@@ -158,7 +172,16 @@ export function Footer() {
 
         <div className="mt-8 border-t pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            Built for marketers navigating the GenAI stack · HYPD AI
+            Built for marketers navigating the GenAI stack ·{" "}
+            <a
+              href="https://www.hypd.ai/?utm_source=tools&utm_content=footer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-4 hover:text-foreground hover:underline"
+              data-testid="link-footer-hypd"
+            >
+              HYPD AI
+            </a>
           </p>
         </div>
       </div>

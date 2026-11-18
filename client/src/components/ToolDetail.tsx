@@ -1,10 +1,12 @@
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { LogoFallback } from "./LogoFallback";
+import { Markdown } from "./Markdown";
+import { getToolContent } from "@/lib/content";
 import { ToolCard } from "./ToolCard";
 import { SiLinkedin, SiX, SiGithub } from "react-icons/si";
 import type { Tool, Category } from "@/lib/types";
@@ -28,12 +30,16 @@ export function ToolDetail({
   const pricingLabels: Record<string, string> = {
     free: "Free",
     freemium: "Freemium",
-    paid: "Paid",
+    subscription: "Subscription",
+    "usage-based": "Usage-based",
     enterprise: "Enterprise",
+    unknown: "Unknown",
+    paid: "Paid",
   };
 
   // Christmas theme is hidden from the switcher (HYP-527); strip legacy holiday emojis unconditionally
   const displayDescription = tool.description.replace(/🎄|🐣|🎅/g, '').trim();
+  const review = getToolContent(tool.slug);
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 md:px-6">
@@ -62,7 +68,7 @@ export function ToolDetail({
         )}
         <div>
           <h1 className="text-2xl font-bold" data-testid="text-tool-detail-name">
-            {tool.name}
+            {tool.headline ?? tool.name}
           </h1>
           <p className="text-muted-foreground" data-testid="text-tool-detail-tagline">
             {tool.tagline}
@@ -71,23 +77,49 @@ export function ToolDetail({
       </div>
 
       <div className="grid gap-8 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <div className="prose prose-neutral dark:prose-invert max-w-none">
-            <p data-testid="text-tool-description">{displayDescription}</p>
-          </div>
+        <div className="min-w-0 lg:col-span-2">
+          {review ? (
+            <Markdown content={review} />
+          ) : (
+            <div className="prose prose-neutral dark:prose-invert max-w-none">
+              <p data-testid="text-tool-description">{displayDescription}</p>
+            </div>
+          )}
         </div>
 
-        <div className="space-y-4">
+        {/* Sticks below the 56px sticky header on desktop, where the review column is taller. */}
+        <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
+          <Card className="border-primary/60 bg-primary/10 p-4" data-testid="card-hypd-cta">
+            <h3 className="font-semibold">Know which ads actually work</h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              HYPD connects Claude or ChatGPT to your ad accounts and ranks your creatives by
+              spend, CTR and ROAS.
+            </p>
+            <Button asChild className="mt-3 w-full" data-testid="button-hypd-cta">
+              <a
+                href={`https://app.hypd.ai/start?utm_source=tools&utm_content=${encodeURIComponent(tool.slug)}&utm_term=sidebar`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Try HYPD free
+                <ArrowRight />
+              </a>
+            </Button>
+          </Card>
           <Card className="p-4">
             <h3 className="font-medium mb-3">Category</h3>
             <div className="space-y-2">
-              <Badge className="border-primary/50 bg-primary/15 text-foreground">
-                {category?.name || tool.category}
-              </Badge>
-              {subcategory && (
-                <Badge variant="outline" className="ml-2">
-                  {subcategory.name}
+              <Link href={`/category/${tool.category}`}>
+                <Badge className="border-primary/50 bg-primary/15 text-foreground hover:bg-primary/25">
+                  {category?.name || tool.category}
                 </Badge>
+              </Link>
+              {subcategory && (
+                <Link href={`/category/${tool.category}/${subcategory.id}`}>
+                  <Badge variant="outline" className="ml-2 hover:bg-muted" data-testid="link-tool-subcategory">
+                    {subcategory.name}
+                  </Badge>
+                </Link>
               )}
             </div>
           </Card>
@@ -108,6 +140,9 @@ export function ToolDetail({
             <Badge className="border-primary/50 bg-primary/15 text-foreground">
               {pricingLabels[tool.pricing] || tool.pricing}
             </Badge>
+            {tool.priceFrom && (
+              <p className="mt-2 text-sm text-muted-foreground">{tool.priceFrom}</p>
+            )}
           </Card>
 
           {(() => {
@@ -229,10 +264,12 @@ export function ToolDetail({
             );
           })()}
 
-          <Card className="p-4">
-            <h3 className="font-medium mb-2">Founded</h3>
-            <p className="text-muted-foreground">{tool.founded}</p>
-          </Card>
+          {tool.founded && (
+            <Card className="p-4">
+              <h3 className="font-medium mb-2">Founded</h3>
+              <p className="text-muted-foreground">{tool.founded}</p>
+            </Card>
+          )}
         </div>
       </div>
 
@@ -240,7 +277,7 @@ export function ToolDetail({
         <>
           <Separator className="my-8" />
           <div>
-            <h2 className="text-lg font-semibold mb-4">Related Tools</h2>
+            <h2 className="text-lg font-semibold mb-4">Similar to {tool.name}</h2>
             <div className="flex gap-3 overflow-x-auto pb-2">
               {relatedTools.map((relatedTool) => (
                 <div key={relatedTool.id} className="w-48 flex-shrink-0">

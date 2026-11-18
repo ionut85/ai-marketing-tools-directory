@@ -25,7 +25,14 @@ function toSlugMap(modules: Record<string, string>): Record<string, string> {
   return map;
 }
 
+const toolModules = import.meta.glob("../data/content/tools/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
+
 const categoryBodies = toSlugMap(categoryModules);
+const toolBodies = toSlugMap(toolModules);
 const subcategoryBodies = toSlugMap(subcategoryModules);
 
 /** Long-form markdown body for a category, or null if none authored yet. */
@@ -36,4 +43,9 @@ export function getCategoryContent(slug: string): string | null {
 /** Long-form markdown body for a subcategory, or null if none authored yet. */
 export function getSubcategoryContent(slug: string): string | null {
   return subcategoryBodies[slug] ?? null;
+}
+
+/** Long-form review body for a tool page, or null if none authored yet. */
+export function getToolContent(slug: string): string | null {
+  return toolBodies[slug] ?? null;
 }
